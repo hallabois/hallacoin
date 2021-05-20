@@ -100,11 +100,12 @@ public:
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
+         * Ksyk -> »§¥»
          */
-        pchMessageStart[0] = 0xfb;
-        pchMessageStart[1] = 0xc0;
-        pchMessageStart[2] = 0xb6;
-        pchMessageStart[3] = 0xdb;
+        pchMessageStart[0] = 0xbb;
+        pchMessageStart[1] = 0xa7;
+        pchMessageStart[2] = 0xa5;
+        pchMessageStart[3] = 0xbb;
         nDefaultPort = 9333;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 22;
