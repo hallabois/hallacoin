@@ -27,7 +27,7 @@ import socket
 import struct
 import time
 
-import Hallacoin_scrypt
+import litecoin_scrypt
 from test_framework.siphash import siphash256
 from test_framework.util import hex_str_to_bytes, bytes_to_hex_str, assert_equal
 
