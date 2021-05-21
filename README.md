@@ -1,7 +1,7 @@
 Hallacoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/Hallabois/Hallacoin.svg?branch=master)](https://travis-ci.org/Hallabois/Hallacoin) 
+[![Build Status](https://travis-ci.org/Hallabois/Hallacoin.svg?branch=master)](https://travis-ci.org/Hallabois/Hallacoin)
 
 Ohjeet (pls lue)
 ------
