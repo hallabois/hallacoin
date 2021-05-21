@@ -3,6 +3,13 @@ Hallacoin Core integration/staging tree
 
 [![Build Status](https://travis-ci.org/Hallacoin-project/Hallacoin.svg?branch=master)](https://travis-ci.org/Hallacoin-project/Hallacoin)
 
+Ohjeet
+------
+https://github.com/Hallabois/Hallacoin-ohjeet
+
+Website
+-------
+
 https://Hallacoin.org
 
 What is Hallacoin?
