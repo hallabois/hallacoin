@@ -4,7 +4,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-exit 1 #Disable for now
+# exit 1 #Disable for now
 
 export LC_ALL=C
 
