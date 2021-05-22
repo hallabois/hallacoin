@@ -23,3 +23,5 @@ RUN make install
 #open service port
 EXPOSE 9666 19666
 CMD ["Hallacoind", "--printtoconsole"]
+
+#Build this docker image with "docker build -t hallacoin ."
