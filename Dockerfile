@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-#COPY ./Hallacoin.conf /root/.Hallacoin/Hallacoin.conf
+#COPY ./Hallacoin.conf /root/.Hallacoin/Hallacoin.conf 
 COPY . /Hallacoin
 WORKDIR /Hallacoin
 #shared libraries and dependencies
