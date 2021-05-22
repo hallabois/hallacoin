@@ -18,7 +18,7 @@ jobs:
     - name: autoconfig
       run:  ./autogen.sh
     - name: configure (without wallet)
-      run: ./configure --without-wallet
+      run: ./configure --disable-wallet
     - name: make
       run: make
     - name: make check
