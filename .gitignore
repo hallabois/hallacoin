@@ -83,6 +83,7 @@ src/qt/bitcoin-qt.includes
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
+!depends/Makefile
 Hallacoin-qt
 Hallacoin-Qt.app
 background.tiff*
