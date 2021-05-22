@@ -13,8 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: install dependencies 
-      run: sudo apt-get install libtool libboost-dev
+    - name: update the apt repos
+      run: sudo apt-get update -y
+    - name: install dependencies
+      run: sudo apt-get install libtool libboost-all-dev -y
     - name: autoconfig
       run:  ./autogen.sh
     - name: configure (without wallet)
