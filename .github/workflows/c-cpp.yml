@@ -17,8 +17,8 @@ jobs:
       run: sudo apt-get install libtool
     - name: autoconfig
       run:  ./autogen.sh
-    - name: configure
-      run: ./configure
+    - name: configure (without wallet)
+      run: ./configure --without-wallet
     - name: make
       run: make
     - name: make check
