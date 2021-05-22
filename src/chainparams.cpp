@@ -91,7 +91,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000002ee655bf00bf13b4cca");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0xb34a457c601ef8ce3294116e3296078797be7ded1b0d12515395db9ab5e93ab8"); //1683528
@@ -111,10 +111,10 @@ public:
         m_assumed_blockchain_size = 22;
         m_assumed_chain_state_size = 3;
 
-        genesis = CreateGenesisBlock(1621711933, 2084572713, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1621711933, 2084848677, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xc88f84a2b6b20b9fb2d38121d5898b02d6c71714f35a66df22ab7b13f13d46cc"));
-        assert(genesis.hashMerkleRoot == uint256S("0xdc9ea7002ea3a7ab5441f757b1930a5291cd1edb87e011d5f22780abd622da16"));
+        assert(consensus.hashGenesisBlock == uint256S("0x27ebdba18b68539a33f4f1a6643ac6cbca83f506884de5d1947e5a855cb4c4a5"));
+        assert(genesis.hashMerkleRoot == uint256S("0x8e50483e96964c30ba034ccf65c183f7619fde57fc6c0bf159efc2946bbfff18"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
