@@ -5,7 +5,7 @@ Hallacoin Core integration/staging tree
 
 Ohjeet (pls lue)
 ------
-https://github.com/Hallabois/Hallacoin-ohjeet
+https://hallabois.github.io/Hallacoin-ohjeet/
 
 Website
 -------
