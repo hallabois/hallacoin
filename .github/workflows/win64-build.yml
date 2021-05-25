@@ -14,9 +14,8 @@ jobs:
         run: sudo apt-get install libtool libboost-all-dev build-essential autotools-dev automake pkg-config bsdmainutils curl git nsis g++-mingw-w64-x86-64 -y
       - name: Depends make
         run: |
-          sudo update-alternatives --config x86_64-w64-mingw32-gcc #pitäs saada valitsemaan molemmista posix, miten teen????????????
-          1
-          sudo update-alternatives --config x86_64-w64-mingw32-g++ #pitäs saada valitsemaan molemmista posix, miten teen????????????
+          echo 1 > sudo update-alternatives --config x86_64-w64-mingw32-gcc #pitäs saada valitsemaan molemmista posix, miten teen????????????
+          echo 1 > sudo update-alternatives --config x86_64-w64-mingw32-g++ #pitäs saada valitsemaan molemmista posix, miten teen????????????
           1
           cd depends
           make HOST=x86_64-w64-mingw32
