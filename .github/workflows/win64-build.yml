@@ -1,0 +1,41 @@
+name: Build and release for x64 Windows
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update the apt repos
+        run: sudo apt-get update -y
+      - name: Install dependencies
+        run: sudo apt-get install libtool libboost-all-dev build-essential autotools-dev automake pkg-config bsdmainutils curl git nsis g++-mingw-w64-x86-64 -y
+      - name: Depends make
+        run: |
+          cd depends
+          make HOST=x86_64-w64-mingw32
+          cd ..
+      - name: Autoconfig
+        run:  ./autogen.sh
+      - name: configure 
+        run: CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
+      - name: make
+        run: make
+      - name: Make installer
+        run: make deploy
+
+  release:
+      runs-on: ubuntu-latest
+      needs: build
+      name: Release
+      
+      steps: 
+        - uses: "marvinpinto/action-automatic-releases@latest"
+          with:
+            repo_token: "${{ secrets.GITHUB_TOKEN }}"
+            automatic_release_tag: "latest"
+            prerelease: true
+            title: "Latest"
+            files: "*.exe"
