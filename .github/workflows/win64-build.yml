@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Update the apt repos
         run: | 
-          sudo add-apt-repository ppa:bitcoin/bitcoin
+          sudo snap install bitcoin-core
           sudo apt-get update -y
       - name: Install dependencies
         run: sudo apt-get install libtool libboost-all-dev build-essential autotools-dev automake pkg-config bsdmainutils curl git nsis g++-mingw-w64-x86-64 qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev libdb4.8-dev libdb4.8++-dev software-properties-common libssl-dev libevent-dev -y
