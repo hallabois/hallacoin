@@ -11,22 +11,22 @@ jobs:
       - name: Update the apt repos
         run: sudo apt-get update -y
       - name: Install dependencies
-        run: sudo apt-get install libtool libboost-all-dev build-essential autotools-dev automake pkg-config bsdmainutils curl git nsis g++-mingw-w64-x86-64 -y
+        run: sudo apt-get install libtool libboost-all-dev build-essential autotools-dev automake pkg-config bsdmainutils curl git nsis g++-mingw-w64-x86-64 qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default -y
       - name: Depends make
         run: |
           echo "1" > sudo update-alternatives --config x86_64-w64-mingw32-gcc #pitäs saada valitsemaan molemmista posix, miten teen????????????
           echo "1" > sudo update-alternatives --config x86_64-w64-mingw32-g++ #pitäs saada valitsemaan molemmista posix, miten teen????????????
           cd depends
-          make HOST=x86_64-w64-mingw32
+          sudo make HOST=x86_64-w64-mingw32
           cd ..
       - name: Autoconfig
-        run:  ./autogen.sh
-      - name: configure 
-        run: CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
-      - name: make
-        run: make
+        run:  sudo ./autogen.sh
+      - name: Configure 
+        run: sudo CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
+      - name: Make
+        run: sudo make
       - name: Make installer
-        run: make deploy
+        run: sudo make deploy
 
   release:
       runs-on: ubuntu-latest
