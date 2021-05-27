@@ -1,0 +1,68 @@
+name: Linux Build, Release and AppImage
+
+on: 
+  workflow_dispatch:
+    inputs:
+      releaseName:
+        description: "What to name the release"
+        required: true
+      tag:
+        description: "What to tag the release with"
+        required: true
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: update the apt repos
+      run: sudo apt-get update -y
+    - name: install dependencies
+      run: sudo apt-get install libtool libboost-all-dev -y
+    - name: autoconfig
+      run:  ./autogen.sh
+    - name: configure (without wallet)
+      run: ./configure --disable-wallet
+    - name: make
+      run: make
+    - name: make dist
+      run: make dist
+
+  build-appimage:
+  
+    runs-on: ubuntu-18.04
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: install dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install autoconfig -y
+          sudo apt-get install -y qt5-default qtdeclarative5-dev
+          sudo apt-get install libtool libboost-all-dev -y
+      - name: install dependencies / compile BerkeleyDB
+        run: |
+         sudo ./contrib/install_db4.sh `pwd`
+      - name: configure
+        run: ./configure
+      - name: build
+        run: make
+      - name: Build AppImage
+        uses: AppImageCrafters/build-appimage-action@master
+        env:
+          UPDATE_INFO: gh-releases-zsync|hallabois|hallacoin|latest|*x86_64.AppImage.zsync
+        with:
+          recipe: AppImageBuilder.yml
+      - uses: actions/upload-artifact@v2
+        with:
+          name: AppImage
+      - name: Release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ github.event.inputs.tag }}"
+          prerelease: true
+          title: "${{ github.event.inputs.releaseName }}"
+          files: "*.AppImage"
