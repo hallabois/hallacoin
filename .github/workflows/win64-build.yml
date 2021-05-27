@@ -4,16 +4,14 @@ on: [workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     
     steps:
       - uses: actions/checkout@v2
       - name: Update the apt repos
-        run: | 
-          sudo snap install bitcoin-core
-          sudo apt-get update -y
+        run: sudo apt-get update -y
       - name: Install dependencies
-        run: sudo apt-get install libtool libboost-all-dev build-essential autotools-dev automake pkg-config bsdmainutils curl git nsis g++-mingw-w64-x86-64 qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev libevent-dev -y
+        run: sudo apt-get install libtool libboost-all-dev build-essential autotools-dev automake pkg-config bsdmainutils curl git nsis g++-mingw-w64-x86-64 qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev libevent-dev libdb4.8-dev libdb4.8++-dev -y
       - name: Depends make
         run: |
           #laittaa automaattisen tilan käyttämään posixia
@@ -37,7 +35,7 @@ jobs:
         run: sudo make deploy
 
   release:
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-18.04
       needs: build
       name: Release
       
