@@ -20,7 +20,9 @@ jobs:
     - name: update the apt repos
       run: sudo apt-get update -y
     - name: install dependencies
-      run: sudo apt-get install libtool libboost-all-dev -y
+      run: |
+        sudo apt-get install libtool libboost-all-dev -y
+        sudo apt install libevent-dev -y
     - name: autoconfig
       run:  ./autogen.sh
     - name: configure (without wallet)
@@ -40,6 +42,7 @@ jobs:
         run: |
           sudo apt-get update -y
           sudo apt-get install -y qt5-default qtdeclarative5-dev
+          sudo apt install libevent-dev
           sudo apt-get install libtool libboost-all-dev -y
       - name: install dependencies / compile BerkeleyDB
         run: |
