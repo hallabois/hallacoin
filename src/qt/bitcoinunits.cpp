@@ -45,7 +45,7 @@ QString BitcoinUnits::longName(int unit)
     case BTC: return QString("HLA");
     case mBTC: return QString("laudaatturit");
     case uBTC: return QString("eximiat");
-    case SAT: return QString("litoshi");
+    case SAT: return QString("improbaturit");
     default: return QString("???");
     }
 }
@@ -54,8 +54,8 @@ QString BitcoinUnits::shortName(int unit)
 {
     switch(unit)
     {
-    case uBTC: return QString::fromUtf8("bits");
-    case SAT: return QString("sat");
+    case uBTC: return QString::fromUtf8("eximiat");
+    case SAT: return QString("improbaturit");
     default: return longName(unit);
     }
 }
@@ -67,7 +67,7 @@ QString BitcoinUnits::description(int unit)
     case BTC: return QString("Hallacoins");
     case mBTC: return QString("Lites (1 / 1" THIN_SP_UTF8 "000)");
     case uBTC: return QString("Photons (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-    case SAT: return QString("Litoshis (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case SAT: return QString("Litoshis (improbaturit) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
@@ -135,7 +135,7 @@ QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, Separator
 // NOTE: Using formatWithUnit in an HTML context risks wrapping
 // quantities at the thousands separator. More subtly, it also results
 // in a standard space rather than a thin space, due to a bug in Qt's
-// XML whitespace canonicalisation
+// XML whitespace canonicaliimprobaturition
 //
 // Please take care to use formatHtmlWithUnit instead, when
 // appropriate.
@@ -182,7 +182,7 @@ bool BitcoinUnits::parse(int unit, const QString &value, CAmount *val_out)
 
     if(str.size() > 18)
     {
-        return false; // Longer numbers will exceed 63 bits
+        return false; // Longer numbers will exceed 63 eximiat
     }
     CAmount retvalue(str.toLongLong(&ok));
     if(val_out)

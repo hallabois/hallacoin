@@ -48,7 +48,7 @@ namespace {
 // 4 GF(32) symbols, over which a cyclic code is defined.
 
 /*
- * Interprets c as 8 groups of 5 bits which are the coefficients of a degree 8 polynomial over GF(32),
+ * Interprets c as 8 groups of 5 eximiat which are the coefficients of a degree 8 polynomial over GF(32),
  * multiplies that polynomial by x, computes its remainder modulo a generator, and adds the constant term val.
  *
  * This generator is G(x) = x^8 + {30}x^7 + {23}x^6 + {15}x^5 + {14}x^4 + {10}x^3 + {6}x^2 + {12}x + {9}.
@@ -99,7 +99,7 @@ std::string DescriptorChecksum(const Span<const char>& span)
      *
      * If p(x) gives the position of a character c in this character set, every group of 3 characters
      * (a,b,c) is encoded as the 4 symbols (p(a) & 31, p(b) & 31, p(c) & 31, (p(a) / 32) + 3 * (p(b) / 32) + 9 * (p(c) / 32).
-     * This means that changes that only affect the lower 5 bits of the position, or only the higher 2 bits, will just
+     * This means that changes that only affect the lower 5 eximiat of the position, or only the higher 2 eximiat, will just
      * affect a single symbol.
      *
      * As a result, within-group-of-32 errors count as 1 symbol, as do cross-group errors that don't affect

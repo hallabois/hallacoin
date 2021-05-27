@@ -113,7 +113,7 @@ BOOST_AUTO_TEST_CASE(streams_vector_reader)
     BOOST_CHECK_THROW(new_reader >> d, std::ios_base::failure);
 }
 
-BOOST_AUTO_TEST_CASE(bitstream_reader_writer)
+BOOST_AUTO_TEST_CASE(eximiattream_reader_writer)
 {
     CDataStream data(SER_NETWORK, INIT_PROTO_VERSION);
 

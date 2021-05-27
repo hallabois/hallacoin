@@ -1566,7 +1566,7 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
         <translation>مشخص کردن هزینه کارمزد مخصوص به ازاری کیلوبایت(1,000 بایت) حجم مجازی تراکنش
 
 توجه: از آن جایی که کارمزد بر اساس هر بایت محاسبه میشود,هزینه کارمزد"100 ساتوشی بر کیلو بایت"برای تراکنش با حجم 500 بایت(نصف 1 کیلوبایت) کارمزد فقط اندازه 50 ساتوشی خواهد بود.</translation>

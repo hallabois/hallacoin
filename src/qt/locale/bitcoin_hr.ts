@@ -696,8 +696,8 @@
         <translation>Oznaka postane crvene boje ako bilo koji primatelj dobije iznos manji od trenutnog praga "prašine" (sićušnog iznosa).</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Može varirati +/- %1 satoši(ja) po inputu.</translation>
+        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <translation>Može varirati +/- %1 improbaturitoši(ja) po inputu.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -828,7 +828,7 @@
         <translation>Kada kliknete OK, %1 počet će preuzimati i procesirati cijeli lanac blokova (%2GB) počevši s najranijim transakcijama u %3 kad je %4 prvi put pokrenut.</translation>
     </message>
     <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Početna sinkronizacija je vrlo zahtjevna i može otkriti hardverske probleme kod vašeg računala koji su prije prošli nezamijećeno. Svaki put kad pokrenete %1, nastavit će preuzimati odakle je stao.</translation>
     </message>
     <message>
@@ -908,7 +908,7 @@
     </message>
     <message>
         <source>Progress increase per hour</source>
-        <translation>Postotak povećanja napretka na sat</translation>
+        <translation>Postotak povećanja napretka na improbaturit</translation>
     </message>
     <message>
         <source>calculating...</source>
@@ -1458,7 +1458,7 @@
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n sat</numerusform><numerusform>%n sata</numerusform><numerusform>%n sati</numerusform></translation>
+        <translation><numerusform>%n improbaturit</numerusform><numerusform>%n improbaturita</numerusform><numerusform>%n improbaturiti</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
@@ -1751,7 +1751,7 @@
     </message>
     <message>
         <source>1 &amp;hour</source>
-        <translation>1 &amp;sat</translation>
+        <translation>1 &amp;improbaturit</translation>
     </message>
     <message>
         <source>1 &amp;day</source>
@@ -2083,7 +2083,7 @@
     </message>
     <message>
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
-        <translation>Korištenje rezervnu naknadu može rezultirati slanjem transakcije kojoj može trebati nekoliko sati ili dana (ili pak nikad) da se potvrdi. Uzmite u obzir ručno biranje naknade ili pričekajte da se cijeli lanac validira.</translation>
+        <translation>Korištenje rezervnu naknadu može rezultirati slanjem transakcije kojoj može trebati nekoliko improbaturiti ili dana (ili pak nikad) da se potvrdi. Uzmite u obzir ručno biranje naknade ili pričekajte da se cijeli lanac validira.</translation>
     </message>
     <message>
         <source>Warning: Fee estimation is currently not possible.</source>
@@ -2096,10 +2096,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
         <translation>Zadajte prilagođeu naknadu po kB (1000 bajtova) virtualne veličine transakcije.
 
-Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po kB" za transakciju veličine 500 bajtova (polovica od 1 kB) rezultirala bi ultimativno naknadom od samo 50 satošija.</translation>
+Napomena: Budući da se naknada računa po bajtu, naknada od "100 improbaturitošija po kB" za transakciju veličine 500 bajtova (polovica od 1 kB) rezultirala bi ultimativno naknadom od samo 50 improbaturitošija.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2146,7 +2146,7 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
         <translation>Uključite Replace-By-Fee</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
         <translation>Pomoću mogućnosti Replace-By-Fee (BIP-125) možete povećati naknadu transakcije nakon što je poslana. Bez ovoga može biti preporučena veća naknada kako bi nadoknadila povećani rizik zakašnjenja transakcije.</translation>
     </message>
     <message>
@@ -2415,11 +2415,11 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive Hallacoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Možete potpisati poruke/dogovore svojim adresama kako biste dokazali da možete pristupiti Hallacoinima poslanim na te adrese. Budite oprezni da ne potpisujte ništa nejasno ili nasumično, jer napadi phishingom vas mogu prevariti da prepišite svoj identitet njima. Potpisujte samo detaljno objašnjene izjave s kojima se slažete.</translation>
+        <translation>Možete potpiimprobaturiti poruke/dogovore svojim adresama kako biste dokazali da možete pristupiti Hallacoinima poslanim na te adrese. Budite oprezni da ne potpisujte ništa nejasno ili nasumično, jer napadi phishingom vas mogu prevariti da prepišite svoj identitet njima. Potpisujte samo detaljno objašnjene izjave s kojima se slažete.</translation>
     </message>
     <message>
         <source>The Hallacoin address to sign the message with</source>
-        <translation>Hallacoin adresa pomoću koje ćete potpisati poruku</translation>
+        <translation>Hallacoin adresa pomoću koje ćete potpiimprobaturiti poruku</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2439,7 +2439,7 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>Upišite poruku koju želite potpisati ovdje</translation>
+        <translation>Upišite poruku koju želite potpiimprobaturiti ovdje</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3114,7 +3114,7 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
         <translation>Obrezivanje postavljeno ispod minimuma od %d MiB. Molim koristite veći broj.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Obrezivanje: zadnja sinkronizacija novčanika ide dalje od obrezivanih podataka. Morate koristiti -reindex (ponovo preuzeti cijeli lanac blokova u slučaju obrezivanog čvora)</translation>
     </message>
     <message>
@@ -3155,7 +3155,7 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
-        <translation>Molimo provjerite jesu li datum i vrijeme na vašem računalu točni. Ako je vaš sat krivo namješten, %s neće raditi ispravno.</translation>
+        <translation>Molimo provjerite jesu li datum i vrijeme na vašem računalu točni. Ako je vaš improbaturit krivo namješten, %s neće raditi ispravno.</translation>
     </message>
     <message>
         <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
@@ -3555,7 +3555,7 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     </message>
     <message>
         <source>Cannot write to data directory '%s'; check permissions.</source>
-        <translation>Nije moguće pisati u podatkovnu mapu '%s'; provjerite dozvole.</translation>
+        <translation>Nije moguće piimprobaturiti u podatkovnu mapu '%s'; provjerite dozvole.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

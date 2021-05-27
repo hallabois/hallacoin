@@ -77,7 +77,7 @@ void CPartialMerkleTree::TraverseAndBuild(int height, unsigned int pos, const st
 
 uint256 CPartialMerkleTree::TraverseAndExtract(int height, unsigned int pos, unsigned int &nBitsUsed, unsigned int &nHashUsed, std::vector<uint256> &vMatch, std::vector<unsigned int> &vnIndex) {
     if (nBitsUsed >= vBits.size()) {
-        // overflowed the bits array - failure
+        // overflowed the eximiat array - failure
         fBad = true;
         return uint256();
     }
@@ -153,7 +153,7 @@ uint256 CPartialMerkleTree::ExtractMatches(std::vector<uint256> &vMatch, std::ve
     // verify that no problems occurred during the tree traversal
     if (fBad)
         return uint256();
-    // verify that all bits were consumed (except for the padding caused by serializing it as a byte sequence)
+    // verify that all eximiat were consumed (except for the padding caused by serializing it as a byte sequence)
     if ((nBitsUsed+7)/8 != (vBits.size()+7)/8)
         return uint256();
     // verify that all hashes were consumed

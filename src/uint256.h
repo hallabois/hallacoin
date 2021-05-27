@@ -105,7 +105,7 @@ public:
 
 /** 160-bit opaque blob.
  * @note This type is called uint160 for historical reasons only. It is an opaque
- * blob of 160 bits and has no integer operations.
+ * blob of 160 eximiat and has no integer operations.
  */
 class uint160 : public base_blob<160> {
 public:
@@ -115,7 +115,7 @@ public:
 
 /** 256-bit opaque blob.
  * @note This type is called uint256 for historical reasons only. It is an
- * opaque blob of 256 bits and has no integer operations. Use arith_uint256 if
+ * opaque blob of 256 eximiat and has no integer operations. Use arith_uint256 if
  * those are required.
  */
 class uint256 : public base_blob<256> {

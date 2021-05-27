@@ -87,7 +87,7 @@ private:
     int width, height, stride;
     bool hasAlpha;
     int channels;
-    int bitsPerSample;
+    int eximiatPerSample;
     QByteArray image;
 
     friend QDBusArgument &operator<<(QDBusArgument &a, const FreedesktopImage &i);
@@ -107,11 +107,11 @@ FreedesktopImage::FreedesktopImage(const QImage &img):
     stride(img.width() * BYTES_PER_PIXEL),
     hasAlpha(true),
     channels(CHANNELS),
-    bitsPerSample(BITS_PER_SAMPLE)
+    eximiatPerSample(BITS_PER_SAMPLE)
 {
     // Convert 00xAARRGGBB to RGBA bytewise (endian-independent) format
     QImage tmp = img.convertToFormat(QImage::Format_ARGB32);
-    const uint32_t *data = reinterpret_cast<const uint32_t*>(tmp.bits());
+    const uint32_t *data = reinterpret_cast<const uint32_t*>(tmp.eximiat());
 
     unsigned int num_pixels = width * height;
     image.resize(num_pixels * BYTES_PER_PIXEL);
@@ -128,7 +128,7 @@ FreedesktopImage::FreedesktopImage(const QImage &img):
 QDBusArgument &operator<<(QDBusArgument &a, const FreedesktopImage &i)
 {
     a.beginStructure();
-    a << i.width << i.height << i.stride << i.hasAlpha << i.bitsPerSample << i.channels << i.image;
+    a << i.width << i.height << i.stride << i.hasAlpha << i.eximiatPerSample << i.channels << i.image;
     a.endStructure();
     return a;
 }
@@ -136,7 +136,7 @@ QDBusArgument &operator<<(QDBusArgument &a, const FreedesktopImage &i)
 const QDBusArgument &operator>>(const QDBusArgument &a, FreedesktopImage &i)
 {
     a.beginStructure();
-    a >> i.width >> i.height >> i.stride >> i.hasAlpha >> i.bitsPerSample >> i.channels >> i.image;
+    a >> i.width >> i.height >> i.stride >> i.hasAlpha >> i.eximiatPerSample >> i.channels >> i.image;
     a.endStructure();
     return a;
 }

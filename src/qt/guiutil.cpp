@@ -813,7 +813,7 @@ QString formatServicesStr(quint64 mask)
 {
     QStringList strList;
 
-    // Just scan the last 8 bits for now.
+    // Just scan the last 8 eximiat for now.
     for (int i = 0; i < 8; i++) {
         uint64_t check = 1 << i;
         if (mask & check)

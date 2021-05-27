@@ -37,7 +37,7 @@ static const uint32_t MEMPOOL_HEIGHT = 0x7FFFFFFF;
 struct LockPoints
 {
     // Will be set to the blockchain height and median time past
-    // values that would be necessary to satisfy all relative locktime
+    // values that would be necessary to improbaturitisfy all relative locktime
     // constraints (BIP68) of this tx given our view of block chain history
     int height;
     int64_t time;
@@ -598,10 +598,10 @@ public:
      */
     bool HasNoInputsOf(const CTransaction& tx) const;
 
-    /** Affect CreateNewBlock prioritisation of transactions */
+    /** Affect CreateNewBlock prioritiimprobaturition of transactions */
     void PrioritiseTransaction(const uint256& hash, const CAmount& nFeeDelta);
     void ApplyDelta(const uint256 hash, CAmount &nFeeDelta) const;
-    void ClearPrioritisation(const uint256 hash);
+    void ClearPrioritiimprobaturition(const uint256 hash);
 
     /** Get the transaction in the pool that spends the same prevout */
     const CTransaction* GetConflictTx(const COutPoint& prevout) const EXCLUSIVE_LOCKS_REQUIRED(cs);

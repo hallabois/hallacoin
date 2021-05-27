@@ -319,11 +319,11 @@
     </message>
     <message>
         <source>Click to disable network activity.</source>
-        <translation>Clique para desativar a atividade de rede.</translation>
+        <translation>Clique para deimprobaturitivar a atividade de rede.</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
-        <translation>Atividade de rede desativada.</translation>
+        <translation>Atividade de rede deimprobaturitivada.</translation>
     </message>
     <message>
         <source>Click to enable network activity again.</source>
@@ -599,7 +599,7 @@
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>Geração de chave HD está &lt;b&gt;desativada&lt;/b&gt;</translation>
+        <translation>Geração de chave HD está &lt;b&gt;deimprobaturitivada&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
@@ -753,8 +753,8 @@
         <translation>Este texto fica vermelho se qualquer destinatário receber uma quantidade menor que o limite atual para poeira.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Pode variar +/- %1 satoshi(s) por entrada</translation>
+        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <translation>Pode variar +/- %1 improbaturitoshi(s) por entrada</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -885,7 +885,7 @@
         <translation>Quando você clica OK, %1 vai começar a baixar e processar todos os %4 da block chain (%2GB) começando com a mais recente transação em %3 quando %4 inicialmente foi lançado.</translation>
     </message>
     <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Esta sincronização inicial é muito exigente e pode expor problemas de hardware com o computador que passaram despercebidos anteriormente. Cada vez que você executar o %1, irá continuar baixando de onde parou.</translation>
     </message>
     <message>
@@ -1087,7 +1087,7 @@
     </message>
     <message>
         <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
-        <translation>Desativa alguns recursos avançados mas todos os blocos ainda serão totalmente validados. Reverter esta configuração requer baixar de novo a blockchain inteira. O uso de memória pode ser um pouco mais alto.</translation>
+        <translation>Deimprobaturitiva alguns recursos avançados mas todos os blocos ainda serão totalmente validados. Reverter esta configuração requer baixar de novo a blockchain inteira. O uso de memória pode ser um pouco mais alto.</translation>
     </message>
     <message>
         <source>Prune &amp;block storage to</source>
@@ -1294,7 +1294,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hallacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. Sua carteira sincroniza automaticamente com a rede Hallacoin depois que a conexão é estabelecida, mas este processo ainda não está completo.</translation>
+        <translation>A informação mostrada pode estar deimprobaturitualizada. Sua carteira sincroniza automaticamente com a rede Hallacoin depois que a conexão é estabelecida, mas este processo ainda não está completo.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1381,7 +1381,7 @@
     </message>
     <message>
         <source>You are using a BIP70 URL which will be unsupported in the future.</source>
-        <translation>Você está usando uma URL do BIP70 que será desativado no futuro.</translation>
+        <translation>Você está usando uma URL do BIP70 que será deimprobaturitivado no futuro.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1389,7 +1389,7 @@
     </message>
     <message>
         <source>Cannot process payment request because BIP70 support was not compiled in.</source>
-        <translation>O pagamento não pode ser processado porque o suporte ao BIP70 foi desativado.</translation>
+        <translation>O pagamento não pode ser processado porque o suporte ao BIP70 foi deimprobaturitivado.</translation>
     </message>
     <message>
         <source>Invalid payment address %1</source>
@@ -1896,7 +1896,7 @@
     </message>
     <message>
         <source>Network activity disabled</source>
-        <translation>Atividade da rede desativada</translation>
+        <translation>Atividade da rede deimprobaturitivada</translation>
     </message>
     <message>
         <source>Executing command without any wallet</source>
@@ -2193,10 +2193,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
         <translation>Especifique uma taxa personalizada por kB (1.000 bytes) do tamanho virtual da transação.
 
-Nota:  Como a taxa é calculada por byte, uma taxa de "100 satoshis por kB" por uma transação de 500 bytes (metade de 1 kB) teria uma taxa final de apenas 50 satoshis.</translation>
+Nota:  Como a taxa é calculada por byte, uma taxa de "100 improbaturitoshis por kB" por uma transação de 500 bytes (metade de 1 kB) teria uma taxa final de apenas 50 improbaturitoshis.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2251,7 +2251,7 @@ Nota:  Como a taxa é calculada por byte, uma taxa de "100 satoshis por kB" por 
         <translation>Habilitar Replace-By-Fee</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
         <translation>Com Replace-By-Fee (BIP-125) você pode aumentar a taxa da transação após ela ser enviada. Sem isso, uma taxa maior pode ser recomendada para compensar por risco de alto atraso na transação.</translation>
     </message>
     <message>
@@ -3231,7 +3231,7 @@ Nota:  Como a taxa é calculada por byte, uma taxa de "100 satoshis por kB" por 
         <translation>Configuração de prune abaixo do mínimo de %d MiB.Por gentileza use um número mais alto.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Prune: A ultima sincronização da carteira foi além dos dados podados. Você precisa usar -reindex (fazer o download de toda a blockchain novamente no caso de nós com prune)</translation>
     </message>
     <message>
@@ -3360,7 +3360,7 @@ Nota:  Como a taxa é calculada por byte, uma taxa de "100 satoshis por kB" por 
     </message>
     <message>
         <source>Error loading %s: Private keys can only be disabled during creation</source>
-        <translation>Erro ao carregar %s: Chaves privadas só podem ser desativadas durante a criação</translation>
+        <translation>Erro ao carregar %s: Chaves privadas só podem ser deimprobaturitivadas durante a criação</translation>
     </message>
     <message>
         <source>Error loading %s: Wallet corrupted</source>
@@ -3695,11 +3695,11 @@ Diretório de blocos especificados "%s" não existe.</translation>
     </message>
     <message>
         <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
-        <translation>Falha na estimativa de taxa. Fallbackfee desativada. Espere alguns blocos ou ative -fallbackfee.</translation>
+        <translation>Falha na estimativa de taxa. Fallbackfee deimprobaturitivada. Espere alguns blocos ou ative -fallbackfee.</translation>
     </message>
     <message>
         <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
-        <translation>Aviso: Chaves privadas detectadas na carteira {%s} com chaves privadas desativadas</translation>
+        <translation>Aviso: Chaves privadas detectadas na carteira {%s} com chaves privadas deimprobaturitivadas</translation>
     </message>
     <message>
         <source>Cannot write to data directory '%s'; check permissions.</source>

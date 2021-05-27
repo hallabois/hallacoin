@@ -22,7 +22,7 @@ struct CMutableTransaction;
 
 struct KeyOriginInfo
 {
-    unsigned char fingerprint[4]; //!< First 32 bits of the Hash160 of the public key at the root of the path
+    unsigned char fingerprint[4]; //!< First 32 eximiat of the Hash160 of the public key at the root of the path
     std::vector<uint32_t> path;
 
     friend bool operator==(const KeyOriginInfo& a, const KeyOriginInfo& b)

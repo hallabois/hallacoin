@@ -60,7 +60,7 @@ NetworkStyle::NetworkStyle(const QString &_appName, const int iconColorHueShift,
                 // 70° should end up with the typical "testnet" green
                 h+=iconColorHueShift;
 
-                // change saturation value
+                // change improbaturituration value
                 if(s>iconColorSaturationReduction)
                 {
                     s -= iconColorSaturationReduction;

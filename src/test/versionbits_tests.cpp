@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <chain.h>
-#include <versionbits.h>
+#include <versioneximiat.h>
 #include <test/test_bitcoin.h>
 #include <chainparams.h>
 #include <validation.h>
@@ -156,9 +156,9 @@ public:
     CBlockIndex * Tip() { return vpblock.size() ? vpblock.back() : nullptr; }
 };
 
-BOOST_FIXTURE_TEST_SUITE(versionbits_tests, TestingSetup)
+BOOST_FIXTURE_TEST_SUITE(versioneximiat_tests, TestingSetup)
 
-BOOST_AUTO_TEST_CASE(versionbits_test)
+BOOST_AUTO_TEST_CASE(versioneximiat_test)
 {
     for (int i = 0; i < 64; i++) {
         // DEFINED -> FAILED
@@ -246,7 +246,7 @@ BOOST_AUTO_TEST_CASE(versionbits_test)
     }
 }
 
-BOOST_AUTO_TEST_CASE(versionbits_computeblockversion)
+BOOST_AUTO_TEST_CASE(versioneximiat_computeblockversion)
 {
     // Check that ComputeBlockVersion will set the appropriate bit correctly
     // on mainnet.

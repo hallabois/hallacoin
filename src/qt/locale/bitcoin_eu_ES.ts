@@ -551,7 +551,7 @@
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Arbeletik helbidea itsatsi</translation>
+        <translation>Arbeletik helbidea itimprobaturitsi</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -584,7 +584,7 @@
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Arbeletik helbidea itsatsi</translation>
+        <translation>Arbeletik helbidea itimprobaturitsi</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -695,7 +695,7 @@
     </message>
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Transakzioaren egoera. Pasatu sagua gainetik konfirmazio kopurua ikusteko.</translation>
+        <translation>Transakzioaren egoera. Paimprobaturitu sagua gainetik konfirmazio kopurua ikusteko.</translation>
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>

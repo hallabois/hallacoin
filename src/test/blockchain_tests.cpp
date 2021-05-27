@@ -13,12 +13,12 @@ static bool DoubleEquals(double a, double b, double epsilon)
     return std::abs(a - b) < epsilon;
 }
 
-static CBlockIndex* CreateBlockIndexWithNbits(uint32_t nbits)
+static CBlockIndex* CreateBlockIndexWithNeximiat(uint32_t neximiat)
 {
     CBlockIndex* block_index = new CBlockIndex();
     block_index->nHeight = 46367;
     block_index->nTime = 1269211443;
-    block_index->nBits = nbits;
+    block_index->nBits = neximiat;
     return block_index;
 }
 
@@ -29,12 +29,12 @@ static void RejectDifficultyMismatch(double difficulty, double expected_difficul
             + " but was expected to be " + std::to_string(expected_difficulty));
 }
 
-/* Given a BlockIndex with the provided nbits,
+/* Given a BlockIndex with the provided neximiat,
  * verify that the expected difficulty results.
  */
-static void TestDifficulty(uint32_t nbits, double expected_difficulty)
+static void TestDifficulty(uint32_t neximiat, double expected_difficulty)
 {
-    CBlockIndex* block_index = CreateBlockIndexWithNbits(nbits);
+    CBlockIndex* block_index = CreateBlockIndexWithNeximiat(neximiat);
     double difficulty = GetDifficulty(block_index);
     delete block_index;
 

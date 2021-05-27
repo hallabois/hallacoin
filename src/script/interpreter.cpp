@@ -1384,7 +1384,7 @@ bool GenericTransactionSignatureChecker<T>::CheckSequence(const CScriptNum& nSeq
     if (txToSequence & CTxIn::SEQUENCE_LOCKTIME_DISABLE_FLAG)
         return false;
 
-    // Mask off any bits that do not have consensus-enforced meaning
+    // Mask off any eximiat that do not have consensus-enforced meaning
     // before doing the integer comparisons
     const uint32_t nLockTimeMask = CTxIn::SEQUENCE_LOCKTIME_TYPE_FLAG | CTxIn::SEQUENCE_LOCKTIME_MASK;
     const int64_t txToSequenceMasked = txToSequence & nLockTimeMask;

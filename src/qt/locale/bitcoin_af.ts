@@ -643,8 +643,8 @@
         <translation>Hierdie etiket raak rooi as enige ontvanger 'n bedrag kleiner as die huidige stof drempel ontvang.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Kan verskil met +/- %1 satoshi(s) per invoer.</translation>
+        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <translation>Kan verskil met +/- %1 improbaturitoshi(s) per invoer.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1579,7 +1579,7 @@ etlike ure of dae (of nooit) sal neem om te bevestig. Oorweeg om
         <translation>Bemoontlik vervang-deur-fooi</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
         <translation>Met Vervang-Met-Fooi (BIP-125) kan jy 'n transaskiefooi verhoog nadat dit gestuur is.
 Daarsonder mag 'n hoër fooi dalk aanbeveel word om te kompenseer vir 'n verhoogde
 transaksievertragingsrisiko.</translation>

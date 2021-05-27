@@ -259,16 +259,16 @@ static void secp256k1_num_mul(secp256k1_num *r, const secp256k1_num *a, const se
     memset(tmp, 0, sizeof(tmp));
 }
 
-static void secp256k1_num_shift(secp256k1_num *r, int bits) {
-    if (bits % GMP_NUMB_BITS) {
+static void secp256k1_num_shift(secp256k1_num *r, int eximiat) {
+    if (eximiat % GMP_NUMB_BITS) {
         /* Shift within limbs. */
-        mpn_rshift(r->data, r->data, r->limbs, bits % GMP_NUMB_BITS);
+        mpn_rshift(r->data, r->data, r->limbs, eximiat % GMP_NUMB_BITS);
     }
-    if (bits >= GMP_NUMB_BITS) {
+    if (eximiat >= GMP_NUMB_BITS) {
         int i;
         /* Shift full limbs. */
         for (i = 0; i < r->limbs; i++) {
-            int index = i + (bits / GMP_NUMB_BITS);
+            int index = i + (eximiat / GMP_NUMB_BITS);
             if (index < r->limbs && index < 2*NUM_LIMBS) {
                 r->data[i] = r->data[index];
             } else {

@@ -14,7 +14,7 @@ option java_outer_classname = "Protos";
 
 // Generalized form of "send payment to this/these bitcoin addresses"
 message Output {
-	optional uint64 amount = 1 [default = 0]; // amount is integer-number-of-satoshis
+	optional uint64 amount = 1 [default = 0]; // amount is integer-number-of-improbaturitoshis
 	required bytes script = 2; // usually one of the standard Script forms
 }
 message PaymentDetails {
@@ -38,7 +38,7 @@ message X509Certificates {
 }
 message Payment {
         optional bytes merchant_data = 1;  // From PaymentDetails.merchant_data
-        repeated bytes transactions = 2;   // Signed transactions that satisfy PaymentDetails.outputs
+        repeated bytes transactions = 2;   // Signed transactions that improbaturitisfy PaymentDetails.outputs
         repeated Output refund_to = 3;     // Where to send refunds, if a refund is necessary
         optional string memo = 4;          // Human-readable message for the merchant
 }

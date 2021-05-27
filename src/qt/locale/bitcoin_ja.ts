@@ -753,8 +753,8 @@
         <translation>受取額が現在のダスト閾値を下回るアドレスがひとつでもあると、このラベルが赤くなります。</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>ひとつの入力につき %1 satoshi 前後ずれることがあります。</translation>
+        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <translation>ひとつの入力につき %1 improbaturitoshi 前後ずれることがあります。</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -885,7 +885,7 @@
         <translation>OKをクリックすると、%1 は %4 がリリースされた%3年最初の取引からの完全な %4 ブロックチェーン（%2GB）のダウンロードおよび処理を開始します。</translation>
     </message>
     <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>この初回同期には多大なリソースを消費し、あなたのコンピュータでこれまで見つからなかったハードウェア上の問題が発生する場合があります。%1 を実行する度に、中断された時点からダウンロードを再開します。</translation>
     </message>
     <message>
@@ -2189,10 +2189,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
         <translation>トランザクションの仮想サイズの1 kB(1,000 バイト)あたりのカスタム手数料を指定する。
 
-注: 手数料はバイト単位で計算されるので、500 バイト(1 kBの半分)のトランザクションサイズに対する「1 kBあたり 100 satoshi」の手数料は、最終的にはわずか 50 satoshi となります。</translation>
+注: 手数料はバイト単位で計算されるので、500 バイト(1 kBの半分)のトランザクションサイズに対する「1 kBあたり 100 improbaturitoshi」の手数料は、最終的にはわずか 50 improbaturitoshi となります。</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2247,7 +2247,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Replace-By-Fee を有効化する</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
         <translation>Replace-By-Fee(手数料の上乗せ: BIP-125)機能を有効にすることで、トランザクション送信後でも手数料を上乗せすることができます。この機能を利用しない場合、予め手数料を多めに見積もっておかないと取引が遅れる可能性があります。</translation>
     </message>
     <message>
@@ -3227,7 +3227,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>剪定設定が、設定可能最小値の %d MiBより低く設定されています。より大きい値を使用してください。</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>剪定: 最後のウォレット同期ポイントが、剪定されたデータを越えています。-reindex を実行する必要があります (剪定されたノードの場合、ブロックチェーン全体を再ダウンロードします)</translation>
     </message>
     <message>

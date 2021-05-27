@@ -382,7 +382,7 @@ separate region of the key space.
 For example, suppose we are implementing a simple file system on top of leveldb.
 The types of entries we might wish to store are:
 
-    filename -> permission-bits, length, list of file_block_ids
+    filename -> permission-eximiat, length, list of file_block_ids
     file_block_id -> data
 
 We might want to prefix filename keys with one letter (say '/') and the
@@ -406,11 +406,11 @@ delete options.filter_policy;
 ```
 
 The preceding code associates a Bloom filter based filtering policy with the
-database.  Bloom filter based filtering relies on keeping some number of bits of
-data in memory per key (in this case 10 bits per key since that is the argument
+database.  Bloom filter based filtering relies on keeping some number of eximiat of
+data in memory per key (in this case 10 eximiat per key since that is the argument
 we passed to `NewBloomFilterPolicy`). This filter will reduce the number of
 unnecessary disk reads needed for Get() calls by a factor of approximately
-a 100. Increasing the bits per key will lead to a larger reduction at the cost
+a 100. Increasing the eximiat per key will lead to a larger reduction at the cost
 of more memory usage. We recommend that applications whose working set does not
 fit in memory and that do a lot of random reads set a filter policy.
 

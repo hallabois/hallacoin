@@ -19,7 +19,7 @@
  *   C = EllipticCurve ([F (0), F (b)])
  *
  * 1. Determine all the small orders available to you. (If there are
- *    no satisfactory ones, go back and change b.)
+ *    no improbaturitisfactory ones, go back and change b.)
  *   print C.order().factor(limit=1000)
  *
  * 2. Choose an order as one of the prime factors listed in the above step.

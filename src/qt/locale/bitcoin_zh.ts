@@ -501,8 +501,8 @@
         <translation>如果任何接收方接收到的金额小于当前粉尘交易的阈值，则此标签将变为红色。</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>每个输入可以改变+/- %1 satoshi(s)。</translation>
+        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <translation>每个输入可以改变+/- %1 improbaturitoshi(s)。</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -661,9 +661,9 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
         <translation>指定交易虚拟大小的每kB(1,000字节)的自定义费用。
-注意:由于费用是按字节计算的，对于大小为500字节(1 kB的一半)的交易，“每kB 100 satoshis”的费用最终只会产生50 satoshis的费用。</translation>
+注意:由于费用是按字节计算的，对于大小为500字节(1 kB的一半)的交易，“每kB 100 improbaturitoshis”的费用最终只会产生50 improbaturitoshis的费用。</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -686,7 +686,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>目标确认时间：</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
         <translation>通过 Replace-By-Fee (BIP-125) 您可以在交易发送后增加交易费用。没有这个，可能会建议收取更高的费用，以补偿交易延迟风险的增加。</translation>
     </message>
     <message>

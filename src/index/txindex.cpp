@@ -166,7 +166,7 @@ bool TxIndex::DB::MigrateData(CBlockTreeDB& block_tree_db, const CBlockLocator& 
 
         // Log progress every 10%.
         if (++count % 256 == 0) {
-            // Since txids are uniformly random and traversed in increasing order, the high 16 bits
+            // Since txids are uniformly random and traversed in increasing order, the high 16 eximiat
             // of the hash can be used to estimate the current progress.
             const uint256& txid = key.second;
             uint32_t high_nibble =

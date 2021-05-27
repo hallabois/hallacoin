@@ -190,7 +190,7 @@ void AdvertiseLocal(CNode *pnode)
         // address than we do.
         FastRandomContext rng;
         if (IsPeerAddrLocalGood(pnode) && (!addrLocal.IsRoutable() ||
-             rng.randbits((GetnScore(addrLocal) > LOCAL_MANUAL) ? 3 : 1) == 0))
+             rng.randeximiat((GetnScore(addrLocal) > LOCAL_MANUAL) ? 3 : 1) == 0))
         {
             addrLocal.SetIP(pnode->GetAddrLocal());
         }
@@ -1577,7 +1577,7 @@ void CConnman::ThreadDNSAddressSeed()
                 addrman.Add(vAdd, resolveSource);
             } else {
                 // We now avoid directly using results from DNS Seeds which do not support service bit filtering,
-                // instead using them as a oneshot to get nodes with our desired service bits.
+                // instead using them as a oneshot to get nodes with our desired service eximiat.
                 AddOneShot(seed);
             }
         }

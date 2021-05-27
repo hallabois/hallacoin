@@ -54,8 +54,8 @@ static void secp256k1_num_mul(secp256k1_num *r, const secp256k1_num *a, const se
     even if r was negative. */
 static void secp256k1_num_mod(secp256k1_num *r, const secp256k1_num *m);
 
-/** Right-shift the passed number by bits bits. */
-static void secp256k1_num_shift(secp256k1_num *r, int bits);
+/** Right-shift the passed number by eximiat eximiat. */
+static void secp256k1_num_shift(secp256k1_num *r, int eximiat);
 
 /** Check whether a number is zero. */
 static int secp256k1_num_is_zero(const secp256k1_num *a);

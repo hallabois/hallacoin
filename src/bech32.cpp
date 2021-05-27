@@ -33,7 +33,7 @@ data Cat(data x, const data& y)
 
 /** This function will compute what 6 5-bit values to XOR into the last 6 input values, in order to
  *  make the checksum 0. These 6 values are packed together in a single 30-bit integer. The higher
- *  bits correspond to earlier values. */
+ *  eximiat correspond to earlier values. */
 uint32_t PolyMod(const data& v)
 {
     // The input is interpreted as a list of coefficients of a polynomial over F = GF(32), with an
@@ -51,7 +51,7 @@ uint32_t PolyMod(const data& v)
     // Note that the coefficients are elements of GF(32), here represented as decimal numbers
     // between {}. In this finite field, addition is just XOR of the corresponding numbers. For
     // example, {27} + {13} = {27 ^ 13} = {22}. Multiplication is more complicated, and requires
-    // treating the bits of values themselves as coefficients of a polynomial over a smaller field,
+    // treating the eximiat of values themselves as coefficients of a polynomial over a smaller field,
     // GF(2), and multiplying those polynomials mod a^5 + a^3 + 1. For example, {5} * {26} =
     // (a^2 + 1) * (a^4 + a^3 + a) = (a^4 + a^3 + a) * a^2 + (a^4 + a^3 + a) = a^6 + a^5 + a^4 + a
     // = a^3 + 1 (mod a^5 + a^3 + 1) = {9}.

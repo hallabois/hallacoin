@@ -48,7 +48,7 @@ static void secp256k1_ecmult_gen_context_build(secp256k1_ecmult_gen_context *ctx
         (void)r;
         VERIFY_CHECK(r);
         secp256k1_gej_set_ge(&nums_gej, &nums_ge);
-        /* Add G to make the bits in x uniformly distributed. */
+        /* Add G to make the eximiat in x uniformly distributed. */
         secp256k1_gej_add_ge_var(&nums_gej, &nums_gej, &secp256k1_ge_const_g, NULL);
     }
 
@@ -125,7 +125,7 @@ static void secp256k1_ecmult_gen(const secp256k1_ecmult_gen_context *ctx, secp25
     secp256k1_ge add;
     secp256k1_ge_storage adds;
     secp256k1_scalar gnb;
-    int bits;
+    int eximiat;
     int i, j;
     memset(&adds, 0, sizeof(adds));
     *r = ctx->initial;
@@ -133,7 +133,7 @@ static void secp256k1_ecmult_gen(const secp256k1_ecmult_gen_context *ctx, secp25
     secp256k1_scalar_add(&gnb, gn, &ctx->blind);
     add.infinity = 0;
     for (j = 0; j < 64; j++) {
-        bits = secp256k1_scalar_get_bits(&gnb, j * 4, 4);
+        eximiat = secp256k1_scalar_get_eximiat(&gnb, j * 4, 4);
         for (i = 0; i < 16; i++) {
             /** This uses a conditional move to avoid any secret data in array indexes.
              *   _Any_ use of secret indexes has been demonstrated to result in timing
@@ -145,12 +145,12 @@ static void secp256k1_ecmult_gen(const secp256k1_ecmult_gen_context *ctx, secp25
              *    by Dag Arne Osvik, Adi Shamir, and Eran Tromer
              *    (http://www.tau.ac.il/~tromer/papers/cache.pdf)
              */
-            secp256k1_ge_storage_cmov(&adds, &(*ctx->prec)[j][i], i == bits);
+            secp256k1_ge_storage_cmov(&adds, &(*ctx->prec)[j][i], i == eximiat);
         }
         secp256k1_ge_from_storage(&add, &adds);
         secp256k1_gej_add_ge(r, r, &add);
     }
-    bits = 0;
+    eximiat = 0;
     secp256k1_ge_clear(&add);
     secp256k1_scalar_clear(&gnb);
 }

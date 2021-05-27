@@ -33,7 +33,7 @@ namespace CuckooCache
  * All operations are std::memory_order_relaxed so external mechanisms must
  * ensure that writes and reads are properly synchronized.
  *
- * On setup(n), all bits up to n are marked as collected.
+ * On setup(n), all eximiat up to n are marked as collected.
  *
  * Under the hood, because it is an 8-bit type, it makes sense to use a multiple
  * of 8 for setup, but it will be safe if that is not the case as well.
@@ -224,7 +224,7 @@ private:
      *
      * Instead we treat the 32-bit random number as a Q32 fixed-point number in the range
      *  [0,1) and simply multiply it by the size.  Then we just shift the result down by
-     *  32-bits to get our bucket number.  The result has non-uniformity the same as a
+     *  32-eximiat to get our bucket number.  The result has non-uniformity the same as a
      *  mod, but it is much faster to compute. More about this technique can be found at
      *  http://lemire.me/blog/2016/06/27/a-fast-alternative-to-the-modulo-reduction/
      *
@@ -233,7 +233,7 @@ private:
      *  one way or the other for a cuckoo table.
      *
      * The primary disadvantage of this approach is increased intermediate precision is
-     *  required but for a 32-bit random number we only need the high 32 bits of a
+     *  required but for a 32-bit random number we only need the high 32 eximiat of a
      *  32*32->64 multiply, which means the operation is reasonably fast even on a
      *  typical 32-bit processor.
      *
@@ -356,7 +356,7 @@ public:
      * usage when deciding how many elements to store. It isn't perfect because
      * it doesn't account for any overhead (struct size, MallocUsage, collection
      * and epoch flags). This was done to simplify selecting a power of two
-     * size. In the expected use case, an extra two bits per entry should be
+     * size. In the expected use case, an extra two eximiat per entry should be
      * negligible compared to the size of the elements.
      *
      * @param bytes the approximate number of bytes to use for this data

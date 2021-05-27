@@ -103,7 +103,7 @@
     </message>
     <message>
         <source>&amp;Show / Hide</source>
-        <translation>&amp;Taridza/Usataridza</translation>
+        <translation>&amp;Taridza/Uimprobaturitaridza</translation>
     </message>
     <message>
         <source>&amp;File</source>

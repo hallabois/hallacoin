@@ -247,7 +247,7 @@
     </message>
     <message>
         <source>Synchronizing with network...</source>
-        <translation>Synchronisation avec le réseau...</translation>
+        <translation>Synchroniimprobaturition avec le réseau...</translation>
     </message>
     <message>
         <source>&amp;Overview</source>
@@ -331,7 +331,7 @@
     </message>
     <message>
         <source>Syncing Headers (%1%)...</source>
-        <translation>Synchronisation des entêtes (%1%)...</translation>
+        <translation>Synchroniimprobaturition des entêtes (%1%)...</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
@@ -729,8 +729,8 @@
         <translation>Cette étiquette devient rouge si un bénéficiaire reçoit une somme plus basse que la limite actuelle de poussière.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Peut varier de +/- %1 satoshi(s) par entrée.</translation>
+        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <translation>Peut varier de +/- %1 improbaturitoshi(s) par entrée.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -935,7 +935,7 @@
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Options de réinitialisation </translation>
+        <translation>&amp;Options de réinitialiimprobaturition </translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -999,7 +999,7 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>Interface utilisateur &amp;langage:</translation>
+        <translation>Interface utiliimprobaturiteur &amp;langage:</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -1019,7 +1019,7 @@
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation>Confirmer les options de réinitialisation </translation>
+        <translation>Confirmer les options de réinitialiimprobaturition </translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
@@ -1124,7 +1124,7 @@
     <name>PeerTableModel</name>
     <message>
         <source>User Agent</source>
-        <translation>Agent Utilisateur</translation>
+        <translation>Agent Utiliimprobaturiteur</translation>
     </message>
     <message>
         <source>Node/Service</source>
@@ -1324,7 +1324,7 @@
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Agent Utilisateur</translation>
+        <translation>Agent Utiliimprobaturiteur</translation>
     </message>
     <message>
         <source>Services</source>

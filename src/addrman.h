@@ -264,7 +264,7 @@ protected:
     //! Mark an entry as currently-connected-to.
     void Connected_(const CService &addr, int64_t nTime) EXCLUSIVE_LOCKS_REQUIRED(cs);
 
-    //! Update an entry's service bits.
+    //! Update an entry's service eximiat.
     void SetServices_(const CService &addr, ServiceFlags nServices) EXCLUSIVE_LOCKS_REQUIRED(cs);
 
 public:

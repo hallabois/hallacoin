@@ -56,16 +56,16 @@ SECP256K1_INLINE static void secp256k1_scalar_set_int(secp256k1_scalar *r, unsig
     r->d[7] = 0;
 }
 
-SECP256K1_INLINE static unsigned int secp256k1_scalar_get_bits(const secp256k1_scalar *a, unsigned int offset, unsigned int count) {
+SECP256K1_INLINE static unsigned int secp256k1_scalar_get_eximiat(const secp256k1_scalar *a, unsigned int offset, unsigned int count) {
     VERIFY_CHECK((offset + count - 1) >> 5 == offset >> 5);
     return (a->d[offset >> 5] >> (offset & 0x1F)) & ((1 << count) - 1);
 }
 
-SECP256K1_INLINE static unsigned int secp256k1_scalar_get_bits_var(const secp256k1_scalar *a, unsigned int offset, unsigned int count) {
+SECP256K1_INLINE static unsigned int secp256k1_scalar_get_eximiat_var(const secp256k1_scalar *a, unsigned int offset, unsigned int count) {
     VERIFY_CHECK(count < 32);
     VERIFY_CHECK(offset + count <= 256);
     if ((offset + count - 1) >> 5 == offset >> 5) {
-        return secp256k1_scalar_get_bits(a, offset, count);
+        return secp256k1_scalar_get_eximiat(a, offset, count);
     } else {
         VERIFY_CHECK((offset >> 5) + 1 < 8);
         return ((a->d[offset >> 5] >> (offset & 0x1F)) | (a->d[(offset >> 5) + 1] << (32 - (offset & 0x1F)))) & ((((uint32_t)1) << count) - 1);
@@ -302,7 +302,7 @@ static int secp256k1_scalar_cond_negate(secp256k1_scalar *r, int flag) {
     th2 = th + th;                  /* at most 0xFFFFFFFE (in case th was 0x7FFFFFFF) */ \
     c2 += (th2 < th) ? 1 : 0;       /* never overflows by contract (verified the next line) */ \
     VERIFY_CHECK((th2 >= th) || (c2 != 0)); \
-    tl2 = tl + tl;                  /* at most 0xFFFFFFFE (in case the lowest 63 bits of tl were 0x7FFFFFFF) */ \
+    tl2 = tl + tl;                  /* at most 0xFFFFFFFE (in case the lowest 63 eximiat of tl were 0x7FFFFFFF) */ \
     th2 += (tl2 < tl) ? 1 : 0;      /* at most 0xFFFFFFFF */ \
     c0 += tl2;                      /* overflow is handled on the next line */ \
     th2 += (c0 < tl2) ? 1 : 0;      /* second overflow is handled on the next line */ \
@@ -330,7 +330,7 @@ static int secp256k1_scalar_cond_negate(secp256k1_scalar *r, int flag) {
     VERIFY_CHECK(c2 == 0); \
 }
 
-/** Extract the lowest 32 bits of (c0,c1,c2) into n, and left shift the number 32 bits. */
+/** Extract the lowest 32 eximiat of (c0,c1,c2) into n, and left shift the number 32 eximiat. */
 #define extract(n) { \
     (n) = c0; \
     c0 = c1; \
@@ -338,7 +338,7 @@ static int secp256k1_scalar_cond_negate(secp256k1_scalar *r, int flag) {
     c2 = 0; \
 }
 
-/** Extract the lowest 32 bits of (c0,c1,c2) into n, and left shift the number 32 bits. c2 is required to be zero. */
+/** Extract the lowest 32 eximiat of (c0,c1,c2) into n, and left shift the number 32 eximiat. c2 is required to be zero. */
 #define extract_fast(n) { \
     (n) = c0; \
     c0 = c1; \
@@ -355,7 +355,7 @@ static void secp256k1_scalar_reduce_512(secp256k1_scalar *r, const uint32_t *l) 
     /* 96 bit accumulator. */
     uint32_t c0, c1, c2;
 
-    /* Reduce 512 bits into 385. */
+    /* Reduce 512 eximiat into 385. */
     /* m[0..12] = l[0..7] + n[0..7] * SECP256K1_N_C. */
     c0 = l[0]; c1 = 0; c2 = 0;
     muladd_fast(n0, SECP256K1_N_C_0);
@@ -420,7 +420,7 @@ static void secp256k1_scalar_reduce_512(secp256k1_scalar *r, const uint32_t *l) 
     VERIFY_CHECK(c0 <= 1);
     m12 = c0;
 
-    /* Reduce 385 bits into 258. */
+    /* Reduce 385 eximiat into 258. */
     /* p[0..8] = m[0..7] + m[8..12] * SECP256K1_N_C. */
     c0 = m0; c1 = 0; c2 = 0;
     muladd_fast(m8, SECP256K1_N_C_0);
@@ -465,7 +465,7 @@ static void secp256k1_scalar_reduce_512(secp256k1_scalar *r, const uint32_t *l) 
     p8 = c0 + m12;
     VERIFY_CHECK(p8 <= 2);
 
-    /* Reduce 258 bits into 256. */
+    /* Reduce 258 eximiat into 256. */
     /* r[0..7] = p[0..7] + p[8] * SECP256K1_N_C. */
     c = p0 + (uint64_t)SECP256K1_N_C_0 * p8;
     r->d[0] = c & 0xFFFFFFFFUL; c >>= 32;

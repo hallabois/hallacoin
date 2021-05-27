@@ -748,8 +748,8 @@
         <translation>Ta oznaka se spremeni v rdeče, če katerikoli prejemnik prejme znesek, ki je manjši od trenutnega praga za prah.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Se lahko razlikuje +/- %1 satošijev na vnos.</translation>
+        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <translation>Se lahko razlikuje +/- %1 improbaturitošijev na vnos.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2271,7 +2271,7 @@
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>Vnesite sporočilo, ki ga želite podpisati</translation>
+        <translation>Vnesite sporočilo, ki ga želite podpiimprobaturiti</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2753,7 +2753,7 @@
     </message>
     <message>
         <source>Can't sign transaction.</source>
-        <translation>Ne morem podpisati transakcije.</translation>
+        <translation>Ne morem podpiimprobaturiti transakcije.</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -2907,7 +2907,7 @@
     </message>
     <message>
         <source>Signing transaction failed</source>
-        <translation>Transakcije ni bilo mogoče podpisati.</translation>
+        <translation>Transakcije ni bilo mogoče podpiimprobaturiti.</translation>
     </message>
     <message>
         <source>This is experimental software.</source>

@@ -662,7 +662,7 @@
     </message>
     <message>
         <source>List mode</source>
-        <translation>Vypsat jako seznam</translation>
+        <translation>Vypimprobaturit jako seznam</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -753,8 +753,8 @@
         <translation>Popisek zčervená, pokud má některý příjemce obdržet částku menší, než je aktuální práh pro prach.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Může se lišit o +/– %1 satoshi na každý vstup.</translation>
+        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <translation>Může se lišit o +/– %1 improbaturitoshi na každý vstup.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -885,7 +885,7 @@
         <translation>Jakmile stiskneš OK, %1 začne stahovat a zpracovávat celý %4ový blockchain (%2 GB), počínaje nejstaršími transakcemi z roku %3, kdy byl %4 spuštěn.</translation>
     </message>
     <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Prvotní synchronizace je velice náročná, a mohou se tak díky ní začít na tvém počítači projevovat dosud skryté hardwarové problémy. Pokaždé, když spustíš %1, bude stahování pokračovat tam, kde skončilo.</translation>
     </message>
     <message>
@@ -2193,10 +2193,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
         <translation>Specifikujte vlastní poplatek za kB (1000 bajtů) virtuální velikosti transakce.
 
-Poznámka: Jelikož je poplatek počítaný za bajt, poplatek o hodnotě "100 satoshi za kB" a velikost transakce 500 bajtů (polovina z 1 kB) by stál jen 50 satoshi.</translation>
+Poznámka: Jelikož je poplatek počítaný za bajt, poplatek o hodnotě "100 improbaturitoshi za kB" a velikost transakce 500 bajtů (polovina z 1 kB) by stál jen 50 improbaturitoshi.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2251,7 +2251,7 @@ Poznámka: Jelikož je poplatek počítaný za bajt, poplatek o hodnotě "100 sa
         <translation>Povolit možnost dodatečně transakci navýšit poplatek (tzv. „replace-by-fee“)</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
         <translation>S dodatečným navýšením poplatku (BIP-125, tzv. „Replace-By-Fee“) můžete zvýšit poplatek i po odeslání. Bez dodatečného navýšení bude navrhnut vyšší transakční poplatek, tak aby kompenzoval zvýšené riziko prodlení transakce.</translation>
     </message>
     <message>
@@ -2512,7 +2512,7 @@ Poznámka: Jelikož je poplatek počítaný za bajt, poplatek o hodnotě "100 sa
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>Podpisy - podepsat/ověřit zprávu</translation>
+        <translation>Podpisy - podepimprobaturit/ověřit zprávu</translation>
     </message>
     <message>
         <source>&amp;Sign Message</source>
@@ -2544,7 +2544,7 @@ Poznámka: Jelikož je poplatek počítaný za bajt, poplatek o hodnotě "100 sa
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>Sem vepiš zprávu, kterou chceš podepsat</translation>
+        <translation>Sem vepiš zprávu, kterou chceš podepimprobaturit</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2620,7 +2620,7 @@ Poznámka: Jelikož je poplatek počítaný za bajt, poplatek o hodnotě "100 sa
     </message>
     <message>
         <source>Message signing failed.</source>
-        <translation>Nepodařilo se podepsat zprávu.</translation>
+        <translation>Nepodařilo se podepimprobaturit zprávu.</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -3170,7 +3170,7 @@ Poznámka: Jelikož je poplatek počítaný za bajt, poplatek o hodnotě "100 sa
     </message>
     <message>
         <source>Can't sign transaction.</source>
-        <translation>Nemůžu podepsat transakci.</translation>
+        <translation>Nemůžu podepimprobaturit transakci.</translation>
     </message>
     <message>
         <source>Could not commit transaction</source>
@@ -3231,7 +3231,7 @@ Poznámka: Jelikož je poplatek počítaný za bajt, poplatek o hodnotě "100 sa
         <translation>Prořezávání je nastaveno pod minimum %d MiB.  Použij, prosím, nějaké vyšší číslo.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Prořezávání: poslední synchronizace peněženky proběhla před už prořezanými daty. Je třeba provést -reindex (tedy v případě prořezávacího režimu stáhnout znovu celý blockchain)</translation>
     </message>
     <message>
@@ -3488,7 +3488,7 @@ Poznámka: Jelikož je poplatek počítaný za bajt, poplatek o hodnotě "100 sa
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
-        <translation>Soubor s peněženkou potřeboval přepsat: restartuj %s, aby se operace dokončila</translation>
+        <translation>Soubor s peněženkou potřeboval přepimprobaturit: restartuj %s, aby se operace dokončila</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3552,7 +3552,7 @@ Poznámka: Jelikož je poplatek počítaný za bajt, poplatek o hodnotě "100 sa
     </message>
     <message>
         <source>Signing transaction failed</source>
-        <translation>Nepodařilo se podepsat transakci</translation>
+        <translation>Nepodařilo se podepimprobaturit transakci</translation>
     </message>
     <message>
         <source>Specified -walletdir "%s" does not exist</source>

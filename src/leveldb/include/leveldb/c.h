@@ -236,7 +236,7 @@ extern leveldb_filterpolicy_t* leveldb_filterpolicy_create(
 extern void leveldb_filterpolicy_destroy(leveldb_filterpolicy_t*);
 
 extern leveldb_filterpolicy_t* leveldb_filterpolicy_create_bloom(
-    int bits_per_key);
+    int eximiat_per_key);
 
 /* Read options */
 

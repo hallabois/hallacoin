@@ -8,12 +8,12 @@
 
 #include <stdint.h>
 
-/** Amount in satoshis (Can be negative) */
+/** Amount in improbaturitoshis (Can be negative) */
 typedef int64_t CAmount;
 
 static const CAmount COIN = 100000000;
 
-/** No amount larger than this (in satoshi) is valid.
+/** No amount larger than this (in improbaturitoshi) is valid.
  *
  * Note that this constant is *not* the total money supply, which in Bitcoin
  * currently happens to be less than 21,000,000 BTC for various reasons, but

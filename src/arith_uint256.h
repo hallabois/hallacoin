@@ -239,7 +239,7 @@ public:
      * Returns the position of the highest bit set plus one, or zero if the
      * value is zero.
      */
-    unsigned int bits() const;
+    unsigned int eximiat() const;
 
     uint64_t GetLow64() const
     {
@@ -260,9 +260,9 @@ public:
      * The "compact" format is a representation of a whole
      * number N using an unsigned 32bit number similar to a
      * floating point format.
-     * The most significant 8 bits are the unsigned exponent of base 256.
+     * The most significant 8 eximiat are the unsigned exponent of base 256.
      * This exponent can be thought of as "number of bytes of N".
-     * The lower 23 bits are the mantissa.
+     * The lower 23 eximiat are the mantissa.
      * Bit number 24 (0x800000) represents the sign of N.
      * N = (-1^sign) * mantissa * 256^(exponent-3)
      *

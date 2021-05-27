@@ -597,7 +597,7 @@
         <translation>Kiedy klikniesz OK, %1 zacznie proces ściągania i przetwarzania pełnego łańcuchu bloków (%2GB) zaczynając od najwcześniejszych transakcji w %3 kiedy %4 wstępnie się uruchomi.</translation>
     </message>
     <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Wstępna synchronizacja jest dość wymagająca i może odsłonić pewne problemy z komputerem które wcześniej nie zostały zauważone. Za każdym razem jak uruchomisz %1, będzie kontynuować ściąganie tam gdzie się wcześniej skończyło.</translation>
     </message>
     <message>

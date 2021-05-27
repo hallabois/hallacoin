@@ -10,7 +10,7 @@
 #include <tinyformat.h>
 #include <util/system.h>
 #include <util/strencodings.h>
-#include <versionbitsinfo.h>
+#include <versioneximiatinfo.h>
 
 #include <assert.h>
 
@@ -116,10 +116,10 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0xfb44beeb2a878cb8eb69f26ddbfa43807997fea9d416c1677620da4beb218372"));
         assert(genesis.hashMerkleRoot == uint256S("0x501ee72921297dd73ad65d8a769f83caa5dc50d64789ff9f26a50e7a45ca3b76"));
 
-        // Note that of those which support the service bits prefix, most only support a subset of
+        // Note that of those which support the service eximiat prefix, most only support a subset of
         // possible options.
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
-        // service bits we want, but we should get them updated to support all service bits wanted by any
+        // service eximiat we want, but we should get them updated to support all service eximiat wanted by any
         // release ASAP to avoid it where possible.
         //vSeeds.emplace_back("seed-a.Hallacoin.loshan.co.uk");
         //vSeeds.emplace_back("dnsseed.thrasher.io");
@@ -215,7 +215,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        // nodes with support for servicebits filtering should be at the top
+        // nodes with support for serviceeximiat filtering should be at the top
         //vSeeds.emplace_back("testnet-seed.Hallacointools.com");
         //vSeeds.emplace_back("seed-b.Hallacoin.loshan.co.uk");
         //vSeeds.emplace_back("dnsseed-testnet.thrasher.io");
@@ -356,7 +356,7 @@ void CRegTestParams::UpdateVersionBitsParametersFromArgs(const ArgsManager& args
         std::vector<std::string> vDeploymentParams;
         boost::split(vDeploymentParams, strDeployment, boost::is_any_of(":"));
         if (vDeploymentParams.size() != 3) {
-            throw std::runtime_error("Version bits parameters malformed, expecting deployment:start:end");
+            throw std::runtime_error("Version eximiat parameters malformed, expecting deployment:start:end");
         }
         int64_t nStartTime, nTimeout;
         if (!ParseInt64(vDeploymentParams[1], &nStartTime)) {
@@ -370,7 +370,7 @@ void CRegTestParams::UpdateVersionBitsParametersFromArgs(const ArgsManager& args
             if (vDeploymentParams[0] == VersionBitsDeploymentInfo[j].name) {
                 UpdateVersionBitsParameters(Consensus::DeploymentPos(j), nStartTime, nTimeout);
                 found = true;
-                LogPrintf("Setting version bits activation parameters for %s to start=%ld, timeout=%ld\n", vDeploymentParams[0], nStartTime, nTimeout);
+                LogPrintf("Setting version eximiat activation parameters for %s to start=%ld, timeout=%ld\n", vDeploymentParams[0], nStartTime, nTimeout);
                 break;
             }
         }

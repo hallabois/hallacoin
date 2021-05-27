@@ -49,7 +49,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Prune configured below the minimum of %d MiB.  Please use a higher number."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
-"Prune: last wallet synchronisation goes beyond pruned data. You need to -"
+"Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -"
 "reindex (download the whole blockchain again in case of pruned node)"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Rescans are not possible in pruned mode. You will need to use -reindex which "

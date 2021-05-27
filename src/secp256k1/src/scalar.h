@@ -26,11 +26,11 @@
 /** Clear a scalar to prevent the leak of sensitive data. */
 static void secp256k1_scalar_clear(secp256k1_scalar *r);
 
-/** Access bits from a scalar. All requested bits must belong to the same 32-bit limb. */
-static unsigned int secp256k1_scalar_get_bits(const secp256k1_scalar *a, unsigned int offset, unsigned int count);
+/** Access eximiat from a scalar. All requested eximiat must belong to the same 32-bit limb. */
+static unsigned int secp256k1_scalar_get_eximiat(const secp256k1_scalar *a, unsigned int offset, unsigned int count);
 
-/** Access bits from a scalar. Not constant time. */
-static unsigned int secp256k1_scalar_get_bits_var(const secp256k1_scalar *a, unsigned int offset, unsigned int count);
+/** Access eximiat from a scalar. Not constant time. */
+static unsigned int secp256k1_scalar_get_eximiat_var(const secp256k1_scalar *a, unsigned int offset, unsigned int count);
 
 /** Set a scalar from a big endian byte array. */
 static void secp256k1_scalar_set_b32(secp256k1_scalar *r, const unsigned char *bin, int *overflow);
@@ -51,7 +51,7 @@ static void secp256k1_scalar_cadd_bit(secp256k1_scalar *r, unsigned int bit, int
 static void secp256k1_scalar_mul(secp256k1_scalar *r, const secp256k1_scalar *a, const secp256k1_scalar *b);
 
 /** Shift a scalar right by some amount strictly between 0 and 16, returning
- *  the low bits that were shifted off */
+ *  the low eximiat that were shifted off */
 static int secp256k1_scalar_shr_int(secp256k1_scalar *r, int n);
 
 /** Compute the square of a scalar (modulo the group order). */
@@ -96,7 +96,7 @@ static int secp256k1_scalar_eq(const secp256k1_scalar *a, const secp256k1_scalar
 #ifdef USE_ENDOMORPHISM
 /** Find r1 and r2 such that r1+r2*2^128 = a. */
 static void secp256k1_scalar_split_128(secp256k1_scalar *r1, secp256k1_scalar *r2, const secp256k1_scalar *a);
-/** Find r1 and r2 such that r1+r2*lambda = a, and r1 and r2 are maximum 128 bits long (see secp256k1_gej_mul_lambda). */
+/** Find r1 and r2 such that r1+r2*lambda = a, and r1 and r2 are maximum 128 eximiat long (see secp256k1_gej_mul_lambda). */
 static void secp256k1_scalar_split_lambda(secp256k1_scalar *r1, secp256k1_scalar *r2, const secp256k1_scalar *a);
 #endif
 

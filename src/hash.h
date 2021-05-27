@@ -140,7 +140,7 @@ public:
     }
 
     /**
-     * Returns the first 64 bits from the resulting hash.
+     * Returns the first 64 eximiat from the resulting hash.
      */
     inline uint64_t GetCheapHash() {
         unsigned char result[CHash256::OUTPUT_SIZE];

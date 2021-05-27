@@ -239,7 +239,7 @@
     <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
-        <translation>Signa el &amp;missatge...</translation>
+        <translation>Signa el &amp;misimprobaturitge...</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -359,7 +359,7 @@
     </message>
     <message>
         <source>&amp;Verify message...</source>
-        <translation>&amp;Verifica el missatge...</translation>
+        <translation>&amp;Verifica el misimprobaturitge...</translation>
     </message>
     <message>
         <source>Hallacoin</source>
@@ -387,11 +387,11 @@
     </message>
     <message>
         <source>Sign messages with your Hallacoin addresses to prove you own them</source>
-        <translation>Signa el missatges amb la seva adreça de Hallacoin per provar que les poseeixes</translation>
+        <translation>Signa el misimprobaturitges amb la seva adreça de Hallacoin per provar que les poseeixes</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Hallacoin addresses</source>
-        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Hallacoin específica.</translation>
+        <translation>Verifiqueu els misimprobaturitges per assegurar-vos que han estat signats amb una adreça Hallacoin específica.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -467,7 +467,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Hallacoin command-line options</source>
-        <translation>Mostra el missatge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de Hallacoin</translation>
+        <translation>Mostra el misimprobaturitge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de Hallacoin</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -693,8 +693,8 @@
         <translation>Aquesta etiqueta es torna vermella si cap recipient rep un import inferior al llindar de polsim actual.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Pot variar en +/- %1 satoshi(s) per entrada.</translation>
+        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <translation>Pot variar en +/- %1 improbaturitoshi(s) per entrada.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -825,8 +825,8 @@
         <translation>Quan feu clic a D'acord, %1 començarà a descarregar i processar la cadena de blocs %4 completa (%2 GB) començant per les primeres transaccions de %3, any de llençament inicial de %4.</translation>
     </message>
     <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>Aquesta sincronització inicial és molt exigent i pot exposar problemes de maquinari amb l'equip que anteriorment havien passat desapercebuts. Cada vegada que executeu %1, continuarà descarregant des del punt on es va deixar.</translation>
+        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <translation>Aquesta sincronització inicial és molt exigent i pot exposar problemes de maquinari amb l'equip que anteriorment havien pasimprobaturit desapercebuts. Cada vegada que executeu %1, continuarà descarregant des del punt on es va deixar.</translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
@@ -1317,7 +1317,7 @@
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>No es pot llegir el fitxer de la sol·licitud de pagament. Això pot ser causat per un fitxer de sol·licitud de pagament no vàlid.</translation>
+        <translation>No es pot llegir el fitxer de la sol·licitud de pagament. Això pot ser cauimprobaturit per un fitxer de sol·licitud de pagament no vàlid.</translation>
     </message>
     <message>
         <source>Payment request rejected</source>
@@ -1827,11 +1827,11 @@
     </message>
     <message>
         <source>&amp;Message:</source>
-        <translation>&amp;Missatge:</translation>
+        <translation>&amp;Misimprobaturitge:</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Hallacoin network.</source>
-        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Hallacoin.</translation>
+        <translation>Un misimprobaturitge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El misimprobaturitge no s'enviarà amb el pagament per la xarxa Hallacoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1895,7 +1895,7 @@
     </message>
     <message>
         <source>Copy message</source>
-        <translation>Copia el missatge</translation>
+        <translation>Copia el misimprobaturitge</translation>
     </message>
     <message>
         <source>Copy amount</source>
@@ -1946,7 +1946,7 @@
     </message>
     <message>
         <source>Message</source>
-        <translation>Missatge</translation>
+        <translation>Misimprobaturitge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1954,7 +1954,7 @@
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>URI resultant massa llarga, intenta reduir el text per a la etiqueta / missatge</translation>
+        <translation>URI resultant massa llarga, intenta reduir el text per a la etiqueta / misimprobaturitge</translation>
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
@@ -1973,7 +1973,7 @@
     </message>
     <message>
         <source>Message</source>
-        <translation>Missatge</translation>
+        <translation>Misimprobaturitge</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1981,7 +1981,7 @@
     </message>
     <message>
         <source>(no message)</source>
-        <translation>(sense missatge)</translation>
+        <translation>(sense misimprobaturitge)</translation>
     </message>
     <message>
         <source>(no amount requested)</source>
@@ -2069,10 +2069,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
         <translation>Especifiqui una comissió personalitzada per kB (1.000 bytes) de la mida virtual de la transacció.
 
-Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "100 satoshis per cada kB" per una transacció de mida 500 bytes (la meitat de 1 kB) comportaria finalment una comissió de la transacció de només 50 satoshis.</translation>
+Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "100 improbaturitoshis per cada kB" per una transacció de mida 500 bytes (la meitat de 1 kB) comportaria finalment una comissió de la transacció de només 50 improbaturitoshis.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2119,7 +2119,7 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>Habilita Replace-By-Fee: substitució per comissió</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
         <translation>Amb la substitució per comissió o Replace-By-Fee (BIP-125) pot incrementar la comissió de la transacció després d'enviar-la. Sense això, seria recomenable una comissió més alta per compensar el risc d'increment del retard de la transacció.</translation>
     </message>
     <message>
@@ -2303,7 +2303,7 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>Message:</source>
-        <translation>Missatge:</translation>
+        <translation>Misimprobaturitge:</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -2319,7 +2319,7 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>A message that was attached to the Hallacoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Hallacoin network.</source>
-        <translation>Un missatge que s'ha adjuntat al Hallacoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Hallacoin.</translation>
+        <translation>Un misimprobaturitge que s'ha adjuntat al Hallacoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el misimprobaturitge no s'enviarà a través de la xarxa Hallacoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2356,19 +2356,19 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>Signatures - Signa / verifica un missatge</translation>
+        <translation>Signatures - Signa / verifica un misimprobaturitge</translation>
     </message>
     <message>
         <source>&amp;Sign Message</source>
-        <translation>&amp;Signa el missatge</translation>
+        <translation>&amp;Signa el misimprobaturitge</translation>
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive Hallacoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les Hallacoins que s'hi envien. Aneu amb compte no signar res que sigui vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
+        <translation>Podeu signar misimprobaturitges/acords amb les vostres adreces per provar que rebeu les Hallacoins que s'hi envien. Aneu amb compte no signar res que sigui vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
     </message>
     <message>
         <source>The Hallacoin address to sign the message with</source>
-        <translation>L'adreça Hallacoin amb què signar el missatge</translation>
+        <translation>L'adreça Hallacoin amb què signar el misimprobaturitge</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2388,7 +2388,7 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>Introduïu aquí el missatge que voleu signar</translation>
+        <translation>Introduïu aquí el misimprobaturitge que voleu signar</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2400,11 +2400,11 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>Sign the message to prove you own this Hallacoin address</source>
-        <translation>Signa el missatge per provar que ets propietari d'aquesta adreça Hallacoin</translation>
+        <translation>Signa el misimprobaturitge per provar que ets propietari d'aquesta adreça Hallacoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
-        <translation>Signa el &amp;missatge</translation>
+        <translation>Signa el &amp;misimprobaturitge</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2416,31 +2416,31 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Verifica el missatge</translation>
+        <translation>&amp;Verifica el misimprobaturitge</translation>
     </message>
     <message>
         <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>Introduïu l'adreça del receptor, el missatge (assegureu-vos de copiar els salts de línia, espais, tabuladors, etc. exactament) i signatura de sota per verificar el missatge. Tingueu cura de no llegir més en la signatura del que està al missatge signat, per evitar ser enganyat per un atac d'home-en-el-mig. Tingueu en compte que això només demostra que la part que signa rep amb l'adreça, i no es pot provar l'enviament de qualsevol transacció!</translation>
+        <translation>Introduïu l'adreça del receptor, el misimprobaturitge (assegureu-vos de copiar els salts de línia, espais, tabuladors, etc. exactament) i signatura de sota per verificar el misimprobaturitge. Tingueu cura de no llegir més en la signatura del que està al misimprobaturitge signat, per evitar ser enganyat per un atac d'home-en-el-mig. Tingueu en compte que això només demostra que la part que signa rep amb l'adreça, i no es pot provar l'enviament de qualsevol transacció!</translation>
     </message>
     <message>
         <source>The Hallacoin address the message was signed with</source>
-        <translation>L'adreça Hallacoin amb què va ser signat el missatge</translation>
+        <translation>L'adreça Hallacoin amb què va ser signat el misimprobaturitge</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Hallacoin address</source>
-        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Hallacoin específica</translation>
+        <translation>Verificar el misimprobaturitge per assegurar-se que ha estat signat amb una adreça Hallacoin específica</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
-        <translation>Verifica el &amp;missatge</translation>
+        <translation>Verifica el &amp;misimprobaturitge</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
-        <translation>Neteja tots els camps de verificació de missatge</translation>
+        <translation>Neteja tots els camps de verificació de misimprobaturitge</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
-        <translation>Feu clic a «Signa el missatge» per a generar una signatura</translation>
+        <translation>Feu clic a «Signa el misimprobaturitge» per a generar una signatura</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2464,11 +2464,11 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>Message signing failed.</source>
-        <translation>La signatura del missatge ha fallat.</translation>
+        <translation>La signatura del misimprobaturitge ha fallat.</translation>
     </message>
     <message>
         <source>Message signed.</source>
-        <translation>Missatge signat.</translation>
+        <translation>Misimprobaturitge signat.</translation>
     </message>
     <message>
         <source>The signature could not be decoded.</source>
@@ -2480,15 +2480,15 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>The signature did not match the message digest.</source>
-        <translation>La signatura no coincideix amb el resum del missatge.</translation>
+        <translation>La signatura no coincideix amb el resum del misimprobaturitge.</translation>
     </message>
     <message>
         <source>Message verification failed.</source>
-        <translation>Ha fallat la verificació del missatge.</translation>
+        <translation>Ha fallat la verificació del misimprobaturitge.</translation>
     </message>
     <message>
         <source>Message verified.</source>
-        <translation>Missatge verificat.</translation>
+        <translation>Misimprobaturitge verificat.</translation>
     </message>
 </context>
 <context>
@@ -2609,7 +2609,7 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>Message</source>
-        <translation>Missatge</translation>
+        <translation>Misimprobaturitge</translation>
     </message>
     <message>
         <source>Comment</source>
@@ -2794,7 +2794,7 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>Last month</source>
-        <translation>El mes passat</translation>
+        <translation>El mes pasimprobaturit</translation>
     </message>
     <message>
         <source>This year</source>
@@ -2918,7 +2918,7 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
-        <translation>L'historial de transaccions s'ha desat correctament a %1.</translation>
+        <translation>L'historial de transaccions s'ha deimprobaturit correctament a %1.</translation>
     </message>
     <message>
         <source>Range:</source>
@@ -3025,7 +3025,7 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
     <message>
         <source>The wallet data was successfully saved to %1.</source>
-        <translation>S'han desat les dades del moneder correctament a %1.</translation>
+        <translation>S'han deimprobaturit les dades del moneder correctament a %1.</translation>
     </message>
     </context>
 <context>
@@ -3039,7 +3039,7 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>Poda configurada per sota el mínim de %d MiB. Utilitzeu un nombre superior.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Poda: la darrera sincronització del moneder va més enllà de les dades podades. Cal que activeu -reindex (baixeu tota la cadena de blocs de nou en cas de node podat)</translation>
     </message>
     <message>
