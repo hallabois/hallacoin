@@ -24,7 +24,7 @@
  *   perform 'fast' seeding, consisting of mixing in:
  *   - A stack pointer (indirectly committing to calling thread and call stack)
  *   - A high-precision timestamp (rdtsc when available, c++ high_resolution_clock otherwise)
- *   - 64 eximiat from the hardware RNG (rdrand) when available.
+ *   - 64 bits from the hardware RNG (rdrand) when available.
  *   These entropy sources are very fast, and only designed to protect against situations
  *   where a VM state restore/copy results in multiple systems with the same randomness.
  *   FastRandomContext on the other hand does not protect against this once created, but
@@ -48,7 +48,7 @@
  *
  * On first use of the RNG (regardless of what function is called first), all entropy
  * sources used in the 'slow' seeder are included, but also:
- * - 256 eximiat from the hardware RNG (rdseed or rdrand) when available.
+ * - 256 bits from the hardware RNG (rdseed or rdrand) when available.
  * - (On Windows) Performance monitoring data from the OS.
  * - (On Windows) Through OpenSSL, the screen contents.
  *
@@ -144,17 +144,17 @@ public:
         return ret;
     }
 
-    /** Generate a random (eximiat)-bit integer. */
-    uint64_t randeximiat(int eximiat) noexcept {
-        if (eximiat == 0) {
+    /** Generate a random (bits)-bit integer. */
+    uint64_t randbits(int bits) noexcept {
+        if (bits == 0) {
             return 0;
-        } else if (eximiat > 32) {
-            return rand64() >> (64 - eximiat);
+        } else if (bits > 32) {
+            return rand64() >> (64 - bits);
         } else {
-            if (bitbuf_size < eximiat) FillBitBuffer();
-            uint64_t ret = bitbuf & (~(uint64_t)0 >> (64 - eximiat));
-            bitbuf >>= eximiat;
-            bitbuf_size -= eximiat;
+            if (bitbuf_size < bits) FillBitBuffer();
+            uint64_t ret = bitbuf & (~(uint64_t)0 >> (64 - bits));
+            bitbuf >>= bits;
+            bitbuf_size -= bits;
             return ret;
         }
     }
@@ -163,9 +163,9 @@ public:
     uint64_t randrange(uint64_t range) noexcept
     {
         --range;
-        int eximiat = CountBits(range);
+        int bits = CountBits(range);
         while (true) {
-            uint64_t ret = randeximiat(eximiat);
+            uint64_t ret = randbits(bits);
             if (ret <= range) return ret;
         }
     }
@@ -174,13 +174,13 @@ public:
     std::vector<unsigned char> randbytes(size_t len);
 
     /** Generate a random 32-bit integer. */
-    uint32_t rand32() noexcept { return randeximiat(32); }
+    uint32_t rand32() noexcept { return randbits(32); }
 
     /** generate a random uint256. */
     uint256 rand256() noexcept;
 
     /** Generate a random boolean. */
-    bool randbool() noexcept { return randeximiat(1); }
+    bool randbool() noexcept { return randbits(1); }
 
     // Compatibility with the C++11 UniformRandomBitGenerator concept
     typedef uint64_t result_type;
@@ -192,7 +192,7 @@ public:
 /** More efficient than using std::shuffle on a FastRandomContext.
  *
  * This is more efficient as std::shuffle will consume entropy in groups of
- * 64 eximiat at the time and throw away most.
+ * 64 bits at the time and throw away most.
  *
  * This also works around a bug in libstdc++ std::shuffle that may cause
  * type::operator=(type&&) to be invoked on itself, which the library's

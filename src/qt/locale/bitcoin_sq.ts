@@ -55,11 +55,11 @@
     </message>
     <message>
         <source>These are your Hallacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Këto janë Hallacoin adreimprobaturit e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
+        <translation>Këto janë Hallacoin adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
     </message>
     <message>
         <source>These are your Hallacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Këto janë Hallacoin adreimprobaturit e juaja për të pranuar pagesa. Rekomandohet që gjithmon të përdorni një adresë të re për çdo transaksion.</translation>
+        <translation>Këto janë Hallacoin adresat e juaja për të pranuar pagesa. Rekomandohet që gjithmon të përdorni një adresë të re për çdo transaksion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>

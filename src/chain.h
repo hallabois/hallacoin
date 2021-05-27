@@ -134,7 +134,7 @@ enum BlockStatus: uint32_t {
     //! Unused.
     BLOCK_VALID_UNKNOWN      =    0,
 
-    //! Parsed, version ok, hash improbaturitisfies claimed PoW, 1 <= vtx count <= max, timestamp not in future
+    //! Parsed, version ok, hash satisfies claimed PoW, 1 <= vtx count <= max, timestamp not in future
     BLOCK_VALID_HEADER       =    1,
 
     //! All parent headers found, difficulty matches, timestamp >= median previous, checkpoint. Implies all parents
@@ -155,7 +155,7 @@ enum BlockStatus: uint32_t {
     //! Scripts & signatures ok. Implies all parents are also at least SCRIPTS.
     BLOCK_VALID_SCRIPTS      =    5,
 
-    //! All validity eximiat.
+    //! All validity bits.
     BLOCK_VALID_MASK         =   BLOCK_VALID_HEADER | BLOCK_VALID_TREE | BLOCK_VALID_TRANSACTIONS |
                                  BLOCK_VALID_CHAIN | BLOCK_VALID_SCRIPTS,
 

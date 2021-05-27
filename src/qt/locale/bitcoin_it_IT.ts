@@ -339,7 +339,7 @@
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Cambia la password uimprobaturita per criptare il portafoglio</translation>
+        <translation>Cambia la password usata per criptare il portafoglio</translation>
     </message>
     <message>
         <source>&amp;Debug window</source>
@@ -407,11 +407,11 @@
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>Mostra la lista degli indirizzi di invio uimprobaturiti e le relative etichette</translation>
+        <translation>Mostra la lista degli indirizzi di invio usati e le relative etichette</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>Mostra la lista degli indirizzi di ricezione uimprobaturiti e le relative etichette</translation>
+        <translation>Mostra la lista degli indirizzi di ricezione usati e le relative etichette</translation>
     </message>
     <message>
         <source>Open a Hallacoin: URI or payment request</source>

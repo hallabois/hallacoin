@@ -332,7 +332,7 @@
     </message>
     <message>
         <source>&amp;Command-line options</source>
-        <translation>Komut improbaturitırı ayarları</translation>
+        <translation>Komut satırı ayarları</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -485,7 +485,7 @@
     </message>
     <message>
         <source>Command-line options</source>
-        <translation>Komut improbaturitırı ayarları</translation>
+        <translation>Komut satırı ayarları</translation>
     </message>
 </context>
 <context>
@@ -602,7 +602,7 @@
     </message>
     <message>
         <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
-        <translation>Konfigürasyon dosyası GUI ayarlarını geçersiz kılmak için gelişmiş kullanıcı ayarlarını değiştirir. Ek olarak, herhangi bir komut improbaturitırı seçeneği konfigürasyon dosyasını geçersiz kılar.</translation>
+        <translation>Konfigürasyon dosyası GUI ayarlarını geçersiz kılmak için gelişmiş kullanıcı ayarlarını değiştirir. Ek olarak, herhangi bir komut satırı seçeneği konfigürasyon dosyasını geçersiz kılar.</translation>
     </message>
     <message>
         <source>Error</source>

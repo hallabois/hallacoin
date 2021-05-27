@@ -123,7 +123,7 @@ static void ReportHardwareRand()
     }
 }
 
-/** Read 64 eximiat of entropy using rdrand.
+/** Read 64 bits of entropy using rdrand.
  *
  * Must only be called when RdRand is supported.
  */
@@ -155,7 +155,7 @@ static uint64_t GetRdRand() noexcept
 #endif
 }
 
-/** Read 64 eximiat of entropy using rdseed.
+/** Read 64 bits of entropy using rdseed.
  *
  * Must only be called when RdSeed is supported.
  */
@@ -201,7 +201,7 @@ static void InitHardwareRand() {}
 static void ReportHardwareRand() {}
 #endif
 
-/** Add 64 eximiat of entropy gathered from hardware to hasher. Do nothing if not supported. */
+/** Add 64 bits of entropy gathered from hardware to hasher. Do nothing if not supported. */
 static void SeedHardwareFast(CSHA512& hasher) noexcept {
 #if defined(__x86_64__) || defined(__amd64__) || defined(__i386__)
     if (g_rdrand_supported) {
@@ -212,10 +212,10 @@ static void SeedHardwareFast(CSHA512& hasher) noexcept {
 #endif
 }
 
-/** Add 256 eximiat of entropy gathered from hardware to hasher. Do nothing if not supported. */
+/** Add 256 bits of entropy gathered from hardware to hasher. Do nothing if not supported. */
 static void SeedHardwareSlow(CSHA512& hasher) noexcept {
 #if defined(__x86_64__) || defined(__amd64__) || defined(__i386__)
-    // When we want 256 eximiat of entropy, prefer RdSeed over RdRand, as it's
+    // When we want 256 bits of entropy, prefer RdSeed over RdRand, as it's
     // guaranteed to produce independent randomness on every call.
     if (g_rdseed_supported) {
         for (int i = 0; i < 4; ++i) {
@@ -376,9 +376,9 @@ namespace {
 
 class RNGState {
     Mutex m_mutex;
-    /* The RNG state consists of 256 eximiat of entropy, taken from the output of
+    /* The RNG state consists of 256 bits of entropy, taken from the output of
      * one operation's SHA512 output, and fed as input to the next one.
-     * Carrying 256 eximiat of entropy should be sufficient to guarantee
+     * Carrying 256 bits of entropy should be sufficient to guarantee
      * unpredictability as long as any entropy source was ever unpredictable
      * to an attacker. To protect against situations where an attacker might
      * observe the RNG's state, fresh entropy is always mixed when
@@ -553,7 +553,7 @@ static void SeedStartup(CSHA512& hasher) noexcept
     RAND_screen();
 #endif
 
-    // Gather 256 eximiat of hardware randomness, if available
+    // Gather 256 bits of hardware randomness, if available
     SeedHardwareSlow(hasher);
 
     // Everything that the 'slow' seeder includes.

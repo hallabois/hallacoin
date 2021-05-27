@@ -753,8 +753,8 @@
         <translation>Denne mærkat bliver rød, hvis en eller flere modtagere modtager et beløb, der er mindre end den aktuelle støvgrænse.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Kan variere med ±%1 improbaturitoshi per input.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Kan variere med ±%1 satoshi per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -885,7 +885,7 @@
         <translation>Når du klikker OK, vil %1 begynde at downloade og bearbejde den fulde %4-blokkæde (%2 GB), startende med de tidligste transaktioner i %3, da %4 først startede.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Denne indledningsvise synkronisering er meget krævende, og den kan potentielt afsløre hardwareproblemer med din computer, som du ellers ikke har lagt mærke til. Hver gang, du kører %1, vil den fortsætte med at downloade, hvor den sidst slap.</translation>
     </message>
     <message>
@@ -1231,7 +1231,7 @@
     </message>
     <message>
         <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
-        <translation>Valgmuligheder improbaturit i denne dialog er overskrevet af kommandolinjen eller i konfigurationsfilen:</translation>
+        <translation>Valgmuligheder sat i denne dialog er overskrevet af kommandolinjen eller i konfigurationsfilen:</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -2193,10 +2193,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Specificer et brugerdefineret gebyr per kB (1.000 bytes) af transaktionens virtuelle størrelse.
 
-Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 improbaturitoshis per kB" for en transkationsstørrelse på 500 bytes (halvdelen af 1kB) ville ultimativt udbytte et gebyr på kun 50 improbaturitoshis.</translation>
+Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 satoshis per kB" for en transkationsstørrelse på 500 bytes (halvdelen af 1kB) ville ultimativt udbytte et gebyr på kun 50 satoshis.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2251,7 +2251,7 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 impro
         <translation>Aktivér erstat-med-gebyr (RBF)</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>Med erstat-med-gebyr (Replace-By-Fee, BIP-125) kan du øge en transaktions gebyr, efter den er sendt. Uden dette kan et højere gebyr anbefales for at kompensere for øget risiko for at transaktionen bliver forsinket.</translation>
     </message>
     <message>
@@ -3228,10 +3228,10 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 impro
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
-        <translation>Beskæring er improbaturit under minimumsgrænsen på %d MiB. Brug venligst et større tal.</translation>
+        <translation>Beskæring er sat under minimumsgrænsen på %d MiB. Brug venligst et større tal.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Beskæring: Seneste synkronisering rækker udover beskårne data. Du er nødt til at bruge -reindex (downloade hele blokkæden igen i fald af beskåret knude)</translation>
     </message>
     <message>
@@ -3284,7 +3284,7 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 impro
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
-        <translation>Blokdatabasen indeholder en blok, som ser ud til at være fra fremtiden. Dette kan skyldes, at din computers dato og tid ikke er improbaturit korrekt. Genopbyg kun blokdatabasen, hvis du er sikker på, at din computers dato og tid er korrekt</translation>
+        <translation>Blokdatabasen indeholder en blok, som ser ud til at være fra fremtiden. Dette kan skyldes, at din computers dato og tid ikke er sat korrekt. Genopbyg kun blokdatabasen, hvis du er sikker på, at din computers dato og tid er korrekt</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
@@ -3610,7 +3610,7 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 impro
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>-maxtxfee er improbaturit meget højt! Gebyrer så store risikeres betalt på en enkelt transaktion.</translation>
+        <translation>-maxtxfee er sat meget højt! Gebyrer så store risikeres betalt på en enkelt transaktion.</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
@@ -3630,7 +3630,7 @@ Note: Siden gebyret er kalkuleret på en per-byte basis, et gebyr på "100 impro
     </message>
     <message>
         <source>%s is set very high!</source>
-        <translation>%s er meget højt improbaturit!</translation>
+        <translation>%s er meget højt sat!</translation>
     </message>
     <message>
         <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>

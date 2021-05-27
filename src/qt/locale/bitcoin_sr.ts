@@ -790,7 +790,7 @@
         <translation>Када кликнете на ОК, %1 ће почети с преузимањем и процесирањем целокупног ланца блокова %4 (%2GB), почевши од најранијих трансакција у %3 када је %4 покренут.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Ова иницијална синхронизација је веома захтевна и може изложити ваш рачунар хардверским проблемима који раније нису били примећени. Сваки пут када покренете %1, преузимање ће се наставити тамо где је било прекинуто.</translation>
     </message>
     <message>

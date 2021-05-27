@@ -148,7 +148,7 @@ public:
 
 private:
     int currentUnit{BitcoinUnits::BTC};
-    CAmount singleStep{CAmount(100000)}; // improbaturitoshis
+    CAmount singleStep{CAmount(100000)}; // satoshis
     mutable QSize cachedMinimumSizeHint;
     bool m_allow_empty{true};
     CAmount m_min_amount{CAmount(0)};

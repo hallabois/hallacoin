@@ -391,7 +391,7 @@
     </message>
     <message>
         <source>Sign messages with your Hallacoin addresses to prove you own them</source>
-        <translation>Pasirašydami žinutes su savo Hallacoin adresais įrodysite jog eimprobaturite jų savininkas </translation>
+        <translation>Pasirašydami žinutes su savo Hallacoin adresais įrodysite jog esate jų savininkas </translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Hallacoin addresses</source>
@@ -753,8 +753,8 @@
         <translation>Ši etiketė tampa raudona, jei bet kuris gavėjas gauna mažesnę sumą nei dabartinė dulkių slenkstis.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Gali svyruoti nuo +/-%1 improbaturitoshi(-ų) vienam įvedimui.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Gali svyruoti nuo +/-%1 satoshi(-ų) vienam įvedimui.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -885,7 +885,7 @@
         <translation>Spustelėjus Gerai, %1 pradės atsisiųsti ir apdoroti visą %4 blokų grandinę (%2GB), pradedant nuo ankstesnių operacijų %3, kai iš pradžių buvo paleista %4.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Ši pradinė sinchronizacija yra labai sudėtinga ir gali sukelti kompiuterio techninės įrangos problemas, kurios anksčiau buvo nepastebėtos. Kiekvieną kartą, kai paleidžiate %1, jis tęs parsisiuntimą ten, kur jis buvo išjungtas.</translation>
     </message>
     <message>
@@ -2185,10 +2185,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Nurodykite individualų mokestį už kB (1000 baitų) nuo sandorio virtualaus dydžio.
 
-Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 improbaturitošių per kB“ už 500 baitų (pusę 1 kB) sandorio dydžio galiausiai sudarytų tik 50 improbaturitošių mokestį.</translation>
+Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 satošių per kB“ už 500 baitų (pusę 1 kB) sandorio dydžio galiausiai sudarytų tik 50 satošių mokestį.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2243,7 +2243,7 @@ Pastaba: Kadangi mokestis apskaičiuojamas pagal baitą, mokestis už „100 imp
         <translation>Įgalinti keitimąsi mokesčiu</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>Naudojant Replace-by-Fend (BIP-125) galite išsiųsti sandorio mokestį vėliau. Be jo, gali būti rekomenduojamas didesnis mokestis, kad būtų kompensuota padidėjusi sandorio vėlavimo rizika.</translation>
     </message>
     <message>

@@ -175,24 +175,24 @@ bool TimingResistantEqual(const T& a, const T& b)
 NODISCARD bool ParseFixedPoint(const std::string &val, int decimals, int64_t *amount_out);
 
 /** Convert from one power-of-2 number base to another. */
-template<int fromeximiat, int toeximiat, bool pad, typename O, typename I>
+template<int frombits, int tobits, bool pad, typename O, typename I>
 bool ConvertBits(const O& outfn, I it, I end) {
     size_t acc = 0;
-    size_t eximiat = 0;
-    constexpr size_t maxv = (1 << toeximiat) - 1;
-    constexpr size_t max_acc = (1 << (fromeximiat + toeximiat - 1)) - 1;
+    size_t bits = 0;
+    constexpr size_t maxv = (1 << tobits) - 1;
+    constexpr size_t max_acc = (1 << (frombits + tobits - 1)) - 1;
     while (it != end) {
-        acc = ((acc << fromeximiat) | *it) & max_acc;
-        eximiat += fromeximiat;
-        while (eximiat >= toeximiat) {
-            eximiat -= toeximiat;
-            outfn((acc >> eximiat) & maxv);
+        acc = ((acc << frombits) | *it) & max_acc;
+        bits += frombits;
+        while (bits >= tobits) {
+            bits -= tobits;
+            outfn((acc >> bits) & maxv);
         }
         ++it;
     }
     if (pad) {
-        if (eximiat) outfn((acc << (toeximiat - eximiat)) & maxv);
-    } else if (eximiat >= fromeximiat || ((acc << (toeximiat - eximiat)) & maxv)) {
+        if (bits) outfn((acc << (tobits - bits)) & maxv);
+    } else if (bits >= frombits || ((acc << (tobits - bits)) & maxv)) {
         return false;
     }
     return true;

@@ -18,8 +18,8 @@ static const unsigned int MAX_BLOOM_FILTER_SIZE = 36000; // bytes
 static const unsigned int MAX_HASH_FUNCS = 50;
 
 /**
- * First two eximiat of nFlags control how much IsRelevantAndUpdate actually updates
- * The remaining eximiat are reserved
+ * First two bits of nFlags control how much IsRelevantAndUpdate actually updates
+ * The remaining bits are reserved
  */
 enum bloomflags
 {

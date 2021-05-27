@@ -220,10 +220,10 @@ CRollingBloomFilter::CRollingBloomFilter(const unsigned int nElements, const dou
      */
     uint32_t nFilterBits = (uint32_t)ceil(-1.0 * nHashFuncs * nMaxElements / log(1.0 - exp(logFpRate / nHashFuncs)));
     data.clear();
-    /* For each data element we need to store 2 eximiat. If both eximiat are 0, the
-     * bit is treated as unset. If the eximiat are (01), (10), or (11), the bit is
+    /* For each data element we need to store 2 bits. If both bits are 0, the
+     * bit is treated as unset. If the bits are (01), (10), or (11), the bit is
      * treated as set in generation 1, 2, or 3 respectively.
-     * These eximiat are stored in separate integers: position P corresponds to bit
+     * These bits are stored in separate integers: position P corresponds to bit
      * (P & 63) of the integers data[(P >> 6) * 2] and data[(P >> 6) * 2 + 1]. */
     data.resize(((nFilterBits + 63) / 64) << 1);
     reset();
@@ -265,7 +265,7 @@ void CRollingBloomFilter::insert(const std::vector<unsigned char>& vKey)
     for (int n = 0; n < nHashFuncs; n++) {
         uint32_t h = RollingBloomHash(n, nTweak, vKey);
         int bit = h & 0x3F;
-        /* FastMod works with the upper eximiat of h, so it is safe to ignore that the lower eximiat of h are already used for bit. */
+        /* FastMod works with the upper bits of h, so it is safe to ignore that the lower bits of h are already used for bit. */
         uint32_t pos = FastMod(h, data.size());
         /* The lowest bit of pos is ignored, and set to zero for the first bit, and to one for the second. */
         data[pos & ~1] = (data[pos & ~1] & ~(((uint64_t)1) << bit)) | ((uint64_t)(nGeneration & 1)) << bit;

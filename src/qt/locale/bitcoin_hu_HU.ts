@@ -675,8 +675,8 @@
         <translation>Ez a címke pirosra változik, ha valamelyik fogadó fél kisebb összeget kap, mint a jelenlegi porszem határérték.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Változó +/- %1 improbaturitoshi(k) megadott értékenként.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Változó +/- %1 satoshi(k) megadott értékenként.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -799,7 +799,7 @@
         <translation>Ha az OK-ra kattint, %1 megkezdi a teljes %4 blokk lánc letöltését és feldolgozását (%2GB) a legkorábbi tranzakciókkal kezdve %3 -ben, amikor a %4 bevezetésre került.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Az első szinkronizáció nagyon erőforrás-igényes és felszínre hozhat a számítógépében eddig rejtve maradt hardver problémákat. Minden %1 indításnál a program onnan folytatja a letöltést, ahol legutóbb abbahagyta.</translation>
     </message>
     <message>
@@ -1029,7 +1029,7 @@
     </message>
     <message>
         <source>Connect to the Hallacoin network through a SOCKS5 proxy.</source>
-        <translation>Cimprobaturitlakozás a Hallacoin hálózathoz SOCKS5 proxy használatával.</translation>
+        <translation>Csatlakozás a Hallacoin hálózathoz SOCKS5 proxy használatával.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1065,7 +1065,7 @@
     </message>
     <message>
         <source>Connect to the Hallacoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Cimprobaturitlakozás a Hallacoin hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
+        <translation>Csatlakozás a Hallacoin hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1606,7 +1606,7 @@
     </message>
     <message>
         <source>Connection Time</source>
-        <translation>Cimprobaturitlakozási idő</translation>
+        <translation>Csatlakozási idő</translation>
     </message>
     <message>
         <source>Last Send</source>
@@ -1769,7 +1769,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Hallacoin network.</source>
-        <translation>Opciónális üzenet cimprobaturitolása a fizetési kérelemhez, ami a kérelem megnyitásakor megjelenik. Megjegyzés: Az üzenet nem lesz elküldve a fizetéssel a Hallacoin hálózaton.</translation>
+        <translation>Opciónális üzenet csatolása a fizetési kérelemhez, ami a kérelem megnyitásakor megjelenik. Megjegyzés: Az üzenet nem lesz elküldve a fizetéssel a Hallacoin hálózaton.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>

@@ -737,8 +737,8 @@
         <translation>當任何一個收款金額小於目前的零散金額上限時，文字會變紅色。</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>每組輸入可能有 +/- %1 個 improbaturitoshi 的誤差。</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>每組輸入可能有 +/- %1 個 satoshi 的誤差。</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -869,7 +869,7 @@
         <translation>在你按下「好」之後，%1 就會開始下載並處理整個 %4 區塊鏈(大小是  %2GB)，也就是從 %3 年 %4 剛剛起步時的最初交易開始。</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>一開始的同步作業非常的耗費資源，並且可能會暴露出之前沒被發現的電腦硬體問題。每次執行 %1 的時候都會繼續先前未完成的下載。</translation>
     </message>
     <message>
@@ -2149,10 +2149,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>指定每一千位元祖(kB)擬真大小的交易所要付出的手續費。
 
-注意: 交易手續費是以位元組為單位來計算。因此當指定手續費為每千位元組 100 個 improbaturitoshi 時，對於一筆大小為 500 位元組(一千位元組的一半)的交易，其手續費會只有  50 個 improbaturitoshi。</translation>
+注意: 交易手續費是以位元組為單位來計算。因此當指定手續費為每千位元組 100 個 satoshi 時，對於一筆大小為 500 位元組(一千位元組的一半)的交易，其手續費會只有  50 個 satoshi。</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2203,7 +2203,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbatur
         <translation>啟用手續費追加</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>手續費追加(Replace-By-Fee, BIP-125)可以讓你在送出交易後才來提高手續費。不用這個功能的話，建議付比較高的手續費來降低交易延遲的風險。</translation>
     </message>
     <message>
@@ -3179,7 +3179,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbatur
         <translation>設定的修剪值小於最小需求的 %d 百萬位元組(MiB)。請指定大一點的數字。</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>修剪模式：錢包的最後同步狀態是在被修剪掉的區塊資料中。你需要用 -reindex 參數執行(會重新下載整個區塊鏈)</translation>
     </message>
     <message>

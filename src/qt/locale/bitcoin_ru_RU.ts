@@ -753,7 +753,7 @@
         <translation>Эта метка становится красной, если получатель получит меньшую сумму, чем текущий порог пыли.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
         <translation>Может меняться +/- %1 сатоши(ей) за вход.</translation>
     </message>
     <message>
@@ -885,7 +885,7 @@
         <translation>Когда вы нажмете ОК, %1 начнет загружать и обрабатывать полную цепочку блоков %4 (%2ГБ), начиная с самых ранних транзакций в %3, когда %4 был первоначально запущен.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Первоначальная синхронизация очень сложна и может выявить проблемы с оборудованием вашего компьютера, которые ранее оставались незамеченными. Каждый раз, когда вы запускаете %1, будет продолжена загрузка с того места, где остановился.</translation>
     </message>
     <message>
@@ -2189,7 +2189,7 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Укажите пользовательскую плату за килобайт (1000 байт) виртуального размера транзакции.
 
 Примечание: Так как комиссия рассчитывается на основе каждого байта, комиссия  "100 сатошей за КБ " для транзакции размером 500 байт (половина 1 КБ) в конечном счете, приведет к сбору только 50 сатошей.</translation>
@@ -2247,7 +2247,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbatur
         <translation>Включить Replace-By-Fee</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>С помощью Replace-By-Fee (BIP-125) вы можете увеличить комиссию за транзакцию после ее отправки. Без этого может быть рекомендована более высокая комиссия для компенсации повышенного риска задержки транзакции.</translation>
     </message>
     <message>
@@ -3219,7 +3219,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbatur
         <translation>Удаление блоков выставлено ниже, чем минимум в %d Мб. Пожалуйста, используйте большее значение.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Удаление: последняя синхронизация кошелька вышла за рамки удаленных данных. Вам нужен -reindex (скачать всю цепь блоков в случае удаленного узла)</translation>
     </message>
     <message>

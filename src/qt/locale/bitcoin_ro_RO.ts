@@ -443,7 +443,7 @@
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>S-a proceimprobaturit %n bloc din istoricul tranzacţiilor.</numerusform><numerusform>S-au proceimprobaturit %n blocuri din istoricul tranzacţiilor.</numerusform><numerusform>S-au proceimprobaturit %n de blocuri din istoricul tranzacţiilor.</numerusform></translation>
+        <translation><numerusform>S-a procesat %n bloc din istoricul tranzacţiilor.</numerusform><numerusform>S-au procesat %n blocuri din istoricul tranzacţiilor.</numerusform><numerusform>S-au procesat %n de blocuri din istoricul tranzacţiilor.</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -697,8 +697,8 @@
         <translation>Această etichetă devine roşie, dacă orice beneficiar primeşte o sumă mai mică decât pragul curent pentru praf.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Poate varia +/- %1 improbaturitoshi pentru fiecare intrare.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Poate varia +/- %1 satoshi pentru fiecare intrare.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -826,15 +826,15 @@
     </message>
     <message>
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>Cand apaimprobaturiti OK, %1 va incepe descarcarea si procesarea intregului %4 blockchain (%2GB) incepand cu cele mai vechi tranzactii din %3 de la lansarea initiala a %4.</translation>
+        <translation>Cand apasati OK, %1 va incepe descarcarea si procesarea intregului %4 blockchain (%2GB) incepand cu cele mai vechi tranzactii din %3 de la lansarea initiala a %4.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Sincronizarea initiala necesita foarte multe resurse, si poate releva probleme de hardware ale computerului care anterior au trecut neobservate. De fiecare data cand rulati %1, descarcarea va continua de unde a fost intrerupta.</translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Daca ati ales o limita pentru capacitatea de stocare a blockchainului (pruning), datele mai vechi tot trebuie sa fie descarcate si proceimprobaturite, insa vor fi sterse ulterior pentru a reduce utilizarea harddiskului.</translation>
+        <translation>Daca ati ales o limita pentru capacitatea de stocare a blockchainului (pruning), datele mai vechi tot trebuie sa fie descarcate si procesate, insa vor fi sterse ulterior pentru a reduce utilizarea harddiskului.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -893,7 +893,7 @@
     </message>
     <message>
         <source>Attempting to spend Hallacoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Incercarea de a cheltui Hallacoini care sunt afectati de tranzactii ce inca nu sunt afiimprobaturite nu va fi acceptata de retea.</translation>
+        <translation>Incercarea de a cheltui Hallacoini care sunt afectati de tranzactii ce inca nu sunt afisate nu va fi acceptata de retea.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1027,7 +1027,7 @@
     </message>
     <message>
         <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
-        <translation>Dezactiveaza unele caracteristici avanimprobaturite insa toate blocurile vor fi validate pe deplin. Inversarea acestei setari necesita re-descarcarea intregului blockchain. Utilizarea reala a discului poate fi ceva mai mare.</translation>
+        <translation>Dezactiveaza unele caracteristici avansate insa toate blocurile vor fi validate pe deplin. Inversarea acestei setari necesita re-descarcarea intregului blockchain. Utilizarea reala a discului poate fi ceva mai mare.</translation>
     </message>
     <message>
         <source>Prune &amp;block storage to</source>
@@ -1199,7 +1199,7 @@
     </message>
     <message>
         <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
-        <translation>Fisierul de configurare e folosit pentru a specifica optiuni utilizator avanimprobaturite care modifica setarile din GUI. In plus orice optiune din linia de comanda va modifica acest fisier de configurare. </translation>
+        <translation>Fisierul de configurare e folosit pentru a specifica optiuni utilizator avansate care modifica setarile din GUI. In plus orice optiune din linia de comanda va modifica acest fisier de configurare. </translation>
     </message>
     <message>
         <source>Error</source>
@@ -2105,10 +2105,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Specificati o taxa anume pe kB (1000 byte) din marimea virtuala a tranzactiei. 
 
-Nota: Cum taxa este calculata per byte, o taxa de "100 improbaturitoshi per kB" pentru o tranzactie de 500 byte (jumatate de kB) va produce o taxa de doar 50 improbaturitoshi.</translation>
+Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o tranzactie de 500 byte (jumatate de kB) va produce o taxa de doar 50 satoshi.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2155,7 +2155,7 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 improbaturitoshi per kB" 
         <translation>Autorizeaza Replace-By-Fee</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>Cu Replace-By-Fee (BIP-125) se poate creste taxa unei tranzactii dupa ce a fost trimisa. Fara aceasta optiune, o taxa mai mare e posibil sa fie recomandata pentru a compensa riscul crescut de intarziere a tranzactiei.</translation>
     </message>
     <message>
@@ -3119,7 +3119,7 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 improbaturitoshi per kB" 
         <translation>Reductia e configurata sub minimul de %d MiB. Rugam folositi un numar mai mare.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Reductie: ultima sincronizare merge dincolo de datele reductiei. Trebuie sa faceti -reindex (sa descarcati din nou intregul blockchain in cazul unui nod redus)</translation>
     </message>
     <message>

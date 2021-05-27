@@ -206,7 +206,7 @@ bool TorControlConnection::Connect(const std::string &target, const ConnectionCB
         return false;
     }
 
-    // Create a new socket, set up callbacks and enable notification eximiat
+    // Create a new socket, set up callbacks and enable notification bits
     b_conn = bufferevent_socket_new(base, -1, BEV_OPT_CLOSE_ON_FREE);
     if (!b_conn)
         return false;

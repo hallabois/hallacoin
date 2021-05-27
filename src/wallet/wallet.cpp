@@ -805,7 +805,7 @@ bool CWallet::EncryptWallet(const SecureString& strWalletPassphrase)
         Lock();
 
         // Need to completely rewrite the wallet file; if we don't, bdb might keep
-        // eximiat of the unencrypted private key in slack space in the database file.
+        // bits of the unencrypted private key in slack space in the database file.
         database->Rewrite();
 
         // BDB seems to have a bad habit of writing old data into
@@ -4357,7 +4357,7 @@ std::shared_ptr<CWallet> CWallet::CreateWalletFromFile(interfaces::Chain& chain,
             }
 
             if (rescan_height != block_height) {
-                InitError(_("Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)"));
+                InitError(_("Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)"));
                 return nullptr;
             }
         }

@@ -247,7 +247,7 @@
     </message>
     <message>
         <source>Synchronizing with network...</source>
-        <translation>Synchroniimprobaturition avec le réseau…</translation>
+        <translation>Synchronisation avec le réseau…</translation>
     </message>
     <message>
         <source>&amp;Overview</source>
@@ -331,7 +331,7 @@
     </message>
     <message>
         <source>Syncing Headers (%1%)...</source>
-        <translation>Synchroniimprobaturition des en-têtes (%1)...</translation>
+        <translation>Synchronisation des en-têtes (%1)...</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
@@ -753,8 +753,8 @@
         <translation>Cette étiquette devient rouge si un destinataire reçoit un montant inférieur au seuil actuel de poussière.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Peut varier +/- %1 improbaturitoshi(s) par entrée.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Peut varier +/- %1 satoshi(s) par entrée.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -885,12 +885,12 @@
         <translation>Quand vous cliquerez sur Valider, %1 commencera à télécharger et à traiter l’intégralité de la chaîne de blocs %4 (%2 Go) en débutant avec les transactions les plus anciennes de %3, quand %4 a été lancé initialement.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>La synchroniimprobaturition initiale est très exigeante et pourrait exposer des problèmes matériels dans votre ordinateur passés inaperçus auparavant. Chaque fois que vous exécuterez %1, le téléchargement reprendra où il s’était arrêté.</translation>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <translation>La synchronisation initiale est très exigeante et pourrait exposer des problèmes matériels dans votre ordinateur passés inaperçus auparavant. Chaque fois que vous exécuterez %1, le téléchargement reprendra où il s’était arrêté.</translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Si vous avez choisi de limiter le stockage de la chaîne de blocs (élagage), les données historiques doivent quand même être téléchargées et traitées, mais seront supprimées par la suite pour minimiser l’utiliimprobaturition de votre espace disque.</translation>
+        <translation>Si vous avez choisi de limiter le stockage de la chaîne de blocs (élagage), les données historiques doivent quand même être téléchargées et traitées, mais seront supprimées par la suite pour minimiser l’utilisation de votre espace disque.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -977,7 +977,7 @@
     </message>
     <message>
         <source>Estimated time left until synced</source>
-        <translation>Temps estimé avant la fin de la synchroniimprobaturition</translation>
+        <translation>Temps estimé avant la fin de la synchronisation</translation>
     </message>
     <message>
         <source>Hide</source>
@@ -985,7 +985,7 @@
     </message>
     <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
-        <translation>Inconnu. Synchroniimprobaturition des en-têtes (%1, %2)…</translation>
+        <translation>Inconnu. Synchronisation des en-têtes (%1, %2)…</translation>
     </message>
 </context>
 <context>
@@ -1191,7 +1191,7 @@
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>N’afficher qu’une icône dans la zone de notification après minimiimprobaturition.</translation>
+        <translation>N’afficher qu’une icône dans la zone de notification après minimisation.</translation>
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
@@ -1207,11 +1207,11 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Langue de l’interface utiliimprobaturiteur :</translation>
+        <translation>&amp;Langue de l’interface utilisateur :</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
-        <translation>La langue de l’interface utiliimprobaturiteur peut être définie ici. Ce réglage sera pris en compte après redémarrage de %1.</translation>
+        <translation>La langue de l’interface utilisateur peut être définie ici. Ce réglage sera pris en compte après redémarrage de %1.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1251,7 +1251,7 @@
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation>Confirmer la réinitialiimprobaturition des options</translation>
+        <translation>Confirmer la réinitialisation des options</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
@@ -1267,7 +1267,7 @@
     </message>
     <message>
         <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
-        <translation>Le fichier de configuration est utilisé pour indiquer aux utiliimprobaturiteurs experts quelles options remplacent les paramètres de l’IUG. De plus, toute option de ligne de commande remplacera ce fichier de configuration.</translation>
+        <translation>Le fichier de configuration est utilisé pour indiquer aux utilisateurs experts quelles options remplacent les paramètres de l’IUG. De plus, toute option de ligne de commande remplacera ce fichier de configuration.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1468,7 +1468,7 @@
     <name>PeerTableModel</name>
     <message>
         <source>User Agent</source>
-        <translation>Agent utiliimprobaturiteur</translation>
+        <translation>Agent utilisateur</translation>
     </message>
     <message>
         <source>Node/Service</source>
@@ -1696,7 +1696,7 @@
     </message>
     <message>
         <source>Memory usage</source>
-        <translation>Utiliimprobaturition de la mémoire</translation>
+        <translation>Utilisation de la mémoire</translation>
     </message>
     <message>
         <source>Wallet: </source>
@@ -1756,7 +1756,7 @@
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Agent utiliimprobaturiteur</translation>
+        <translation>Agent utilisateur</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -1888,11 +1888,11 @@
     </message>
     <message>
         <source>For more information on using this console type %1.</source>
-        <translation>Pour de plus amples renseignements sur l’utiliimprobaturition de cette console, tapez %1.</translation>
+        <translation>Pour de plus amples renseignements sur l’utilisation de cette console, tapez %1.</translation>
     </message>
     <message>
         <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
-        <translation>AVERTISSEMENT : Des fraudeurs se sont montrés actifs, demandant aux utiliimprobaturiteurs de taper des commandes ici, dérobant ainsi le contenu de leurs porte-monnaie. N’utilisez pas cette console sans une compréhension parfaite des conséquences d’une commande.</translation>
+        <translation>AVERTISSEMENT : Des fraudeurs se sont montrés actifs, demandant aux utilisateurs de taper des commandes ici, dérobant ainsi le contenu de leurs porte-monnaie. N’utilisez pas cette console sans une compréhension parfaite des conséquences d’une commande.</translation>
     </message>
     <message>
         <source>Network activity disabled</source>
@@ -2180,7 +2180,7 @@
     </message>
     <message>
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
-        <translation>L’utiliimprobaturition de l’option « fallbackfee » (frais de repli) peut avoir comme effet d’envoyer une transaction qui prendra plusieurs heures ou jours pour être confirmée ou qui ne le sera jamais. Envisagez de choisir vos frais manuellement ou attendez d’avoir validé l’intégralité de la chaîne.</translation>
+        <translation>L’utilisation de l’option « fallbackfee » (frais de repli) peut avoir comme effet d’envoyer une transaction qui prendra plusieurs heures ou jours pour être confirmée ou qui ne le sera jamais. Envisagez de choisir vos frais manuellement ou attendez d’avoir validé l’intégralité de la chaîne.</translation>
     </message>
     <message>
         <source>Warning: Fee estimation is currently not possible.</source>
@@ -2193,10 +2193,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Déterminer des frais personnalisés par Ko (1 000 octets) de la taille virtuelle de la transaction.
 
-Note : Les frais étant calculés par octet, des frais de « 100 improbaturitoshis par Ko » pour une transaction d’une taille de 500 octets (la moitié de 1 Ko) donneront des frais de seulement 50 improbaturitoshis.</translation>
+Note : Les frais étant calculés par octet, des frais de « 100 satoshis par Ko » pour une transaction d’une taille de 500 octets (la moitié de 1 Ko) donneront des frais de seulement 50 satoshis.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2251,7 +2251,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 improbaturit
         <translation>Activer Remplacer-par-des-frais</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>Avec Remplacer-par-des-frais (BIP-125), vous pouvez augmenter les frais de transaction après qu’elle est envoyée. Sans cela, des frais plus élevés peuvent être recommandés pour compenser le risque accru de retard transactionnel.</translation>
     </message>
     <message>
@@ -2939,7 +2939,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 improbaturit
     </message>
     <message>
         <source>User-defined intent/purpose of the transaction.</source>
-        <translation>Intention/but de la transaction défini par l’utiliimprobaturiteur.</translation>
+        <translation>Intention/but de la transaction défini par l’utilisateur.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -3224,15 +3224,15 @@ Note : Les frais étant calculés par octet, des frais de « 100 improbaturit
     <name>bitcoin-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
-        <translation>Distribué sous la licence MIT d’utiliimprobaturition d’un logiciel. Consulter le fichier joint %s ou %s</translation>
+        <translation>Distribué sous la licence MIT d’utilisation d’un logiciel. Consulter le fichier joint %s ou %s</translation>
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
         <translation>L’élagage est configuré au-dessous du minimum de %d Mio. Veuillez utiliser un nombre plus élevé.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>Élagage : la dernière synchroniimprobaturition de porte-monnaie va par-delà les données élaguées.  Vous devez -reindex (réindexer, télécharger de nouveau toute la chaîne de blocs en cas de nœud élagué)</translation>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <translation>Élagage : la dernière synchronisation de porte-monnaie va par-delà les données élaguées.  Vous devez -reindex (réindexer, télécharger de nouveau toute la chaîne de blocs en cas de nœud élagué)</translation>
     </message>
     <message>
         <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
@@ -3288,7 +3288,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 improbaturit
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Ceci est une préversion de test - son utiliimprobaturition est entièrement à vos risques - ne pas l’utiliser pour miner ou pour des applications marchandes</translation>
+        <translation>Ceci est une préversion de test - son utilisation est entièrement à vos risques - ne pas l’utiliser pour miner ou pour des applications marchandes</translation>
     </message>
     <message>
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
@@ -3348,11 +3348,11 @@ Note : Les frais étant calculés par octet, des frais de « 100 improbaturit
     </message>
     <message>
         <source>Error initializing block database</source>
-        <translation>Erreur d’initialiimprobaturition de la base de données de blocs</translation>
+        <translation>Erreur d’initialisation de la base de données de blocs</translation>
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
-        <translation>Erreur d’initialiimprobaturition de l’environnement de la base de données du porte-monnaie %s !</translation>
+        <translation>Erreur d’initialisation de l’environnement de la base de données du porte-monnaie %s !</translation>
     </message>
     <message>
         <source>Error loading %s</source>
@@ -3388,7 +3388,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 improbaturit
     </message>
     <message>
         <source>Failed to rescan the wallet during initialization</source>
-        <translation>Échec de réanalyse du porte-monnaie lors de l’initialiimprobaturition</translation>
+        <translation>Échec de réanalyse du porte-monnaie lors de l’initialisation</translation>
     </message>
     <message>
         <source>Importing...</source>
@@ -3400,7 +3400,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 improbaturit
     </message>
     <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
-        <translation>L’initialiimprobaturition du test de cohérence a échoué. %s est en cours de fermeture. </translation>
+        <translation>L’initialisation du test de cohérence a échoué. %s est en cours de fermeture. </translation>
     </message>
     <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
@@ -3472,7 +3472,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 improbaturit
     </message>
     <message>
         <source>Unsupported logging category %s=%s.</source>
-        <translation>Catégorie de journaliimprobaturition non prise en charge %s=%s.</translation>
+        <translation>Catégorie de journalisation non prise en charge %s=%s.</translation>
     </message>
     <message>
         <source>Upgrading UTXO database</source>
@@ -3480,7 +3480,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 improbaturit
     </message>
     <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
-        <translation>Le commentaire d’agent utiliimprobaturiteur (%s) contient des caractères dangereux.</translation>
+        <translation>Le commentaire d’agent utilisateur (%s) contient des caractères dangereux.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

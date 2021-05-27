@@ -1394,7 +1394,7 @@ bool CheckInputs(const CTransaction& tx, CValidationState &state, const CCoinsVi
             uint256 hashCacheEntry;
             // We only use the first 19 bytes of nonce to avoid a second SHA
             // round - giving us 19 + 32 + 4 = 55 bytes (+ 8 + 1 = 64)
-            static_assert(55 - sizeof(flags) - 32 >= 128/8, "Want at least 128 eximiat of nonce for script execution cache");
+            static_assert(55 - sizeof(flags) - 32 >= 128/8, "Want at least 128 bits of nonce for script execution cache");
             CSHA256().Write(scriptExecutionCacheNonce.begin(), 55 - sizeof(flags) - 32).Write(tx.GetWitnessHash().begin(), 32).Write((unsigned char*)&flags, sizeof(flags)).Finalize(hashCacheEntry.begin());
             AssertLockHeld(cs_main); //TODO: Remove this requirement by making CuckooCache not require external locks
             if (scriptExecutionCache.contains(hashCacheEntry, !cacheFullScriptStore)) {
@@ -1681,7 +1681,7 @@ void ThreadScriptCheck() {
     scriptcheckqueue.Thread();
 }
 
-VersionBitsCache versioneximiatcache GUARDED_BY(cs_main);
+VersionBitsCache versionbitscache GUARDED_BY(cs_main);
 
 int32_t ComputeBlockVersion(const CBlockIndex* pindexPrev, const Consensus::Params& params)
 {
@@ -1689,7 +1689,7 @@ int32_t ComputeBlockVersion(const CBlockIndex* pindexPrev, const Consensus::Para
     int32_t nVersion = VERSIONBITS_TOP_BITS;
 
     for (int i = 0; i < (int)Consensus::MAX_VERSION_BITS_DEPLOYMENTS; i++) {
-        ThresholdState state = VersionBitsState(pindexPrev, params, static_cast<Consensus::DeploymentPos>(i), versioneximiatcache);
+        ThresholdState state = VersionBitsState(pindexPrev, params, static_cast<Consensus::DeploymentPos>(i), versionbitscache);
         if (state == ThresholdState::LOCKED_IN || state == ThresholdState::STARTED) {
             nVersion |= VersionBitsMask(params, static_cast<Consensus::DeploymentPos>(i));
         }
@@ -1699,7 +1699,7 @@ int32_t ComputeBlockVersion(const CBlockIndex* pindexPrev, const Consensus::Para
 }
 
 /**
- * Threshold condition checker that triggers when unknown versioneximiat are seen on the network.
+ * Threshold condition checker that triggers when unknown versionbits are seen on the network.
  */
 class WarningBitsConditionChecker : public AbstractThresholdConditionChecker
 {
@@ -1744,17 +1744,17 @@ static unsigned int GetBlockScriptFlags(const CBlockIndex* pindex, const Consens
         flags |= SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY;
     }
 
-    // Start enforcing BIP68 (sequence locks) and BIP112 (CHECKSEQUENCEVERIFY) using versioneximiat logic.
-    if (VersionBitsState(pindex->pprev, consensusparams, Consensus::DEPLOYMENT_CSV, versioneximiatcache) == ThresholdState::ACTIVE) {
+    // Start enforcing BIP68 (sequence locks) and BIP112 (CHECKSEQUENCEVERIFY) using versionbits logic.
+    if (VersionBitsState(pindex->pprev, consensusparams, Consensus::DEPLOYMENT_CSV, versionbitscache) == ThresholdState::ACTIVE) {
         flags |= SCRIPT_VERIFY_CHECKSEQUENCEVERIFY;
     }
 
-    // Start enforcing WITNESS rules using versioneximiat logic.
+    // Start enforcing WITNESS rules using versionbits logic.
     if (IsWitnessEnabled(pindex->pprev, consensusparams)) {
         flags |= SCRIPT_VERIFY_WITNESS;
     }
 
-    // Start enforcing NULLDUMMY rules using versioneximiat logic.
+    // Start enforcing NULLDUMMY rules using versionbits logic.
     if (IsNullDummyEnabled(pindex->pprev, consensusparams)) {
         flags |= SCRIPT_VERIFY_NULLDUMMY;
     }
@@ -1942,9 +1942,9 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
         }
     }
 
-    // Start enforcing BIP68 (sequence locks) and BIP112 (CHECKSEQUENCEVERIFY) using versioneximiat logic.
+    // Start enforcing BIP68 (sequence locks) and BIP112 (CHECKSEQUENCEVERIFY) using versionbits logic.
     int nLockTimeFlags = 0;
-    if (VersionBitsState(pindex->pprev, chainparams.GetConsensus(), Consensus::DEPLOYMENT_CSV, versioneximiatcache) == ThresholdState::ACTIVE) {
+    if (VersionBitsState(pindex->pprev, chainparams.GetConsensus(), Consensus::DEPLOYMENT_CSV, versionbitscache) == ThresholdState::ACTIVE) {
         nLockTimeFlags |= LOCKTIME_VERIFY_SEQUENCE;
     }
 
@@ -3146,13 +3146,13 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
 bool IsWitnessEnabled(const CBlockIndex* pindexPrev, const Consensus::Params& params)
 {
     LOCK(cs_main);
-    return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versioneximiatcache) == ThresholdState::ACTIVE);
+    return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE);
 }
 
 bool IsNullDummyEnabled(const CBlockIndex* pindexPrev, const Consensus::Params& params)
 {
     LOCK(cs_main);
-    return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versioneximiatcache) == ThresholdState::ACTIVE);
+    return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE);
 }
 
 // Compute at which vout of the block's coinbase transaction the witness
@@ -3228,7 +3228,7 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationSta
     // Check proof of work
     const Consensus::Params& consensusParams = params.GetConsensus();
     if (block.nBits != GetNextWorkRequired(pindexPrev, &block, consensusParams))
-        return state.DoS(100, false, REJECT_INVALID, "bad-diffeximiat", false, "incorrect proof of work");
+        return state.DoS(100, false, REJECT_INVALID, "bad-diffbits", false, "incorrect proof of work");
 
     // Check against checkpoints
     if (fCheckpointsEnabled) {
@@ -3273,9 +3273,9 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
 {
     const int nHeight = pindexPrev == nullptr ? 0 : pindexPrev->nHeight + 1;
 
-    // Start enforcing BIP113 (Median Time Past) using versioneximiat logic.
+    // Start enforcing BIP113 (Median Time Past) using versionbits logic.
     int nLockTimeFlags = 0;
-    if (VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_CSV, versioneximiatcache) == ThresholdState::ACTIVE) {
+    if (VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_CSV, versionbitscache) == ThresholdState::ACTIVE) {
         assert(pindexPrev != nullptr);
         nLockTimeFlags |= LOCKTIME_MEDIAN_TIME_PAST;
     }
@@ -3310,7 +3310,7 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
     //   {0xaa, 0x21, 0xa9, 0xed}, and the following 32 bytes are SHA256^2(witness root, witness reserved value). In case there are
     //   multiple, the last one is used.
     bool fHaveWitness = false;
-    if (VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_SEGWIT, versioneximiatcache) == ThresholdState::ACTIVE) {
+    if (VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE) {
         int commitpos = GetWitnessCommitmentIndex(block);
         if (commitpos != -1) {
             bool malleated = false;
@@ -4350,7 +4350,7 @@ void UnloadBlockIndex()
     nLastBlockFile = 0;
     setDirtyBlockIndex.clear();
     setDirtyFileInfo.clear();
-    versioneximiatcache.Clear();
+    versionbitscache.Clear();
     for (int b = 0; b < VERSIONBITS_NUM_BITS; b++) {
         warningcache[b].clear();
     }
@@ -4737,7 +4737,7 @@ CBlockFileInfo* GetBlockFileInfo(size_t n)
 ThresholdState VersionBitsTipState(const Consensus::Params& params, Consensus::DeploymentPos pos)
 {
     LOCK(cs_main);
-    return VersionBitsState(chainActive.Tip(), params, pos, versioneximiatcache);
+    return VersionBitsState(chainActive.Tip(), params, pos, versionbitscache);
 }
 
 BIP9Stats VersionBitsTipStatistics(const Consensus::Params& params, Consensus::DeploymentPos pos)
@@ -4749,7 +4749,7 @@ BIP9Stats VersionBitsTipStatistics(const Consensus::Params& params, Consensus::D
 int VersionBitsTipStateSinceHeight(const Consensus::Params& params, Consensus::DeploymentPos pos)
 {
     LOCK(cs_main);
-    return VersionBitsStateSinceHeight(chainActive.Tip(), params, pos, versioneximiatcache);
+    return VersionBitsStateSinceHeight(chainActive.Tip(), params, pos, versionbitscache);
 }
 
 static const uint64_t MEMPOOL_DUMP_VERSION = 1;

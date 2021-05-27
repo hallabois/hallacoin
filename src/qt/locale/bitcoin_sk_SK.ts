@@ -693,8 +693,8 @@
         <translation>Tento štítok sa zmení na červený ak nejaký prijímateľ obdrží čiastku menšiu ako je aktuálny prah prachu</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Môže sa kolísať o +/- %1 improbaturitoshi() za vstup</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Môže sa kolísať o +/- %1 satoshi() za vstup</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -825,7 +825,7 @@
         <translation>Keď kliknete na OK tak %1 začne sťahovanie a spracuje celý %4 blockchain (%2GB) počnúc najmladšími transakciami v %3 keď sa %4 prvý krát spustil.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Počiatočná synchronizácia je veľmi náročná a môže odhaliť hardvérove problémy vo vašom počítači o ktorých ste do teraz nevedeli. Vždy keď zapnete %1 tak sa sťahovanie začne presne tam kde bolo pred vypnutím.</translation>
     </message>
     <message>
@@ -2089,10 +2089,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Špecifikujte vlastný transakčný polatok za 1 kB (1000 bajtov) virtuálnej veľkosti transakcie.
 
-Zapamätajte si: Keďže cena poplatku je počítaná za bajt, tak poplatok o hodnote ''100 improbaturitoshi za kB'' pri veľkosti transakcie 500 bajtov (polovica z 1kB) by stál len 50 improbaturitoshi.</translation>
+Zapamätajte si: Keďže cena poplatku je počítaná za bajt, tak poplatok o hodnote ''100 satoshi za kB'' pri veľkosti transakcie 500 bajtov (polovica z 1kB) by stál len 50 satoshi.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2139,7 +2139,7 @@ Zapamätajte si: Keďže cena poplatku je počítaná za bajt, tak poplatok o ho
         <translation>Povoliť nahradenie poplatkom</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>S nahradením poplatkov (BIP-125) môžete zvýšiť transakčný poplatok po tom, čo je transakcia odoslaná. Bez tejto funkcie je odporúčaný vyšší poplatok aby sa predišlo oneskoreniu transakcie.</translation>
     </message>
     <message>
@@ -3107,7 +3107,7 @@ Zapamätajte si: Keďže cena poplatku je počítaná za bajt, tak poplatok o ho
         <translation>Zmenšenie nastavené pod minimálnu hodnotu %d MiB. Prosím použite vyššiu hodnotu.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Zmenšenie: posledná synchronizácia peňaženky prekračuje zmenšené dáta. Musíte použiť -reindex (opäť stiahnuť celý blockchain pre prípad zmenšeného uzla)</translation>
     </message>
     <message>

@@ -3663,8 +3663,8 @@ bool PeerLogicValidation::SendMessages(CNode* pto)
         }
         // In case there is a block that has been in flight from this peer for 2 + 0.5 * N times the block interval
         // (with N the number of peers from which we're downloading validated blocks), disconnect due to timeout.
-        // We compenimprobaturite for other peers to prevent killing off peers due to our own downstream link
-        // being improbaturiturated. We only count validated in-flight blocks so peers can't advertise non-existing block hashes
+        // We compensate for other peers to prevent killing off peers due to our own downstream link
+        // being saturated. We only count validated in-flight blocks so peers can't advertise non-existing block hashes
         // to unreasonably increase our timeout.
         if (state.vBlocksInFlight.size() > 0) {
             QueuedBlock &queuedBlock = state.vBlocksInFlight.front();

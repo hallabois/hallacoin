@@ -667,8 +667,8 @@
         <translation>Hierdie etiket verander na rooi as enige ontvanger 'n bedrag kleiner as die huidige stof drempelwaarde ontvang.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Kan wissel met +/- %1 improbaturitoshi(s) per inset.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Kan wissel met +/- %1 satoshi(s) per inset.</translation>
     </message>
     <message>
         <source>(no label)</source>

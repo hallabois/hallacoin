@@ -752,8 +752,8 @@
         <translation>Esta etiqueta se vuelve roja si algún destinatario recibe una cantidad inferior al actual umbral de polvo.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Puede variar +/- %1 improbaturitoshi(s) por entrada.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Puede variar +/- %1 satoshi(s) por entrada.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -884,7 +884,7 @@
         <translation>Cuando haga click en OK, %1 se empezará a descargar la %4 cadena de bloques completa (%2GB) empezando por la transacción más antigua en %3 cuando se publicó %4 originalmente.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>La sincronización inicial demanda muchos recursos y podría revelar problemas de hardware que no se han notado previamente. Cada vez que ejecuta %1, continuará descargando a partir del punto anterior.</translation>
     </message>
     <message>
@@ -2192,10 +2192,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Especifique una comisión personalizada por kB (1,000 bytes) del tamaño virtual de la transacción.
 
-Nota: Dado que la comisión se calcula por byte, una comisión de "100 improbaturitoshis por kB" para un tamaño de transacción de 500 bytes (la mitad de 1 kB) finalmente generará una comisión de solo 50 improbaturitoshis.</translation>
+Nota: Dado que la comisión se calcula por byte, una comisión de "100 satoshis por kB" para un tamaño de transacción de 500 bytes (la mitad de 1 kB) finalmente generará una comisión de solo 50 satoshis.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2250,7 +2250,7 @@ Nota: Dado que la comisión se calcula por byte, una comisión de "100 improbatu
         <translation>Habilitar Replace-By-Fee</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>Con Replace-By-Fee (BIP-125) puede incrementar la comisión después de haber enviado la transacción. Si no utiliza esto, se recomienda que añada una comisión mayor para compensar el riesgo adicional de que la transacción se retrase.</translation>
     </message>
     <message>
@@ -3230,7 +3230,7 @@ Nota: Dado que la comisión se calcula por byte, una comisión de "100 improbatu
         <translation>La Poda se ha configurado por debajo del minimo de %d MiB. Por favor utiliza un valor más alto.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Poda: la ultima sincronizacion del monedero sobrepasa los datos podados. Necesitas reindexar con -reindex (o descargar la cadena de bloques de nuevo en el caso de un nodo podado)</translation>
     </message>
     <message>

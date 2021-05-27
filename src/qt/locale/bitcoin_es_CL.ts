@@ -681,8 +681,8 @@
         <translation>Está etiqueta se vuelve roja si algún receptor recibe una cantidad inferior al límite actual establecido para el polvo.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Puede variar +/- %1 improbaturitoshi(s) por entrada.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Puede variar +/- %1 satoshi(s) por entrada.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -801,7 +801,7 @@
         <translation>Al ser la primera vez que se ejecuta el programa, puede elegir donde %1 almacenará sus datos.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>El primer proceso de sincronización consume muchos recursos, y es posible que puedan ocurrir problemas de hardware que anteriormente no hayas notado. Cada vez que ejecutes %1 automáticamente se reiniciará el proceso de sincronización desde el punto que lo dejaste anteriormente.</translation>
     </message>
     <message>

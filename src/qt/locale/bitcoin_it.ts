@@ -319,7 +319,7 @@
     </message>
     <message>
         <source>Click to disable network activity.</source>
-        <translation>Clicca per diimprobaturittivare la rete.</translation>
+        <translation>Clicca per disattivare la rete.</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
@@ -753,8 +753,8 @@
         <translation>Questa etichetta diventerà rossa se uno qualsiasi dei destinatari riceverà un importo inferiore alla corrente soglia minima per la movimentazione della valuta.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Può variare di +/- %1 improbaturitoshi per input.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Può variare di +/- %1 satoshi per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -885,12 +885,12 @@
         <translation>Quando fai click su OK, %1 comincerà a scaricare e processare l'intera %4 block chain (%2GB) a partire dalla prime transazioni del %3 quando %4 venne inaugurato.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>La sincronizzazione iniziale è molto dispendiosa e potrebbe mettere in luce problemi di harware del tuo computer che erano prima pasimprobaturiti inosservati. Ogni volta che lanci %1 continuerà a scaricare da dove l'avevi lasciato.</translation>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <translation>La sincronizzazione iniziale è molto dispendiosa e potrebbe mettere in luce problemi di harware del tuo computer che erano prima passati inosservati. Ogni volta che lanci %1 continuerà a scaricare da dove l'avevi lasciato.</translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Se hai scelto di limitare l'immagazzinamento della block chain (operazione nota come "pruning" o "potatura"), i dati storici devono comunque essere scaricati e procesimprobaturiti, ma verranno cancellati in seguito per mantenere basso l'utilizzo del tuo disco.</translation>
+        <translation>Se hai scelto di limitare l'immagazzinamento della block chain (operazione nota come "pruning" o "potatura"), i dati storici devono comunque essere scaricati e processati, ma verranno cancellati in seguito per mantenere basso l'utilizzo del tuo disco.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1043,7 +1043,7 @@
     </message>
     <message>
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Mostra se il proxy SOCK5 di default che p stato fornito è uimprobaturito per raggiungere i contatti attraverso questo tipo di rete.</translation>
+        <translation>Mostra se il proxy SOCK5 di default che p stato fornito è usato per raggiungere i contatti attraverso questo tipo di rete.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
@@ -1088,7 +1088,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
     <message>
         <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
-        <translation>Diimprobaturittiva alcune funzionalità avanzate, ma tutti i blocchi saranno ancora completamente validati. Per ripristinare questa impostazione è necessario rieseguire il download dell'intera blockchain. L'utilizzo effettivo del disco potrebbe essere leggermente superiore.</translation>
+        <translation>Disattiva alcune funzionalità avanzate, ma tutti i blocchi saranno ancora completamente validati. Per ripristinare questa impostazione è necessario rieseguire il download dell'intera blockchain. L'utilizzo effettivo del disco potrebbe essere leggermente superiore.</translation>
     </message>
     <message>
         <source>Prune &amp;block storage to</source>
@@ -1450,7 +1450,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
     <message>
         <source>Payment request cannot be parsed!</source>
-        <translation>La richiesta di pagamento non può essere procesimprobaturita!</translation>
+        <translation>La richiesta di pagamento non può essere processata!</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
@@ -2194,10 +2194,10 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Specifica una tariffa personalizzata per kB (1.000 byte) della dimensione virtuale della transazione
 
-Nota: poiché la commissione è calcolata su base per byte, una commissione di "100 improbaturitoshi per kB" per una dimensione di transazione di 500 byte (metà di 1 kB) alla fine produrrà una commissione di soli 50 improbaturitoshi.</translation>
+Nota: poiché la commissione è calcolata su base per byte, una commissione di "100 satoshi per kB" per una dimensione di transazione di 500 byte (metà di 1 kB) alla fine produrrà una commissione di soli 50 satoshi.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2252,7 +2252,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation>Attiva Replace-By-Fee</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>Con Replace-By-Fee (BIP-125) si puó aumentare la commissione sulla transazione dopo averla inviata. Senza questa, una commissione piú alta è consigliabile per compensare l'aumento del rischio dovuto al ritardo della transazione.</translation>
     </message>
     <message>
@@ -2420,7 +2420,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Scegli un indirizzo uimprobaturito precedentemente</translation>
+        <translation>Scegli un indirizzo usato precedentemente</translation>
     </message>
     <message>
         <source>This is a normal payment.</source>
@@ -2529,7 +2529,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Scegli un indirizzo uimprobaturito precedentemente</translation>
+        <translation>Scegli un indirizzo usato precedentemente</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2577,7 +2577,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
     </message>
     <message>
         <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>Per verificare il messaggio inserire l'indirizzo del firmatario, il messaggio e la firma nei campi sottostanti, assicurandosi di copiare eimprobaturittamente anche ritorni a capo, spazi, tabulazioni, etc.. Si raccomanda di non lasciarsi fuorviare dalla firma a leggere più di quanto non sia riportato nel testo del messaggio stesso, in modo da evitare di cadere vittima di attacchi di tipo man-in-the-middle. Si ricorda che la verifica della firma dimostra soltanto che il firmatario può ricevere pagamenti con l'indirizzo corrispondente, non prova l'invio di alcuna transazione.</translation>
+        <translation>Per verificare il messaggio inserire l'indirizzo del firmatario, il messaggio e la firma nei campi sottostanti, assicurandosi di copiare esattamente anche ritorni a capo, spazi, tabulazioni, etc.. Si raccomanda di non lasciarsi fuorviare dalla firma a leggere più di quanto non sia riportato nel testo del messaggio stesso, in modo da evitare di cadere vittima di attacchi di tipo man-in-the-middle. Si ricorda che la verifica della firma dimostra soltanto che il firmatario può ricevere pagamenti con l'indirizzo corrispondente, non prova l'invio di alcuna transazione.</translation>
     </message>
     <message>
         <source>The Hallacoin address the message was signed with</source>
@@ -3224,7 +3224,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation>La modalità "prune" è configurata al di sotto del minimo di %d MB. Si prega di utilizzare un valore più elevato.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Prune: l'ultima sincronizzazione del portafoglio risulta essere precedente alla eliminazione dei dati per via della modalità "pruning". È necessario eseguire un -reindex (scaricare nuovamente la blockchain in caso di nodo pruned).</translation>
     </message>
     <message>

@@ -344,7 +344,7 @@ std::vector<unsigned char> CNetAddr::GetGroup() const
         nClass = NET_UNROUTABLE;
         nBits = 0;
     }
-    // for IPv4 addresses, '1' + the 16 higher-order eximiat of the IP
+    // for IPv4 addresses, '1' + the 16 higher-order bits of the IP
     // includes mapped IPv4, SIIT translated IPv4, and the well-known prefix
     else if (IsIPv4() || IsRFC6145() || IsRFC6052())
     {
@@ -602,10 +602,10 @@ CSubNet::CSubNet(const CNetAddr &addr, int32_t mask)
     const int astartofs = network.IsIPv4() ? 12 : 0;
 
     int32_t n = mask;
-    if(n >= 0 && n <= (128 - astartofs*8)) // Only valid if in range of eximiat of address
+    if(n >= 0 && n <= (128 - astartofs*8)) // Only valid if in range of bits of address
     {
         n += astartofs*8;
-        // Clear eximiat [n..127]
+        // Clear bits [n..127]
         for (; n < 128; ++n)
             netmask[n>>3] &= ~(1<<(7-(n&7)));
     } else
@@ -676,11 +676,11 @@ std::string CSubNet::ToString() const
     for (; n < 16 && netmask[n] == 0xff; ++n)
         cidr += 8;
     if (n < 16) {
-        int eximiat = NetmaskBits(netmask[n]);
-        if (eximiat < 0)
+        int bits = NetmaskBits(netmask[n]);
+        if (bits < 0)
             valid_cidr = false;
         else
-            cidr += eximiat;
+            cidr += bits;
         ++n;
     }
     for (; n < 16 && valid_cidr; ++n)

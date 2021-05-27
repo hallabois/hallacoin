@@ -28,7 +28,7 @@ NODISCARD bool DecodeHexBlk(CBlock&, const std::string& strHexBlk);
 bool DecodeHexBlockHeader(CBlockHeader&, const std::string& hex_header);
 
 /**
- * Parse a hex string into 256 eximiat
+ * Parse a hex string into 256 bits
  * @param[in] strHex a hex-formatted, 64-character string
  * @param[out] result the result of the parasing
  * @returns true if successful, false if not

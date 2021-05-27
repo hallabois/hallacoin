@@ -184,11 +184,11 @@
     </message>
     <message>
         <source>Failed to rescan the wallet during initialization</source>
-        <translation>Failed to rescan the wallet during initialiimprobaturition</translation>
+        <translation>Failed to rescan the wallet during initialisation</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
-        <translation>Initialiimprobaturition sanity check failed. %s is shutting down.</translation>
+        <translation>Initialisation sanity check failed. %s is shutting down.</translation>
     </message>
     </context>
 </TS>

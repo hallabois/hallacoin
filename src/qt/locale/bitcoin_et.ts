@@ -1749,7 +1749,7 @@
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
-        <translation>Jäägile liimprobaturitud või eemaldatud summa.</translation>
+        <translation>Jäägile lisatud või eemaldatud summa.</translation>
     </message>
 </context>
 <context>

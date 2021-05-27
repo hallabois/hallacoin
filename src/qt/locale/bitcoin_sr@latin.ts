@@ -39,7 +39,7 @@
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Izbriimprobaturiti</translation>
+        <translation>&amp;Izbrisati</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>

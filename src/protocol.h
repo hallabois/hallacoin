@@ -271,10 +271,10 @@ enum ServiceFlags : uint64_t {
 
     // Bits 24-31 are reserved for temporary experiments. Just pick a bit that
     // isn't getting used, or one not being used much, and notify the
-    // bitcoin-development mailing list. Remember that service eximiat are just
+    // bitcoin-development mailing list. Remember that service bits are just
     // unauthenticated advertisements, so your code must be robust against
     // collisions and other cases where nodes may be advertising a service they
-    // do not actually support. Other service eximiat should be allocated via the
+    // do not actually support. Other service bits should be allocated via the
     // BIP process.
 };
 

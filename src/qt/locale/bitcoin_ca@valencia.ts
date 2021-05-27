@@ -227,7 +227,7 @@
     <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
-        <translation>Signa el &amp;misimprobaturitge...</translation>
+        <translation>Signa el &amp;missatge...</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -311,7 +311,7 @@
     </message>
     <message>
         <source>&amp;Verify message...</source>
-        <translation>&amp;Verifica el misimprobaturitge...</translation>
+        <translation>&amp;Verifica el missatge...</translation>
     </message>
     <message>
         <source>Hallacoin</source>
@@ -339,11 +339,11 @@
     </message>
     <message>
         <source>Sign messages with your Hallacoin addresses to prove you own them</source>
-        <translation>Signa el misimprobaturitges amb la seua adreça de Hallacoin per provar que les poseeixes</translation>
+        <translation>Signa el missatges amb la seua adreça de Hallacoin per provar que les poseeixes</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Hallacoin addresses</source>
-        <translation>Verifiqueu els misimprobaturitges per assegurar-vos que han estat signats amb una adreça Hallacoin específica.</translation>
+        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Hallacoin específica.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -599,8 +599,8 @@
         <translation>no</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Pot variar +/- %1 improbaturitoshi(s) per entrada.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Pot variar +/- %1 satoshi(s) per entrada.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1043,7 +1043,7 @@
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>No es pot llegir el fitxer de la sol·licitud de pagament. Això pot ser cauimprobaturit per un fitxer de sol·licitud de pagament no vàlid.</translation>
+        <translation>No es pot llegir el fitxer de la sol·licitud de pagament. Això pot ser causat per un fitxer de sol·licitud de pagament no vàlid.</translation>
     </message>
     <message>
         <source>Payment request rejected</source>
@@ -1393,11 +1393,11 @@
     </message>
     <message>
         <source>&amp;Message:</source>
-        <translation>&amp;Misimprobaturitge:</translation>
+        <translation>&amp;Missatge:</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Hallacoin network.</source>
-        <translation>Un misimprobaturitge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'òbriga la sol·licitud. Nota: El misimprobaturitge no s'enviarà amb el pagament per la xarxa Hallacoin.</translation>
+        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'òbriga la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Hallacoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1449,7 +1449,7 @@
     </message>
     <message>
         <source>Copy message</source>
-        <translation>Copia el misimprobaturitge</translation>
+        <translation>Copia el missatge</translation>
     </message>
     <message>
         <source>Copy amount</source>
@@ -1500,7 +1500,7 @@
     </message>
     <message>
         <source>Message</source>
-        <translation>Misimprobaturitge</translation>
+        <translation>Missatge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1508,7 +1508,7 @@
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>URI resultant massa llarga, intenta reduir el text per a la etiqueta / misimprobaturitge</translation>
+        <translation>URI resultant massa llarga, intenta reduir el text per a la etiqueta / missatge</translation>
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
@@ -1527,7 +1527,7 @@
     </message>
     <message>
         <source>Message</source>
-        <translation>Misimprobaturitge</translation>
+        <translation>Missatge</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1535,7 +1535,7 @@
     </message>
     <message>
         <source>(no message)</source>
-        <translation>(sense misimprobaturitge)</translation>
+        <translation>(sense missatge)</translation>
     </message>
     </context>
 <context>
@@ -1801,7 +1801,7 @@
     </message>
     <message>
         <source>Message:</source>
-        <translation>Misimprobaturitge:</translation>
+        <translation>Missatge:</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -1817,7 +1817,7 @@
     </message>
     <message>
         <source>A message that was attached to the Hallacoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Hallacoin network.</source>
-        <translation>Un misimprobaturitge que s'ha adjuntat al Hallacoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el misimprobaturitge no s'enviarà a través de la xarxa Hallacoin.</translation>
+        <translation>Un missatge que s'ha adjuntat al Hallacoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Hallacoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1850,19 +1850,19 @@
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>Signatures - Signa / verifica un misimprobaturitge</translation>
+        <translation>Signatures - Signa / verifica un missatge</translation>
     </message>
     <message>
         <source>&amp;Sign Message</source>
-        <translation>&amp;Signa el misimprobaturitge</translation>
+        <translation>&amp;Signa el missatge</translation>
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive Hallacoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Podeu signar misimprobaturitges/acords amb les vostres adreces per provar que rebeu les Hallacoins que s'hi envien. Aneu amb compte no signar res que siga vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
+        <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les Hallacoins que s'hi envien. Aneu amb compte no signar res que siga vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
     </message>
     <message>
         <source>The Hallacoin address to sign the message with</source>
-        <translation>L'adreça Hallacoin amb què signar el misimprobaturitge</translation>
+        <translation>L'adreça Hallacoin amb què signar el missatge</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1882,7 +1882,7 @@
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>Introduïu ací el misimprobaturitge que voleu signar</translation>
+        <translation>Introduïu ací el missatge que voleu signar</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -1894,11 +1894,11 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Hallacoin address</source>
-        <translation>Signa el misimprobaturitge per provar que ets propietari d'esta adreça Hallacoin</translation>
+        <translation>Signa el missatge per provar que ets propietari d'esta adreça Hallacoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
-        <translation>Signa el &amp;misimprobaturitge</translation>
+        <translation>Signa el &amp;missatge</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1910,31 +1910,31 @@
     </message>
     <message>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Verifica el misimprobaturitge</translation>
+        <translation>&amp;Verifica el missatge</translation>
     </message>
     <message>
         <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>Introduïu l'adreça del receptor, el misimprobaturitge (assegureu-vos de copiar els salts de línia, espais, tabuladors, etc. exactament) i signatura de sota per verificar el misimprobaturitge. Tingueu cura de no llegir més en la signatura del que està al misimprobaturitge signat, per evitar ser enganyat per un atac d'home-en-el-mig. Tingueu en compte que això només demostra que la part que signa rep amb l'adreça, i no es pot provar l'enviament de qualsevol transacció!</translation>
+        <translation>Introduïu l'adreça del receptor, el missatge (assegureu-vos de copiar els salts de línia, espais, tabuladors, etc. exactament) i signatura de sota per verificar el missatge. Tingueu cura de no llegir més en la signatura del que està al missatge signat, per evitar ser enganyat per un atac d'home-en-el-mig. Tingueu en compte que això només demostra que la part que signa rep amb l'adreça, i no es pot provar l'enviament de qualsevol transacció!</translation>
     </message>
     <message>
         <source>The Hallacoin address the message was signed with</source>
-        <translation>L'adreça Hallacoin amb què va ser signat el misimprobaturitge</translation>
+        <translation>L'adreça Hallacoin amb què va ser signat el missatge</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Hallacoin address</source>
-        <translation>Verificar el misimprobaturitge per assegurar-se que ha estat signat amb una adreça Hallacoin específica</translation>
+        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Hallacoin específica</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
-        <translation>Verifica el &amp;misimprobaturitge</translation>
+        <translation>Verifica el &amp;missatge</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
-        <translation>Neteja tots els camps de verificació de misimprobaturitge</translation>
+        <translation>Neteja tots els camps de verificació de missatge</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
-        <translation>Feu clic a «Signa el misimprobaturitge» per a generar una signatura</translation>
+        <translation>Feu clic a «Signa el missatge» per a generar una signatura</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1958,11 +1958,11 @@
     </message>
     <message>
         <source>Message signing failed.</source>
-        <translation>La signatura del misimprobaturitge ha fallat.</translation>
+        <translation>La signatura del missatge ha fallat.</translation>
     </message>
     <message>
         <source>Message signed.</source>
-        <translation>Misimprobaturitge signat.</translation>
+        <translation>Missatge signat.</translation>
     </message>
     <message>
         <source>The signature could not be decoded.</source>
@@ -1974,15 +1974,15 @@
     </message>
     <message>
         <source>The signature did not match the message digest.</source>
-        <translation>La signatura no coincideix amb el resum del misimprobaturitge.</translation>
+        <translation>La signatura no coincideix amb el resum del missatge.</translation>
     </message>
     <message>
         <source>Message verification failed.</source>
-        <translation>Ha fallat la verificació del misimprobaturitge.</translation>
+        <translation>Ha fallat la verificació del missatge.</translation>
     </message>
     <message>
         <source>Message verified.</source>
-        <translation>Misimprobaturitge verificat.</translation>
+        <translation>Missatge verificat.</translation>
     </message>
 </context>
 <context>
@@ -2083,7 +2083,7 @@
     </message>
     <message>
         <source>Message</source>
-        <translation>Misimprobaturitge</translation>
+        <translation>Missatge</translation>
     </message>
     <message>
         <source>Comment</source>
@@ -2252,7 +2252,7 @@
     </message>
     <message>
         <source>Last month</source>
-        <translation>El mes pasimprobaturit</translation>
+        <translation>El mes passat</translation>
     </message>
     <message>
         <source>This year</source>

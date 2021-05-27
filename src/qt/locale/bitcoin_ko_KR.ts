@@ -753,7 +753,7 @@
         <translation>수령인이 현재 더스트 임계값보다 작은 양을 수신하면 이 라벨이 빨간색으로 변합니다.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
         <translation>입력마다 +/- %1 사토시가 변할 수 있습니다.</translation>
     </message>
     <message>
@@ -885,7 +885,7 @@
         <translation>확인을 클릭하면 %1은 모든 %4블록 체인 (%2GB) 장부를 %3 안에 다운로드하고 처리하기 시작합니다.  이는 %4가 시작될 때 생성된 가장 오래된 트랜잭션부터 시작합니다.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>초기 동기화는 매우 오래 걸리며 이전에는 본 적 없는  하드웨어 문제가 발생할 수 있습니다. %1을 실행할 때마다 중단 된 곳에서 다시 계속 다운로드 됩니다.</translation>
     </message>
     <message>
@@ -2193,10 +2193,10 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>거래 가상 크기의 kB (1,000 바이트)당 수수료을 지정하십시오.
 
-참고 : 수수료는 바이트 단위로 계산되므로 거래 크기가 500 바이트 (1kB의 절반)일때에 수수료가 "100 improbaturitoshis / kB"이면 궁극적으로 50사토시의 수수료만 발생합니다.</translation>
+참고 : 수수료는 바이트 단위로 계산되므로 거래 크기가 500 바이트 (1kB의 절반)일때에 수수료가 "100 satoshis / kB"이면 궁극적으로 50사토시의 수수료만 발생합니다.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2251,7 +2251,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbatur
         <translation>Replace-By-Fee 옵션 활성화</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>Replace-By-Fee (BIP-125) 옵션은 보낸 거래의 수수료 상향을 지원해 줍니다. 이 옵션이 없을 경우 거래 지연을 방지하기 위해 더 높은 수수료가 권장됩니다.</translation>
     </message>
     <message>
@@ -3231,7 +3231,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbatur
         <translation>블록 축소가 최소치인 %d MiB 밑으로 설정되어 있습니다. 더 높은 값을 사용해 주세요.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>블록 축소: 마지막 지갑 동기화 지점이 축소된 데이터보다 과거의 것 입니다. -reindex가 필요합니다 (축소된 노드의 경우 모든 블록체인을 재다운로드합니다)</translation>
     </message>
     <message>

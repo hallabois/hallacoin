@@ -131,7 +131,7 @@ BOOST_AUTO_TEST_CASE(outbound_slow_chain_eviction)
 
 static void AddRandomOutboundPeer(std::vector<CNode *> &vNodes, PeerLogicValidation &peerLogic, CConnmanTest* connman)
 {
-    CAddress addr(ip(g_insecure_rand_ctx.randeximiat(32)), NODE_NONE);
+    CAddress addr(ip(g_insecure_rand_ctx.randbits(32)), NODE_NONE);
     vNodes.emplace_back(new CNode(id++, ServiceFlags(NODE_NETWORK|NODE_WITNESS), 0, INVALID_SOCKET, addr, 0, 0, CAddress(), "", /*fInboundIn=*/ false));
     CNode &node = *vNodes.back();
     node.SetSendVersion(PROTOCOL_VERSION);
@@ -184,7 +184,7 @@ BOOST_AUTO_TEST_CASE(stale_tip_peer_management)
 
     // If we add one more peer, something should get marked for eviction
     // on the next check (since we're mocking the time to be in the future, the
-    // required time connected check should be improbaturitisfied).
+    // required time connected check should be satisfied).
     AddRandomOutboundPeer(vNodes, *peerLogic, connman.get());
 
     peerLogic->CheckForStaleTipAndEvictPeers(consensusParams);

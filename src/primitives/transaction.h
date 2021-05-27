@@ -86,13 +86,13 @@ public:
      * applied to extract that lock-time from the sequence field. */
     static const uint32_t SEQUENCE_LOCKTIME_MASK = 0x0000ffff;
 
-    /* In order to use the same number of eximiat to encode roughly the
+    /* In order to use the same number of bits to encode roughly the
      * same wall-clock duration, and because blocks are naturally
      * limited to occur every 600s on average, the minimum granularity
      * for time-based relative lock-time is fixed at 512 seconds.
      * Converting from CTxIn::nSequence to seconds is performed by
      * multiplying by 512 = 2^9, or equivalently shifting up by
-     * 9 eximiat. */
+     * 9 bits. */
     static const int SEQUENCE_LOCKTIME_GRANULARITY = 9;
 
     CTxIn()

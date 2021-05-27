@@ -122,30 +122,30 @@ BOOST_AUTO_TEST_CASE( basics ) // constructors, equality, inequality
     tmpL = ~MaxL; BOOST_CHECK(tmpL == ~MaxL);
 }
 
-static void shiftArrayRight(unsigned char* to, const unsigned char* from, unsigned int arrayLength, unsigned int eximiatToShift)
+static void shiftArrayRight(unsigned char* to, const unsigned char* from, unsigned int arrayLength, unsigned int bitsToShift)
 {
     for (unsigned int T=0; T < arrayLength; ++T)
     {
-        unsigned int F = (T+eximiatToShift/8);
+        unsigned int F = (T+bitsToShift/8);
         if (F < arrayLength)
-            to[T]  = from[F] >> (eximiatToShift%8);
+            to[T]  = from[F] >> (bitsToShift%8);
         else
             to[T] = 0;
         if (F + 1 < arrayLength)
-            to[T] |= from[(F+1)] << (8-eximiatToShift%8);
+            to[T] |= from[(F+1)] << (8-bitsToShift%8);
     }
 }
 
-static void shiftArrayLeft(unsigned char* to, const unsigned char* from, unsigned int arrayLength, unsigned int eximiatToShift)
+static void shiftArrayLeft(unsigned char* to, const unsigned char* from, unsigned int arrayLength, unsigned int bitsToShift)
 {
     for (unsigned int T=0; T < arrayLength; ++T)
     {
-        if (T >= eximiatToShift/8)
+        if (T >= bitsToShift/8)
         {
-            unsigned int F = T-eximiatToShift/8;
-            to[T]  = from[F] << (eximiatToShift%8);
-            if (T >= eximiatToShift/8+1)
-                to[T] |= from[F-1] >> (8-eximiatToShift%8);
+            unsigned int F = T-bitsToShift/8;
+            to[T]  = from[F] << (bitsToShift%8);
+            if (T >= bitsToShift/8+1)
+                to[T] |= from[F-1] >> (8-bitsToShift%8);
         }
         else {
             to[T] = 0;

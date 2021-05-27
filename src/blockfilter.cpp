@@ -21,14 +21,14 @@ static void GolombRiceEncode(BitStreamWriter<OStream>& bitwriter, uint8_t P, uin
     // Write quotient as unary-encoded: q 1's followed by one 0.
     uint64_t q = x >> P;
     while (q > 0) {
-        int neximiat = q <= 64 ? static_cast<int>(q) : 64;
-        bitwriter.Write(~0ULL, neximiat);
-        q -= neximiat;
+        int nbits = q <= 64 ? static_cast<int>(q) : 64;
+        bitwriter.Write(~0ULL, nbits);
+        q -= nbits;
     }
     bitwriter.Write(0, 1);
 
-    // Write the remainder in P eximiat. Since the remainder is just the bottom
-    // P eximiat of x, there is no need to mask first.
+    // Write the remainder in P bits. Since the remainder is just the bottom
+    // P bits of x, there is no need to mask first.
     bitwriter.Write(x, P);
 }
 
@@ -47,7 +47,7 @@ static uint64_t GolombRiceDecode(BitStreamReader<IStream>& bitreader, uint8_t P)
 }
 
 // Map a value x that is uniformly distributed in the range [0, 2^64) to a
-// value uniformly distributed in [0, n) by returning the upper 64 eximiat of
+// value uniformly distributed in [0, n) by returning the upper 64 bits of
 // x * n.
 //
 // See: https://lemire.me/blog/2016/06/27/a-fast-alternative-to-the-modulo-reduction/
@@ -58,7 +58,7 @@ static uint64_t MapIntoRange(uint64_t x, uint64_t n)
 #else
     // To perform the calculation on 64-bit numbers without losing the
     // result to overflow, split the numbers into the most significant and
-    // least significant 32 eximiat and perform multiplication piece-wise.
+    // least significant 32 bits and perform multiplication piece-wise.
     //
     // See: https://stackoverflow.com/a/26855440
     uint64_t x_hi = x >> 32;

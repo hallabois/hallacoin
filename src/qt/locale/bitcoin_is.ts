@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Smelltu á hægri múimprobaturitakka til að breyta færslugildi eða merkingu</translation>
+        <translation>Smelltu á hægri músatakka til að breyta færslugildi eða merkingu</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -673,7 +673,7 @@
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>URL frá þriðja aðila (t.d. blokkarskoðari) sem birtast í færsluflipanum sem samhengiimprobaturitriði. %s í URL-inu skipt út fyrir færslutvíkross. Mörg URL eru aðskilin með lóðréttu striki |.</translation>
+        <translation>URL frá þriðja aðila (t.d. blokkarskoðari) sem birtast í færsluflipanum sem samhengisatriði. %s í URL-inu skipt út fyrir færslutvíkross. Mörg URL eru aðskilin með lóðréttu striki |.</translation>
     </message>
     <message>
         <source>Error</source>

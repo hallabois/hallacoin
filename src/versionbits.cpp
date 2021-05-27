@@ -2,7 +2,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <versioneximiat.h>
+#include <versionbits.h>
 #include <consensus/params.h>
 
 ThresholdState AbstractThresholdConditionChecker::GetStateFor(const CBlockIndex* pindexPrev, const Consensus::Params& params, ThresholdConditionCache& cache) const
@@ -162,7 +162,7 @@ int AbstractThresholdConditionChecker::GetStateSinceHeightFor(const CBlockIndex*
 namespace
 {
 /**
- * Class to implement versioneximiat logic.
+ * Class to implement versionbits logic.
  */
 class VersionBitsConditionChecker : public AbstractThresholdConditionChecker {
 private:

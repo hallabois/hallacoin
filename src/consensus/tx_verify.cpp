@@ -32,7 +32,7 @@ std::pair<int, int64_t> CalculateSequenceLocks(const CTransaction &tx, int flags
     assert(prevHeights->size() == tx.vin.size());
 
     // Will be set to the equivalent height- and time-based nLockTime
-    // values that would be necessary to improbaturitisfy all relative lock-
+    // values that would be necessary to satisfy all relative lock-
     // time constraints given our view of block chain history.
     // The semantics of nLockTime are the last invalid height/time, so
     // use -1 to have the effect of any height or time being valid.

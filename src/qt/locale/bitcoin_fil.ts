@@ -311,7 +311,7 @@
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
-        <translation>Muling isinaimprobaturitalatuntunan ang mga blocks sa disk...</translation>
+        <translation>Muling isinasatalatuntunan ang mga blocks sa disk...</translation>
     </message>
     <message>
         <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
@@ -411,7 +411,7 @@
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
-        <translation>Isinaimprobaturitalatuntunan ang mga blocks sa disk...</translation>
+        <translation>Isinasatalatuntunan ang mga blocks sa disk...</translation>
     </message>
     <message>
         <source>Processing blocks on disk...</source>
@@ -685,8 +685,8 @@
         <translation>Ang label na ito ay magiging pula kung ang sinumang tatanggap ay tumanggap ng halagang mas mababa sa kasalukuyang dust threshold.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Maaaring magbago ng +/- %1 improbaturitoshi(s) kada input. </translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Maaaring magbago ng +/- %1 satoshi(s) kada input. </translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -789,7 +789,7 @@
         <translation>Pagkatapos mong mag-click ng OK, %1 ay magsisimulang mag-download at mag-proseso ng buong blockchain (%2GB) magmula sa pinakaunang transaksyon sa %3 nuong ang %4 ay paunang nilunsad.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Maraming pangangailangan ang itong paunang sinkronisasyon at maaaring ilantad ang mga problema sa hardware ng iyong computer na hindi dating napansin. Tuwing pagaganahin mo ang %1, ito'y magpapatuloy mag-download kung saan ito tumigil.</translation>
     </message>
     <message>

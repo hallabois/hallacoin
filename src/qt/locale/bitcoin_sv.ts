@@ -754,8 +754,8 @@ Försök igen.</translation>
         <translation>Denna etikett blir röd om någon mottagare tar emot ett belopp som är lägre än aktuell dammtröskel.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Kan variera +/- %1 improbaturitoshi per inmatning.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Kan variera +/- %1 satoshi per inmatning.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -886,8 +886,8 @@ Försök igen.</translation>
         <translation>När du trycker OK kommer %1 att börja ladda ner och bearbeta den fullständiga %4-blockkedjan (%2 GB), med början vid de första transaktionerna %3 när %4 först lanserades.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>Denna första synkronisering är väldigt krävande, och kan påvisa hårdvaruproblem hos din dator som tidigare inte viimprobaturit sig. Varje gång du kör %1, kommer nerladdningen att fortsätta där den avslutades.</translation>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <translation>Denna första synkronisering är väldigt krävande, och kan påvisa hårdvaruproblem hos din dator som tidigare inte visat sig. Varje gång du kör %1, kommer nerladdningen att fortsätta där den avslutades.</translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
@@ -2194,10 +2194,10 @@ Försök igen.</translation>
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Ange en egen avgift per kB (1 000 bytes) av transaktionens virtuella storlek.
 
-Notera: Då avgiften beräknas per byte kommer en avgift på 50 improbaturitoshi tas ut för en transaktion på 500 bytes (en halv kB) om man valt "100 improbaturitoshi per kB" som egen avgift.</translation>
+Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut för en transaktion på 500 bytes (en halv kB) om man valt "100 satoshi per kB" som egen avgift.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2252,7 +2252,7 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 improbaturitoshi
         <translation>Aktivera Replace-By-Fee</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>Med Replace-By-Fee (BIP-125) kan du höja transaktionsavgiften efter att transaktionen skickats. Om du väljer bort det kan en högre avgift rekommenderas för att kompensera för ökad risk att transaktionen fördröjs.</translation>
     </message>
     <message>
@@ -3232,7 +3232,7 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 improbaturitoshi
         <translation>Gallring konfigurerad under miniminivån %d MiB. Använd ett högre värde.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Gallring: senaste plånbokssynkroniseringen ligger utanför gallrade data. Du måste använda -reindex (ladda ner hela blockkedjan igen om noden gallrats)</translation>
     </message>
     <message>
@@ -3623,7 +3623,7 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 improbaturitoshi
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>-maxtxfee är väldigt högt improbaturitt! Så höga avgifter kan komma att betalas för en enstaka transaktion.</translation>
+        <translation>-maxtxfee är väldigt högt satt! Så höga avgifter kan komma att betalas för en enstaka transaktion.</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
@@ -3643,7 +3643,7 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 improbaturitoshi
     </message>
     <message>
         <source>%s is set very high!</source>
-        <translation>%s är improbaturitt väldigt högt!</translation>
+        <translation>%s är satt väldigt högt!</translation>
     </message>
     <message>
         <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>

@@ -719,8 +719,8 @@
         <translation>Label này chuyển sang đỏ nếu bất cứ giao dịch nhận nào có số lượng nhỏ hơn ngưỡng dust.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Có thể thay đổi +/-%1 improbaturitoshi(s) trên input.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Có thể thay đổi +/-%1 satoshi(s) trên input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -843,7 +843,7 @@
         <translation>Khi bạn click OK, %1 sẽ bắt đầu download và process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Đồng bộ hóa ban đầu này rất đòi hỏi, và có thể phơi bày các sự cố về phần cứng với máy tính của bạn trước đó đã không được chú ý. Mỗi khi bạn chạy %1, nó sẽ tiếp tục tải về nơi nó dừng lại.</translation>
     </message>
     <message>
@@ -3005,8 +3005,8 @@
         <translation>Prune configured below the minimum of %d MiB.  Please use a higher number.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</translation>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <translation>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</translation>
     </message>
     <message>
         <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>

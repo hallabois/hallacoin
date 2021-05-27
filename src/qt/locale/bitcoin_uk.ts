@@ -725,7 +725,7 @@
         <translation>ні</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
         <translation>Може відрізнятися на +/- %1 сатоші за введені</translation>
     </message>
     <message>
@@ -2151,7 +2151,7 @@
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbaturitoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 improbaturitoshis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
         <translation>Вкажіть комісію за кБ (1,000 байт) віртуального розміру транзакції.
 
 Примітка: Так як комісія нараховується за байт, комісія "100 сатоші за кБ" для транзакції розміром 500 байт (пів 1 кБ) буде приблизно 50 сатоші. </translation>
@@ -2209,7 +2209,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbatur
         <translation>Увімкнути Заміна-Через-Комісію</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>З опцією Заміна-Через-Комісію (BIP-125) ви можете збільшити комісію за транзакцію після її надсилання. Інакше може бути рекомендоване збільшення розміру комісії для компенсації підвищеного ризику затримки транзакції.</translation>
     </message>
     <message>
@@ -3177,7 +3177,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 improbatur
         <translation>Встановлений розмір ланцюжка блоків є замалим (меншим за %d МіБ). Будь ласка, виберіть більше число.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Операція відсікання: остання синхронізація вмісту гаманцю не обмежується діями над скороченими данними. Вам необхідно зробити переіндексацію -reindex (заново завантажити веcь ланцюжок блоків в разі появи скороченого ланцюга)</translation>
     </message>
     <message>

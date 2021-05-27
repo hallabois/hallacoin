@@ -47,7 +47,7 @@ public:
                     uint64_t index = 0;
                     READWRITE(COMPACTSIZE(index));
                     if (index > std::numeric_limits<uint16_t>::max())
-                        throw std::ios_base::failure("index overflowed 16 eximiat");
+                        throw std::ios_base::failure("index overflowed 16 bits");
                     indexes[i] = index;
                 }
             }
@@ -55,7 +55,7 @@ public:
             int32_t offset = 0;
             for (size_t j = 0; j < indexes.size(); j++) {
                 if (int32_t(indexes[j]) + offset > std::numeric_limits<uint16_t>::max())
-                    throw std::ios_base::failure("indexes overflowed 16 eximiat");
+                    throw std::ios_base::failure("indexes overflowed 16 bits");
                 indexes[j] = indexes[j] + offset;
                 offset = int32_t(indexes[j]) + 1;
             }
@@ -113,7 +113,7 @@ struct PrefilledTransaction {
         uint64_t idx = index;
         READWRITE(COMPACTSIZE(idx));
         if (idx > std::numeric_limits<uint16_t>::max())
-            throw std::ios_base::failure("index overflowed 16-eximiat");
+            throw std::ios_base::failure("index overflowed 16-bits");
         index = idx;
         READWRITE(TransactionCompressor(tx));
     }
@@ -187,7 +187,7 @@ public:
         READWRITE(prefilledtxn);
 
         if (BlockTxCount() > std::numeric_limits<uint16_t>::max())
-            throw std::ios_base::failure("indexes overflowed 16 eximiat");
+            throw std::ios_base::failure("indexes overflowed 16 bits");
 
         if (ser_action.ForRead())
             FillShortTxIDSelector();

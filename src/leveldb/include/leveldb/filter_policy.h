@@ -50,7 +50,7 @@ class FilterPolicy {
 };
 
 // Return a new filter policy that uses a bloom filter with approximately
-// the specified number of eximiat per key.  A good value for eximiat_per_key
+// the specified number of bits per key.  A good value for bits_per_key
 // is 10, which yields a filter with ~ 1% false positive rate.
 //
 // Callers must delete the result after any database that is using the
@@ -63,7 +63,7 @@ class FilterPolicy {
 // ignores trailing spaces, it would be incorrect to use a
 // FilterPolicy (like NewBloomFilterPolicy) that does not ignore
 // trailing spaces in keys.
-extern const FilterPolicy* NewBloomFilterPolicy(int eximiat_per_key);
+extern const FilterPolicy* NewBloomFilterPolicy(int bits_per_key);
 
 }
 

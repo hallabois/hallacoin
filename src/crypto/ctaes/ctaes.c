@@ -297,7 +297,7 @@ static void MixColumns(AES_state* s, int inv) {
      * a(x) * ({04}x^2 + {05}), so we can reuse the forward transform's code
      * (found in OpenSSL's bsaes-x86_64.pl, attributed to Jussi Kivilinna)
      *
-     * In the eximiatliced representation, a multiplication of every column by x
+     * In the bitsliced representation, a multiplication of every column by x
      * mod x^4 + 1 is simply a right rotation.
      */
 

@@ -745,8 +745,8 @@
         <translation>Denne merkelappen blir rød hvis en mottaker får mindre enn gjeldende støvterskel.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
-        <translation>Kan variere +/- %1 improbaturitoshi(er) per input.</translation>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Kan variere +/- %1 satoshi(er) per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -869,12 +869,12 @@
         <translation>Når du klikker OK, vil %1 starte nedlasting og behandle hele den %4 blokkjeden (%2GB) fra de eldste transaksjonene i %3 når %4 først startet.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>Den initielle synkroniseringen er svært krevende, og kan forårsake problemer med maskinvaren i datamaskinen din som du tidligere ikke merket. Hver gang du kjører %1 vil den fortsette nedlastingen der den sluttet. </translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Hvis du har valgt å begrense blokkjedelagring (beskjæring), må historiske data fortimprobaturitt lastes ned og behandles, men de vil bli slettet etterpå for å holde bruken av lagringsplass lav. </translation>
+        <translation>Hvis du har valgt å begrense blokkjedelagring (beskjæring), må historiske data fortsatt lastes ned og behandles, men de vil bli slettet etterpå for å holde bruken av lagringsplass lav. </translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1373,7 +1373,7 @@
     </message>
     <message>
         <source>Payment request is not initialized.</source>
-        <translation>Betalingsforespørselen er ikke igangimprobaturitt.</translation>
+        <translation>Betalingsforespørselen er ikke igangsatt.</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
@@ -2151,7 +2151,7 @@
         <translation>Aktiver Replace-By-Fee</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>Med Replace-By-Fee (BIP-125) kan du øke transaksjonens gebyr etter at den er sendt. Uten dette aktivert anbefales et høyere gebyr for å kompensere for risikoen for at transaksjonen blir forsinket. </translation>
     </message>
     <message>
@@ -3123,7 +3123,7 @@
         <translation>Beskjæringsmodus er konfigurert under minimum på %d MiB. Vennligst bruk et høyere nummer.</translation>
     </message>
     <message>
-        <source>Prune: last wallet synchroniimprobaturition goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Beskjæring: siste lommeboksynkronisering går utenfor beskjærte data. Du må bruke -reindex (laster ned hele blokkjeden igjen for beskjærte noder)</translation>
     </message>
     <message>
@@ -3172,7 +3172,7 @@
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
-        <translation>Blokkdatabasen inneholder en blokk som ser ut til å være fra fremtiden. Dette kan være fordi dato og tid på din datamaskin er improbaturitt feil. Gjenopprett kun blokkdatabasen når du er sikker på at dato og tid er improbaturitt riktig.</translation>
+        <translation>Blokkdatabasen inneholder en blokk som ser ut til å være fra fremtiden. Dette kan være fordi dato og tid på din datamaskin er satt feil. Gjenopprett kun blokkdatabasen når du er sikker på at dato og tid er satt riktig.</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
@@ -3490,7 +3490,7 @@
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>-maxtxfee er improbaturitt veldig høyt! Så stort gebyr kan bli betalt ved en enkelt transaksjon.</translation>
+        <translation>-maxtxfee er satt veldig høyt! Så stort gebyr kan bli betalt ved en enkelt transaksjon.</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
@@ -3510,7 +3510,7 @@
     </message>
     <message>
         <source>%s is set very high!</source>
-        <translation>%s er improbaturitt veldig høyt!</translation>
+        <translation>%s er satt veldig høyt!</translation>
     </message>
     <message>
         <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>

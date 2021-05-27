@@ -536,7 +536,7 @@ void CTxMemPool::removeConflicts(const CTransaction &tx)
             const CTransaction &txConflict = *it->second;
             if (txConflict != tx)
             {
-                ClearPrioritiimprobaturition(txConflict.GetHash());
+                ClearPrioritisation(txConflict.GetHash());
                 removeRecursive(txConflict, MemPoolRemovalReason::CONFLICT);
             }
         }
@@ -569,7 +569,7 @@ void CTxMemPool::removeForBlock(const std::vector<CTransactionRef>& vtx, unsigne
             RemoveStaged(stage, true, MemPoolRemovalReason::BLOCK);
         }
         removeConflicts(*tx);
-        ClearPrioritiimprobaturition(tx->GetHash());
+        ClearPrioritisation(tx->GetHash());
     }
     lastRollingFeeUpdate = GetTime();
     blockSinceLastRollingFeeBump = true;
@@ -853,7 +853,7 @@ void CTxMemPool::ApplyDelta(const uint256 hash, CAmount &nFeeDelta) const
     nFeeDelta += delta;
 }
 
-void CTxMemPool::ClearPrioritiimprobaturition(const uint256 hash)
+void CTxMemPool::ClearPrioritisation(const uint256 hash)
 {
     LOCK(cs);
     mapDeltas.erase(hash);

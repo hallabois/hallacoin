@@ -729,7 +729,7 @@
         <translation>يتحول هذا الملصق إلى اللون الأحمر إذا تلقى أي مستلم كمية أصغر من عتبة الغبار الحالية.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 improbaturitoshi(s) per input.</source>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
         <translation>يمكن أن يختلف +/- %1 من ساتوشي(s) لكل إدخال.</translation>
     </message>
     <message>
@@ -853,7 +853,7 @@
         <translation>عند النقر على "موافق" ، سيبدأ %1 في تنزيل ومعالجة سلسلة الكتل %4 الكاملة (%2 جيجابايت) بدءًا من المعاملات الأقدم في %3 عند تشغيل %4 في البداية.</translation>
     </message>
     <message>
-        <source>This initial synchroniimprobaturition is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
         <translation>تُعد هذه المزامنة الأولية أمرًا شاقًا للغاية، وقد تعرض جهاز الكمبيوتر الخاص بك للمشاكل الذي لم يلاحظها أحد سابقًا. في كل مرة تقوم فيها بتشغيل %1، سيتابع التحميل من حيث تم التوقف.</translation>
     </message>
     <message>
@@ -2047,7 +2047,7 @@
         <translation>تفعيل الإستبدال بواسطة الرسوم</translation>
     </message>
     <message>
-        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compenimprobaturite for increased transaction delay risk.</source>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>مع الإستبدال بواسطة الرسوم (BIP-125) يمكنك زيادة رسوم المعاملة بعد إرسالها. وبدون ذلك، قد نوصي برسوم أعلى للتعويض عن مخاطر تأخير المعاملة المتزايدة.</translation>
     </message>
     <message>
