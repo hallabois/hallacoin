@@ -49,6 +49,8 @@ jobs:
          sudo ./contrib/install_db4.sh `pwd`
       - name: configure
         run: ./configure
+      - name: autoconfig
+        run:  ./autogen.sh
       - name: build
         run: make
       - name: Build AppImage
