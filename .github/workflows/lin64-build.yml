@@ -26,7 +26,7 @@ jobs:
     - name: autoconfig
       run:  ./autogen.sh
     - name: configure (without wallet)
-      run: ./configure --disable-wallet
+      run: CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/ --without-wallet
     - name: make
       run: make
     - name: make dist
