@@ -23,6 +23,9 @@ jobs:
       run: |
         sudo apt-get install libtool libboost-all-dev -y
         sudo apt install libevent-dev -y
+    - name: install dependencies / compile BerkeleyDB
+      run: |
+        sudo ./contrib/install_db4.sh `pwd`
     - name: autoconfig
       run:  ./autogen.sh
     - name: configure (without wallet)
