@@ -1,6 +1,14 @@
 name: Build and release for x64 Windows
 
-on: [workflow_dispatch]
+on: 
+  workflow_dispatch:
+    inputs:
+      releaseName:
+        description: "What to name the release"
+        required: true
+      tag:
+        description: "What to tag the release with"
+        required: true
 
 jobs:
   build:
@@ -34,18 +42,14 @@ jobs:
       - name: Make
         run: sudo make
       - name: Make installer
-        run: sudo make deploy
-
-  release:
-      runs-on: ubuntu-18.04
-      needs: build
-      name: Release
-      
-      steps: 
-        - uses: "marvinpinto/action-automatic-releases@latest"
-          with:
-            repo_token: "${{ secrets.GITHUB_TOKEN }}"
-            automatic_release_tag: "latest"
-            prerelease: true
-            title: "Latest"
-            files: "*.exe"
+        run: | 
+          sudo make deploy
+          ls -R
+      - name: Release
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "${{ github.event.inputs.releaseName }}"
+          files: "*.exe"
