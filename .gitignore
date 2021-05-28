@@ -50,6 +50,7 @@ src/qt/bitcoin-qt.creator
 src/qt/bitcoin-qt.creator.user
 src/qt/bitcoin-qt.files
 src/qt/bitcoin-qt.includes
+src/qt/log.txt
 
 .deps
 .dirstamp
