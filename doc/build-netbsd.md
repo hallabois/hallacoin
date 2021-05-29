@@ -22,7 +22,7 @@ libtool
 pkg-config
 python37
 
-git clone https://github.com/Hallacoin-project/Hallacoin.git
+git clone https://github.com/Hallabois/Hallacoin.git
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.

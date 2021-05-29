@@ -23,7 +23,7 @@ packages:
 - "python"
 - "rename"
 remotes:
-- "url": "https://github.com/Hallacoin-project/Hallacoin.git"
+- "url": "https://github.com/Hallabois/Hallacoin.git"
   "dir": "Hallacoin"
 files: []
 script: |

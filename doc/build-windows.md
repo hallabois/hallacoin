@@ -117,7 +117,7 @@ This means you cannot use a directory that located directly on the host Windows 
 
 Acquire the source in the usual way:
 
-    git clone https://github.com/Hallacoin-project/Hallacoin.git
+    git clone https://github.com/Hallabois/Hallacoin.git
 
 Then build using:
 

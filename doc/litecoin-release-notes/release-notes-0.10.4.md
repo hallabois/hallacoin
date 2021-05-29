@@ -8,7 +8,7 @@ recommended to upgrade to this version as soon as possible.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/Hallacoin-project/Hallacoin/issues>
+  <https://github.com/Hallabois/Hallacoin/issues>
 
 Upgrading and downgrading
 =========================

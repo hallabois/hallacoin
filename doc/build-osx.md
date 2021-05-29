@@ -43,7 +43,7 @@ Build Hallacoin Core
 
 1. Clone the Hallacoin Core source code:
 
-        git clone https://github.com/Hallacoin-project/Hallacoin
+        git clone https://github.com/Hallabois/Hallacoin
         cd Hallacoin
 
 2.  Build Hallacoin Core:

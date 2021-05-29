@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/Hallacoin-project/Hallacoin-detached-sigs.git"
+- "url": "https://github.com/Hallabois/Hallacoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "Hallacoin-osx-unsigned.tar.gz"

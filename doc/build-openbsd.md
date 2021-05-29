@@ -17,7 +17,7 @@ pkg_add autoconf # (select highest version, e.g. 2.69)
 pkg_add automake # (select highest version, e.g. 1.16)
 pkg_add python # (select highest version, e.g. 3.6)
 
-git clone https://github.com/Hallacoin-project/Hallacoin.git
+git clone https://github.com/Hallabois/Hallacoin.git
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.
