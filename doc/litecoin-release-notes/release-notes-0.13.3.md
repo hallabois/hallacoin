@@ -1,6 +1,6 @@
 Hallacoin Core version 0.13.3 is now available from:
 
-  <https://download.Hallacoin.org/Hallacoin-0.13.3/>
+  <https://download.Hallacoin.ml/Hallacoin-0.13.3/>
 
 This is a new minor version release, including new features, various bugfixes and performance improvements.
 It is recommended to upgrade to this version.

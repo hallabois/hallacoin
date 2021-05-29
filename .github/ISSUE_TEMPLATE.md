@@ -2,7 +2,7 @@
 
 General Hallacoin questions and/or support requests and are best directed to the [Hallacointalk.io forums](https://Hallacointalk.io/).
 
-For reporting security issues, please contact the Hallacoin developers on the #Hallacoin-dev Freenode IRC channel or alternatively you can email us at contact@Hallacoin.org.
+For reporting security issues, please contact the Hallacoin developers on the #Hallacoin-dev Freenode IRC channel or alternatively you can email us at contact@Hallacoin.ml.
 
 If the node is "stuck" during sync or giving "block checksum mismatch" errors, please ensure your hardware is stable by running memtest and observe CPU temperature with a load-test tool such as linpack before creating an issue! -->
 

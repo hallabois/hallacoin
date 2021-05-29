@@ -10,7 +10,7 @@ https://hallabois.github.io/Hallacoin-ohjeet/
 Website
 -------
 
-https://Hallacoin.org
+https://Hallacoin.ml
 
 What is Hallacoin?
 ----------------
@@ -22,7 +22,7 @@ out collectively by the network. Hallacoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Hallacoin Core software, see [https://Hallacoin.org](https://Hallacoin.org).
+the Hallacoin Core software, see [https://Hallacoin.ml](https://Hallacoin.ml).
 
 License
 -------

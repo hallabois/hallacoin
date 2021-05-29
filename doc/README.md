@@ -5,7 +5,7 @@ Setup
 ---------------------
 Hallacoin Core is the original Hallacoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Hallacoin transactions, which requires approximately 22 gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Hallacoin Core, visit [Hallacoin.org](https://Hallacoin.org/).
+To download Hallacoin Core, visit [Hallacoin.ml](https://Hallacoin.ml/).
 
 Running
 ---------------------

@@ -47,7 +47,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Hallacoin"
-#define QAPP_ORG_DOMAIN "Hallacoin.org"
+#define QAPP_ORG_DOMAIN "Hallacoin.ml"
 #define QAPP_APP_NAME_DEFAULT "Hallacoin-Qt"
 #define QAPP_APP_NAME_TESTNET "Hallacoin-Qt-testnet"
 #define QAPP_APP_NAME_REGTEST "Hallacoin-Qt-regtest"

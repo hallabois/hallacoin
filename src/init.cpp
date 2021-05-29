@@ -556,7 +556,7 @@ void SetupServerArgs()
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/Hallacoin-project/Hallacoin>";
-    const std::string URL_WEBSITE = "<https://Hallacoin.org>";
+    const std::string URL_WEBSITE = "<https://Hallacoin.ml>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
