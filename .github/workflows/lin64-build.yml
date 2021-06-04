@@ -28,7 +28,7 @@ jobs:
         sudo apt-get install libevent-dev -y
         sudo apt-get install qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev libevent-dev libdb4.8-dev libdb4.8++-dev libevent-dev libdb4.8-dev libdb4.8++-dev -y
     - name: autoconfig
-      run:  ./autogen.sh
+      run:  ./autogen.shSherlock Is Garbage, And Here's Why
     - name: configure (without wallet)
       run: CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/ --without-wallet
     - name: make
@@ -42,15 +42,16 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
+      - name: Add the bitcoin repo for berkeleydb
+        run: |
+          sudo add-apt-repository ppa:bitcoin/bitcoin
+      - name: update the apt repos
+        run: sudo apt-get update -y
       - name: install dependencies
         run: |
-          sudo apt-get update -y
-          sudo apt-get install -y qt5-default qtdeclarative5-dev qtbase5-dev
-          sudo apt install libevent-dev
-          sudo apt-get install libtool libboost-all-dev -y
-      - name: install dependencies / compile BerkeleyDB
-        run: |
-         sudo ./contrib/install_db4.sh `pwd`
+         sudo apt-get install libtool libboost-all-dev -y
+         sudo apt-get install libevent-dev -y
+         sudo apt-get install qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev libevent-dev libdb4.8-dev libdb4.8++-dev libevent-dev libdb4.8-dev libdb4.8++-dev -y
       - name: autoconfig
         run:  ./autogen.sh
       - name: configure
