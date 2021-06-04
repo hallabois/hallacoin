@@ -24,9 +24,9 @@ jobs:
       run: sudo apt-get update -y
     - name: install dependencies
       run: |
-        sudo apt install libtool libboost-all-dev -y
-        sudo apt install libevent-dev -y
-        sudo apt install qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev libevent-dev libdb4.8-dev libdb4.8++-devlibevent-dev libdb4.8-dev libdb4.8++-dev -y
+        sudo apt-get install libtool libboost-all-dev -y
+        sudo apt-get install libevent-dev -y
+        sudo apt-get install qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev libevent-dev libdb4.8-dev libdb4.8++-devlibevent-dev libdb4.8-dev libdb4.8++-dev -y
     - name: autoconfig
       run:  ./autogen.sh
     - name: configure (without wallet)
