@@ -1,8 +1,5 @@
-Hallacoin Core integration/staging tree
+Hallacoin Core integration/staging tree [![C/C++ CI](https://github.com/hallabois/hallacoin/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/hallabois/hallacoin/actions/workflows/c-cpp.yml)
 =====================================
-
-[![Build Status](https://travis-ci.org/Hallabois/Hallacoin.svg?branch=master)](https://travis-ci.org/Hallabois/Hallacoin)
-
 Ohjeet (pls lue)
 ------
 https://hallabois.github.io/Hallacoin-ohjeet/
