@@ -32,7 +32,7 @@ jobs:
     - name: autoconfig
       run:  ./autogen.sh
     - name: configure
-      run: CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=./debianbuild
+      run: CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix="${PWD}"/debianbuild
     - name: make
       run: make
     - name: make install to ./debianbuild
