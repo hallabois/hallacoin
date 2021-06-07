@@ -17,6 +17,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Create ./debianbuild
+      run: mkdir ./debianbuild
     - name: Add the bitcoin repo for berkeleydb
       run: |
         sudo add-apt-repository ppa:bitcoin/bitcoin
@@ -29,49 +31,56 @@ jobs:
         sudo apt-get install qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev libevent-dev libdb4.8-dev libdb4.8++-dev libevent-dev libdb4.8-dev libdb4.8++-dev -y
     - name: autoconfig
       run:  ./autogen.sh
-    - name: configure (without wallet)
-      run: CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/ --without-wallet
+    - name: configure
+      run: CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=./debianbuild
     - name: make
       run: make
-    - name: make dist
-      run: make dist
+    - name: make install to ./debianbuild
+      run: make install
+    - name: Set up a workfolder for the debian package
+      run: |
+        mkdir ./debianbuild/DEBIAN
+        cp ./debianControlFile ./debianbuild/DEBIAN/control
+    - name: lmao
+      run: dpkg-deb --build --root-owner-group ./debianbuild
+        
 
-  build-appimage:
-  
-    runs-on: ubuntu-18.04
-    
-    steps:
-      - uses: actions/checkout@v2
-      - name: Add the bitcoin repo for berkeleydb
-        run: |
-          sudo add-apt-repository ppa:bitcoin/bitcoin
-      - name: update the apt repos
-        run: sudo apt-get update -y
-      - name: install dependencies
-        run: |
-         sudo apt-get install libtool libboost-all-dev -y
-         sudo apt-get install libevent-dev -y
-         sudo apt-get install qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev libevent-dev libdb4.8-dev libdb4.8++-dev libevent-dev libdb4.8-dev libdb4.8++-dev -y
-      - name: autoconfig
-        run:  ./autogen.sh
-      - name: configure
-        run: ./configure
-      - name: build
-        run: make
-      - name: Build AppImage
-        uses: AppImageCrafters/build-appimage-action@master
-        env:
-          UPDATE_INFO: gh-releases-zsync|hallabois|hallacoin|latest|*x86_64.AppImage.zsync
-        with:
-          recipe: AppImageBuilder.yml
-      - uses: actions/upload-artifact@v2
-        with:
-          name: AppImage
-      - name: Release
-        uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "${{ github.event.inputs.tag }}"
-          prerelease: true
-          title: "${{ github.event.inputs.releaseName }}"
-          files: "*.AppImage"
+#  build-appimage:
+#  
+#    runs-on: ubuntu-18.04
+#    
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Add the bitcoin repo for berkeleydb
+#        run: |
+#          sudo add-apt-repository ppa:bitcoin/bitcoin
+#      - name: update the apt repos
+#        run: sudo apt-get update -y
+#      - name: install dependencies
+#        run: |
+#         sudo apt-get install libtool libboost-all-dev -y
+#         sudo apt-get install libevent-dev -y
+#         sudo apt-get install qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev qtdeclarative5-dev qtbase5-dev qttools5-dev qtdeclarative5-dev qt5-default libzmq3-dev libminiupnpc-dev software-properties-common libssl-dev libevent-dev libdb4.8-dev libdb4.8++-dev libevent-dev libdb4.8-dev libdb4.8++-dev -y
+#      - name: autoconfig
+#        run:  ./autogen.sh
+#      - name: configure
+#        run: ./configure
+#      - name: build
+#        run: make
+#      - name: Build AppImage
+#        uses: AppImageCrafters/build-appimage-action@master
+#        env:
+#          UPDATE_INFO: gh-releases-zsync|hallabois|hallacoin|latest|*x86_64.AppImage.zsync
+#        with:
+#          recipe: AppImageBuilder.yml
+#      - uses: actions/upload-artifact@v2
+#        with:
+#          name: AppImage
+#      - name: Release
+#        uses: "marvinpinto/action-automatic-releases@latest"
+#        with:
+#          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+#          automatic_release_tag: "${{ github.event.inputs.tag }}"
+#          prerelease: true
+#          title: "${{ github.event.inputs.releaseName }}"
+#          files: "*.AppImage"
