@@ -41,9 +41,14 @@ jobs:
       run: |
         mkdir ./debianbuild/DEBIAN
         cp ./debianControlFile ./debianbuild/DEBIAN/control
-    - name: lmao
-      run: dpkg-deb --build --root-owner-group ./debianbuild
-        
+    - name: build a .deb
+      run: |
+        dpkg-deb --build --root-owner-group ./debianbuild
+        mv ./debianbuild.deb ./Hallacoin.deb
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Hallacoin_deb
+        path: ./Hallacoin.deb
 
 #  build-appimage:
 #  
