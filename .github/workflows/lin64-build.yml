@@ -5,10 +5,10 @@ on:
     inputs:
       releaseName:
         description: "What to name the release"
-        required: true
+        required: false
       tag:
         description: "What to tag the release with"
-        required: true
+        required: false
 
 jobs:
   build:
