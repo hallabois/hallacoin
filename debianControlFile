@@ -1,33 +1,3 @@
-Source: Hallacoin
-Section: utils
-Priority: optional
-Maintainer: Hallabois
-Uploaders: Elias Eskelinen <elias.eskelinen@protonmail.com>
-Build-Depends: autotools-dev, bash-completion, dh-exec,
- debhelper (>= 9),
- libminiupnpc-dev,
- libboost-chrono-dev,
- libboost-system-dev,
- libboost-filesystem-dev,
- libboost-program-options-dev,
- libboost-thread-dev,
- libboost-test-dev,
- libdb++-dev,
- libssl-dev,
- pkg-config,
- qtbase5-dev, qt5-qmake, qttools5-dev-tools,
- libevent-dev,
- libzmq3-dev (>= 4) | libzmq5-dev,
- libqrencode-dev,
- dh-autoreconf,
- libprotobuf-dev,
- protobuf-compiler,
- python
-Standards-Version: 3.9.8
-Homepage: http://hallacoin.ml/
-Vcs-Git: git://github.com/hallabois/hallacoin.git
-Vcs-Browser: https://github.com/hallabois/hallacoin.git
-
 Package: Hallacoin
 Version: 1.0
 Architecture: amd64
