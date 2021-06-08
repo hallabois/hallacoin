@@ -1,7 +1,6 @@
 Package: Hallacoin
 Version: 1.0
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}
 Maintainer: Hallabois
 Description: an experimental digital currency
  Since 1940 - Confido Autem In Halla - Inventum Est Ksyk
