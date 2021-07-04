@@ -48,11 +48,10 @@ jobs:
           ls -R
       - name: Upload
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
-        env: 
-        #credentials are stored in the repository secrets separated by "|" in format "server|username|password".
-          FTP_SERVER: $(cut -d'|' -f1 <<< "${{ secrets.FTP_CREDS }}")
-          FTP_USERNAME: $(cut -d'|' -f2 <<< "${{ secrets.FTP_CREDS }}")
-          FTP_PASSWORD: $(cut -d'|' -f3 <<< "${{ secrets.FTP_CREDS }}")
+        env:
+          FTP_SERVER: "${{ secrets.FTP_SERVER }}"
+          FTP_USERNAME: "${{ secrets.FTP_USERNAME }}"
+          FTP_PASSWORD: "${{ secrets.FTP_PASSWORD }}"
           METHOD: "${{ github.event.inputs.ftpMethod }}"
           PORT: "${{ github.event.inputs.ftpPort }}"
           ARGS: --include-glob=*.exe
