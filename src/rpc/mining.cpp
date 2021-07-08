@@ -446,9 +446,11 @@ static UniValue getblocktemplate(const JSONRPCRequest& request)
     if (g_connman->GetNodeCount(CConnman::CONNECTIONS_ALL) == 0)
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Hallacoin is not connected!");
 
-    if (IsInitialBlockDownload())
+    // Skipataan check koska jää tähän jumiin aikachekkiin jos viimesin block on yli päivän vanha
+    // BUG: Tämä saattaa johtaa forkkiin chainista jos ei ole syncissä
+    /* if (IsInitialBlockDownload())
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Hallacoin is downloading blocks...");
-
+    */
     static unsigned int nTransactionsUpdatedLast;
 
     if (!lpval.isNull())
